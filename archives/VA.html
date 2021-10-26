@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Innovation@VA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./assets/documents/VHA Innovation Ecosystem - News_files/uswds.css">  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.11.1-web/css/all.css">
+    <script>
+        $(function () {
+            $("#header").load("/partials/header.html");
+            $("#footer").load("/partials/footer.html");
+        });
+    </script>
+</head>
+<style>
+    body{
+        font-weight: 200;
+    }
+    .font-weight-400 {
+        font-weight: 400;
+    }
+    .no-padding {
+        padding: 0px;
+    }
+    .header {
+        background: #112e51;
+        clear: both;
+        padding: 0;
+        width: 100%;
+        height: 93px;
+    }
+
+    .merger #va-header-logo-menu {
+        align-items: center;
+    }
+
+    #va-header-logo-menu {
+        flex-wrap: wrap;
+        padding: 1em .75em 0;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        .merger .va-header-logo-wrapper {
+            width: 55%;
+            float: left;
+            margin-right: 10px;
+        }
+        .welcome-section {
+        background: #537494;
+        width: 100%;
+        height: 355px !important;
+    }
+    .welcome-section-text {
+        padding: 20px !important;
+    }
+    /* .innovation-images-text {
+    margin-left: 91px !important;
+    test
+    } */
+    .innovation-section-content {
+     margin-left: 0px !important;
+     height: 1130px !important;
+}
+.test {
+    position: relative;
+    display:inline-block;
+    left: 12%;
+}
+.vha-offices-section {
+    margin-left: 28px !important;
+    margin-bottom: 10px !important;
+}
+.innovation-text {
+    padding: 22px !important;
+}
+.innovation-images-text {
+        margin-left: 0px !important;
+;
+    }
+/* .container {
+        max-width: 100%;
+    } */
+    }
+    @media screen and (min-width: 767px) and (max-width: 990px){
+        .welcome-section {
+        background: #537494;
+        width: 100%;
+        height: 325px !important;
+    }
+    /* .container {
+        max-width: 100%;
+    } */
+}
+@media (max-width: 992px){
+.container{
+    max-width: 100%;
+}}
+    .usa-grid,
+    .usa-grid-full {
+        max-width: 100rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .usa-grid-full>:last-child,
+    .usa-grid>:last-child,
+    .usa-section>:last-child {
+        margin-bottom: 0;
+    }
+
+    .usa-grid-full>:first-child,
+    .usa-grid>:first-child,
+    .usa-section>:first-child {
+        margin-top: 0;
+    }
+
+    .va-header-logo-wrapper {
+        flex: 1 0 164px;
+    }
+
+
+    .merger .va-header-logo {
+        width: 100%;
+        max-width: 264px;
+        height: auto;
+    }
+
+    .va-header-logo {
+        background-color: transparent;
+        border-bottom: none;
+        display: block;
+        height: 40px;
+        margin: 0;
+        width: 164px;
+        width: 100%;
+        max-width: 264px;
+        height: auto;
+    }
+
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        -ms-interpolation-mode: bicubic;
+    }
+
+    img {
+        border: 0;
+    }
+
+    .welcome-section {
+        background: #537494;
+        width: 100%;
+        height: 180px;
+    }
+
+    .welcome-section-text {
+        height: 106px;
+        max-width: 1200px;
+        color: #FFFFFF;
+        padding: 26px 118px 60px 118px;
+    }
+
+    .welcome-text {
+        text-align: center;
+        font-size: 40px;
+        font-family: Merriweather;
+    }
+
+    .innovation-section {
+        background: #E0F1F1;
+        margin-top: 6.5px;
+    }
+
+    .innovation-section-content {
+        max-width: 1035px;
+        height: 538px;
+        border: 1px solid #112E51;
+        margin-left: 54px;
+    }
+
+    .innovation-images-text {
+        font-size: 14px;
+        height: 90px;
+        background: #0071BB;
+        color: #FFF;
+        width: 300px;
+        margin-left: 12px;
+        text-align: left;
+        padding-left: 6px;
+        position: relative;
+    }
+
+    .innovation-images-text-para {
+        font-style: italic;
+        font-size: 12px;
+        margin-top: 7px;
+        position: absolute;
+        bottom: -9px;
+    }
+
+    .innovation-section-text {
+        color: #000000;
+    }
+
+    .innovation-text {
+        font-size: 18px;
+        font-family: Source Sans Pro;
+        padding: 29px 118px 5px 54px;
+    }
+
+    .vha-offices-section {
+        border: 1px solid black;
+        width: 300px;
+        height: 52px;
+        background: #003E73;
+        border-radius: 2px;
+    }
+
+    .vha-offices-section-text {
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: Droid Sans;
+        text-align: left;
+        margin: 4px;
+
+    }
+
+    .usa-footer {
+        font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+        font-size: 1.06471rem;
+        line-height: 1.52155;
+        overflow: hidden;
+    }
+
+    .usa-footer__return-to-top {
+        padding-bottom: 1.25rem;
+        padding-top: 1.25rem;
+        line-height: 0.93923;
+    }
+
+    .usa-footer__return-to-top a {
+        color: #005ea2;
+        text-decoration: underline;
+    }
+
+    .usa-footer__return-to-top a:hover {
+        color: #1a4480;
+    }
+
+    .usa-footer__return-to-top a:active {
+        color: #162e51;
+    }
+
+    .usa-footer__return-to-top a:focus {
+        outline: 0.25rem solid #2491ff;
+        outline-offset: 0;
+    }
+
+    .usa-footer__return-to-top a:visited {
+        color: #562b97;
+    }
+
+    .usa-footer__nav {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #a9aeb1;
+        max-width: 64rem;
+    }
+
+    .usa-footer__primary-section {
+        background-color: #f0f0f0;
+    }
+
+    .usa-footer__primary-content {
+        line-height: 1.12707;
+    }
+
+    .usa-footer__primary-link a,
+    .usa-footer__secondary-link a {
+        text-decoration: none;
+    }
+
+    .usa-footer__primary-link a:hover,
+    .usa-footer__secondary-link a:hover {
+        text-decoration: underline;
+    }
+
+    .usa-footer__primary-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        color: #1b1b1b;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+    }
+
+    .usa-footer__primary-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .usa-footer__secondary-link {
+        line-height: 1.12707;
+        margin-left: 1rem;
+        padding: 0;
+    }
+
+    .usa-footer__secondary-link a {
+        color: #005ea2;
+        text-decoration: underline;
+    }
+
+    .usa-footer__secondary-link a:hover {
+        color: #1a4480;
+    }
+
+    .usa-footer__secondary-link a:active {
+        color: #162e51;
+    }
+
+    .usa-footer__secondary-link a:focus {
+        outline: 0.25rem solid #2491ff;
+        outline-offset: 0;
+    }
+
+    .usa-footer__secondary-link a:visited {
+        color: #562b97;
+    }
+
+    .usa-footer__secondary-link+.usa-footer__secondary-link {
+        padding-top: 1rem;
+    }
+
+    .usa-footer__contact-info {
+        display: inline-block;
+        line-height: 1.12707;
+    }
+
+    .usa-footer__contact-info a {
+        color: #1b1b1b;
+        text-decoration: none;
+    }
+
+    .usa-footer__contact-info:hover {
+        text-decoration: underline;
+    }
+
+    .usa-footer__primary-content {
+        border-top: 1px solid #a9aeb1;
+    }
+
+    .usa-sign-up {
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .usa-sign-up .usa-label,
+    .usa-sign-up .usa-button {
+        margin-top: 0.75rem;
+    }
+
+    .usa-sign-up__heading {
+        font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+        font-size: 1.34164rem;
+        line-height: 1.22983;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .usa-footer__secondary-section {
+        padding-bottom: 1.25rem;
+        padding-top: 1.25rem;
+        background-color: #dcdee0;
+    }
+
+    .usa-footer__secondary-section a {
+        color: #1b1b1b;
+    }
+
+    .usa-footer__logo {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .usa-footer__logo-img {
+        max-width: 5rem;
+    }
+
+    .usa-footer__logo-heading {
+        font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+        font-size: 1.34164rem;
+        line-height: 1.22983;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        line-height: 1.02486;
+    }
+
+    .usa-footer__contact-links {
+        margin-top: 1.5rem;
+    }
+
+    .usa-footer__contact-heading {
+        font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+        font-size: 1.34164rem;
+        line-height: 1.22983;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .usa-footer__social-links {
+        line-height: 0.93923;
+        padding-bottom: 0.5rem;
+    }
+
+    .usa-footer__social-links a {
+        text-decoration: none;
+    }
+
+    .usa-social-link {
+        height: 3rem;
+        width: 3rem;
+        background-position: center center;
+        background-size: auto 1.5rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        display: inline-block;
+    }
+
+    .usa-social-link span {
+        position: absolute;
+        left: -999em;
+    }
+
+    .usa-social-link--facebook {
+        background-image: url("../img/social-icons/facebook25.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+        background-image: url("../img/social-icons/facebook25.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+    }
+
+    .usa-social-link--twitter {
+        background-image: url("../img/social-icons/twitter16.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+        background-image: url("../img/social-icons/twitter16.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+    }
+
+    .usa-social-link--youtube {
+        background-image: url("../img/social-icons/youtube15.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+        background-image: url("../img/social-icons/youtube15.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+    }
+
+    .usa-social-link--rss {
+        background-image: url("../img/social-icons/rss25.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+        background-image: url("../img/social-icons/rss25.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+    }
+
+    .usa-footer--slim .usa-footer__address {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .usa-footer--slim .usa-footer__logo {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .usa-footer--slim .usa-footer__logo-img {
+        max-width: 3rem;
+    }
+
+    .usa-footer--big .usa-footer__nav {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .usa-footer--big .usa-footer__primary-link {
+        font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+        font-size: 0.97574rem;
+        line-height: 1.22983;
+        font-weight: bold;
+        background-image: url("../img/arrow-down.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+        background-image: url("../img/arrow-down.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        background-position: 1rem center;
+        background-size: 0.75rem;
+        line-height: 1.22983;
+        margin: 0;
+        padding-left: 2rem;
+    }
+
+    .usa-footer--big .usa-footer__primary-content--collapsible.hidden .usa-list--unstyled {
+        display: none;
+    }
+
+    .usa-footer--big .usa-footer__primary-content--collapsible.hidden .usa-footer__primary-link {
+        background-image: url("../img/arrow-right.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+        background-image: url("../img/arrow-right.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .usa-footer--big .usa-footer__primary-content--collapsible .usa-list--unstyled {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1.25rem;
+    }
+    .grid-container .usa-sidenav{
+        margin-left:-1rem;
+        margin-right:-1rem;
+}
+.grid-container{
+  margin-left:auto;
+  margin-right:auto;
+  max-width:64rem;
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.grid-row{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+}
+
+.grid-row.grid-gap{
+  margin-left:-0.5rem;
+  margin-right:-0.5rem;
+}
+
+.usa-button{
+  font-family:Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size:1.06471rem;
+  line-height:0.93923;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+  background-color:#005ea2;
+  border:0;
+  border-radius:0.25rem;
+  color:white;
+  cursor:pointer;
+  display:inline-block;
+  font-weight:bold;
+  margin-right:0.5rem;
+  padding:0.75rem 1.25rem;
+  text-align:center;
+  text-decoration:none;
+  width:100%;
+}
+
+.usa-button:visited{
+  color:white;
+}
+
+.usa-button:hover, .usa-button.usa-button--hover{
+  background-color:#1a4480;
+  border-bottom:0;
+  color:white;
+  text-decoration:none;
+}
+
+.usa-button:active, .usa-button.usa-button--active{
+  background-color:#162e51;
+  color:white;
+}
+
+.usa-button:focus, .usa-button.usa-focus{
+  outline-offset:0.25rem;
+}
+
+.usa-button:disabled{
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+  background-color:#c9c9c9;
+  color:white;
+  pointer-events:none;
+}
+.usa-button--secondary{
+  background-color:#d83933;
+}
+
+.usa-button--secondary:hover, .usa-button--secondary.usa-button--hover{
+  background-color:#b50909;
+}
+
+.usa-button--secondary:active, .usa-button--secondary.usa-button--active{
+  background-color:#8b0a03;
+}
+@media (min-width: 64em){
+.desktop\:grid-col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 33.33333%;
+}
+}
+@media (min-width: 64em){
+.grid-row.grid-gap > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}}
+@media (min-width: 64em){
+.desktop\:grid-col-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 41.66667%;
+}}
+@media (min-width: 64em){
+.desktop\:grid-col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 25%;
+}}
+.usa-section--dark {
+    background-color: #162e51;
+    color: white;
+}
+@media (min-width: 40em){
+.usa-section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}}
+
+</style>
+<!-- <div id="header"></div> -->
+<header class="container header">
+    <div class="row va-flex usa-grid usa-grid-full" id="va-header-logo-menu">
+        <div class="va-header-logo-wrapper">
+            <a href="/" class="va-header-logo">
+                <img src="https://s3-us-gov-west-1.amazonaws.com/content.www.va.gov/img/header-logo.png"
+                    alt="Go to VA.gov">
+            </a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="container no-padding" style="background: #E0F1F1;">
+        <section class="welcome-section">
+            <div class="welcome-section-text">
+                <p class="welcome-text">
+                    Welcome to the Department of Veterans Affairs (VA)
+                    Collaborative Innovation Portal
+                </p>
+            </div>
+        </section>
+        <svg viewBox="0 0 422 20.98" preserveAspectRatio="none" style="background:#e0f1f1;margin-top:0;padding-top: 0;">
+            <defs></defs>
+            <g "="">
+                <polygon class=" fl-shape" style="background:#e0f1f1;fill:#7fcfcf" points="0,0 422,0 422,20">
+                </polygon>
+            </g>
+        </svg>
+        <section class="innovation-section">
+            <div class="innovation-section-content">
+                <p style="margin-bottom: 0px;"><img alt="got Innovation"
+                        src="./assets/images/innovation/gotinnovation.png"
+                        style="margin-right: auto; margin-left: auto; display: block;" width="654"></p>
+                        <h3 style="text-align: center;font-size: 18px;font-family: Source Sans Pro;font-weight: 700;margin-bottom: 30px;">Please click the box which best describes you. I'm EXTERNAL to VA and want to...</h3>
+                <div class="row text-center test">
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="https://ohil-externalintake.ideas.medalliafederal.com/category/4" target="_blank">
+                                <img src="./assets/images/innovation/collaborate.png"
+                                    alt="" width="300">
+                                <figcaption class="innovation-images-text"><p class="font-weight-400">Collaborate to Improve the Veteran Experience or VA Services</p> <p class="innovation-images-text-para">I would like to collaborate or partner with VA to improve the Veteran experience or VA services</p></figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="https://ohil-externalintake.ideas.medalliafederal.com/category/6" target="_blank">
+                                <img src="./assets/images/innovation/solution.png"
+                                    alt="" width="300">
+                                <figcaption class="innovation-images-text"><p class="font-weight-400">Share Innovative Idea or Solution</p><p class="innovation-images-text-para">I want to work with VA to explore my idea, develop my prototype, or advance my solution</p></figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="https://ohil-externalintake.ideas.medalliafederal.com/category/8" target="_blank">
+                                <img src="./assets/images/innovation/doingbusiness.jfif"
+                                    alt="" width="300">
+                                <figcaption class="innovation-images-text"><p class="font-weight-400">Do Business with VA </p><p class="innovation-images-text-para">I would like to sell a product or service to VA</p></figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="innovation-section-text">
+                <p class="" style="font-size: 18px; text-align: center; font-family: Source Sans Pro;margin-top: 20px;">
+                    At VA, innovation is a team sport. The following VA offices are working collaboratively to bring innovation to our Veterans through this portal.
+                </p>
+            <div class="row text-center" style="max-width: 1035px;margin-left: 5%;">
+               
+                <div class="vha-offices-section" style="margin-right: 5%;">
+                    <a href="https://www.va.gov/innovationecosystem/" target="_blank">
+                    <p class="vha-offices-section-text">VHA Office of Healthcare Innovation and Learning (OHIL) </p>
+                </a>
+                </div>
+          
+
+                <div class="vha-offices-section" style="margin-right: 5%;">
+                    <a href="https://www.oit.va.gov/" target="_blank">
+                    <p class="vha-offices-section-text">VA Office of Information and Technology (OI&T) </p>
+                </a>
+                </div>
+     
+           
+                <div class="vha-offices-section">
+                    <a href="https://www.va.gov/OPAL/index.asp" target="_blank">
+                    <p class="vha-offices-section-text">VA Office of Procurement and Logistics (OPAL)</p>
+                </a>
+                </div>
+         
+            </div>
+                <h3 style="text-align: center; margin-top: 37px;">History of Innovation @ VA</h3>
+                <p class="innovation-text">
+                    VA has long embraced innovation, from the first implantable cardiac pacemaker in 1960 to the recent
+                    exploration of clinical virtual reality (VR) applications and 3D bioprinting to fabricate
+                    patient-matched, vascularized, living bone. VA empowers frontline staff to take calculated risks,
+                    methodically test assumptions, learn from failure, and thrive in uncertainty. Our ability to adapt
+                    and rapidly spread innovation throughout the VA, shows us every day what it means to be a learning
+                    organization. This is one of our most critical resources in delivering the best care to Veterans.
+                    Today, VA is cultivating dynamic partnerships with federal agencies, nonprofits, and private
+                    industries, as well as collaborating with academic affiliates to test innovative solutions through
+                    research.
+                </p>
+            </div>
+            <p><img alt="VHA Innovation Ecosystem Banner"
+                    src="./assets/images/innovation/timeline.png"
+                    style="margin-right: auto; margin-left: auto; display: block;" width="1000"></p>
+        </section>
+    </div>
+</body>
+<footer class="container usa-footer usa-footer--big no-padding" role="contentinfo" >
+    <div class="grid-container usa-footer__return-to-top">
+        <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer__primary-section padding-bottom-8">
+        <div class="grid-container">
+            <div class="grid-row grid-gap">
+                <div class="desktop:grid-col-4 mobile:grid-row">
+                    <h3 class="font-serif-lg">VA Mission</h3>
+                    <p>To fulfill President Lincoln&rsquo;s promise <span class="text-italic font-family-alt">&ldquo;To
+                            care for
+                            him who shall have borne the battle,
+                            and for his widow, and his orphan&rdquo;</span> by serving and honoring the men and women
+                        who are
+                        America&rsquo;s Veterans.</p>
+                    <h3 class="font-serif-lg">Subscribe</h3>
+                    <p>Get the latest VA News products delivered to your inbox.</p>
+                    <a href="https://public.govdelivery.com/accounts/USVA/subscriber/new/"
+                        class="usa-button usa-button--secondary shadow"
+                        title="the will take you to the GovDelivery subscription form for VA and will open a new window or tab"
+                        target="_blank"><i class="fa fa-at icon-left" aria-hidden="true"></i> SUBSCRIBE TODAY!</a>
+
+                </div>
+                <div class="desktop:grid-col-5 mobile:grid-row">
+                    <h3 class="font-serif-lg">Veterans Programs and Services</h3>
+                    <ul class="usa-list usa-list--unstyled" style="column-count:2;column-gap:2rem;">
+                        <li><a href="https://www.va.gov/" title="Department of Veterans Affairs homepage">VA.gov</a>
+                        </li>
+                        <li><a href="https://www.va.gov/homeless/">For Homeless Veterans</a></li>
+                        <li><a href="https://www.va.gov/womenvet/">For Women Veterans</a></li>
+                        <li><a href="https://www.va.gov/centerforminorityveterans/">For Minority Veterans</a></li>
+                        <li><a href="https://www.ptsd.va.gov">PTSD</a></li>
+                        <li><a href="https://www.mentalhealth.va.gov/">Mental Health</a></li>
+                        <li><a href="https://www.publichealth.va.gov/">Public Health</a>
+                        <li><a href="https://www.accesstocare.va.gov/ourproviders/">Find a VA Healthcare Provider</a>
+                        </li>
+                        <li><a href="https://www.va.gov/adaptivesports/">Adaptive Sports and Special Events</a></li>
+                        <li><a href="https://www.va.gov/vso/">Veterans Service Organizations (VSO)</a></li>
+                    </ul>
+
+                    <h3 class="font-serif-lg">Additional VA Resources</h3>
+
+                    <ul class="usa-list usa-list--unstyled" style="column-count:2;column-gap:2rem;">
+                        <li><a href="https://iris.custhelp.va.gov/">Contact VA</a></li>
+                        <li><a href="https://explore.va.gov">Explore VA</a></li>
+                        <li><a href="https://www.va.gov/vaforms/">VA Forms</a></li>
+                        <li><a href="https://www.va.gov/health/">Veterans Health Administration (VHA)</a></li>
+                        <li><a href="https://benefits.va.gov/benefits/">Veterans Benefits Administration (VBA)</a></li>
+                        <li><a href="https://www.cem.va.gov/">National Cemetery Administration (NCA)</a></li>
+                        <li><a href="https://www.va.gov/jobs/">Careers at VA</a></li>
+                        <li><a href="https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp">Veterans Choice
+                                Program</a></li>
+                        <li><a href="https://www.accesstocare.va.gov/">Access to Care</a></li>
+                        <li><a href="https://www.va.gov/landing2_business.htm">Doing Business with VA</a></li>
+                        <li><a href="https://www.va.gov/opa/">Public Affairs</a></li>
+                        <li><a href="https://www.va.gov/opa/pressrel/">News Releases</a></li>
+                    </ul>
+                </div>
+
+                <div class="desktop:grid-col-3 mobile:grid-row">
+                    <h3 class="font-serif-lg">Connect with VA</h3>
+                    <ul class="usa-list fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-rss text-accent-warm-dark"
+                                    aria-hidden="true"></i></span><a href="https://www.blogs.va.gov/VAntage">VAntage
+                                Point</a></li>
+                        <li><span class="fa-li"><i class="fab fa-facebook facebook" aria-hidden="true"></i></span><a
+                                href="https://www.facebook.com/VeteransAffairs">Facebook</a></li>
+                        <li><span class="fa-li"><i class="fab fa-twitter twitter" aria-hidden="true"></i></span><a
+                                href="https://www.twitter.com/DeptVetAffairs/">Twitter</a></li>
+                        <li><span class="fa-li"><i class="fab fa-youtube youtube" aria-hidden="true"></i></span><a
+                                href="https://www.youtube.com/user/DeptVetAffairs">YouTube</a></li>
+                        <li><span class="fa-li"><i class="fab fa-flickr flickr" aria-hidden="true"></i></span><a
+                                href="https://www.flickr.com/photos/VeteransAffairs/">Flickr</a></li>
+                        <li><span class="fa-li"><i class="fab fa-instagram instagram" aria-hidden="true"></i></span><a
+                                href="https://www.instagram.com/deptvetaffairs/">Instagram</a></li>
+                        <li><span class="fa-li"><i class="fas fa-mobile" aria-hidden="true"></i></span><a
+                                href="https://mobile.va.gov/appstore/">VA
+                                Mobile Apps</a></li>
+                        <li><span class="fa-li"><i class="fas fa-list" aria-hidden="true"></i></span><a
+                                href="https://www.va.gov/opa/socialmedia.asp">Social
+                                Media Index</a></li>
+                    </ul>
+                    <h3 class="font-serif-lg">In Crisis? Get Help Now</h3>
+                    <a href="http://www.veteranscrisisline.net/" class="usa-button radius-0 shadow"><i
+                            class="fas fa-comment-alt-dots text-white icon-left" aria-hidden="true"></i> Veterans Crisis
+                        Line</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="usa-section usa-section--dark" style="padding-bottom:0rem;padding-top: 0rem;">
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="grid-col" style="height:5rem;">
+                    <p class="text-center"> <a href="https://www.va.gov" title="go to the VA homepage"><img
+                                src="/assets/images/logos/Official_VA_Seal.png"
+                                style=" margin-left: auto; margin-right: auto; margin-top:-3rem; max-width:7rem;"
+                                alt="Official VA seal" /></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="usa-section usa-section--dark mobile-hide padding-top-1 padding-bottom-4 copyright"
+        style="padding-top:1rem;">
+        <div class="grid-container">
+            <p class="text-center font-serif-3xs"> <span><a
+                        href="https://www.va.gov/oei/docs/VA2018-2024strategicPlan.pdf">VA
+                        Strategic Plan</a></span> | <span><a href="https://www.oprm.va.gov/privacy/">Privacy</a></span>
+                | <span><a href="https://www.va.gov/web/standards/disclaimer.cfm">Disclaimers</a></span> | <span><a
+                        href="https://www.va.gov/oig/">Inspector General</a></span> | <span><a
+                        href="https://www.oprm.va.gov/foia/">FOIA</a></span> | <span><a
+                        href="https://www.va.gov/orm/NOFEAR_Select.asp">No FEAR Act</a></span> | <span><a
+                        href="https://www.va.gov/accountability">Whistleblower and Rights
+                        Protection</a></span> | <span><a href="https://www.va.gov/web/standards/">Website
+                        Policies</a></span> | <span><a href="https://www.data.va.gov">Open Data</a></span>
+            </p>
+        </div>
+    </section>
+</footer>
+<!-- <div id="footer"></div> -->
+</html>
