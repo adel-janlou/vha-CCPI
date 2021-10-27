@@ -413,7 +413,6 @@ a.a-work{
     margin: 2%;
     border: 1px solid #f0f0f0 !important;
     padding: 10px;
-    border-radius: 20px;
  }
  /* border-light-blue y */
  .border-blue{
@@ -1021,4 +1020,26 @@ ul.b {
 
   .margin-botton-10 {
 margin-bottom: 10px;
+  }
+
+  .parallax {
+    /* The image used */
+    background: url("../images/page1-images/Simlearnmain.png") top center;
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+
+  }
+  .centered {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
