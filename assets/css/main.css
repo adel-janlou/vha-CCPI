@@ -1081,8 +1081,8 @@ margin-bottom: 10px;
 .flip-box-front-1 {
     color: white;
     padding: 15px;
-    background-color: #0f3560;
-
+    background: url(/assets/images/page1-images/VA-IE_Home_Thumb-1.jpg);
+    
 }
 
 .flip-box-back-1 {
@@ -1093,7 +1093,7 @@ margin-bottom: 10px;
 
 .flip-box-front-2 {
     color: white;
-    background-color: #2a72ce;
+    background-image: url(/assets/images/page1-images/VA-IE_Home_Thumb-2.jpg);
 
 }
 
