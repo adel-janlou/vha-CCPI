@@ -1027,7 +1027,7 @@ margin-bottom: 10px;
     background: url("../images/page1-images/Simlearnmain.png") top center;
   
     /* Set a specific height */
-    min-height: 550px; 
+    min-height: 450px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -1041,7 +1041,7 @@ margin-bottom: 10px;
   }
   .centered {
     position: absolute;
-    top:50%;
+    top:40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
