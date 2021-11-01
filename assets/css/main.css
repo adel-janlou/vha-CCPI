@@ -1113,3 +1113,16 @@ margin-bottom: 10px;
     color: white;
     transform: rotateY(180deg);
 }
+
+/* figma design  */
+.f48-700
+{
+    font-size:48px;
+    font-weight:700;
+}
+
+.f14-line22-w700{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
