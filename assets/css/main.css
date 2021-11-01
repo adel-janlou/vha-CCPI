@@ -1126,3 +1126,64 @@ margin-bottom: 10px;
     font-weight: 700;
     line-height: 22px;
 }
+
+
+
+/* test  */
+.cd-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cd-section--bg-fixed {
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  /* backgrounds */
+  .cd-section {
+    background-image: url("/assets/images/page1-images/Simlearnmain.png");
+  }
+  .max-width-sm {
+    max-width: 48rem;
+
+    max-width: var(--max-width-sm);
+}
+.container {
+    width: calc(100% - 1.25em);
+    width: calc(100% - 2*var(--component-padding));
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-component {
+    --line-height-multiplier: 1;
+    --text-vspace-multiplier: 1;
+}
+.text-component {
+    --component-body-line-height: calc(var(--body-line-height)*var(--line-height-multiplier, 1));
+    --component-heading-line-height: calc(var(--heading-line-height)*var(--line-height-multiplier, 1));
+}
+.cd-section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 3.25
+em
+ 0;
+    padding: var(--space-xl) 0;
+    font-size: 1.2em;
+    font-size: var(--text-md);
+    box-shadow: 0 1px 8px rgb(0 0 0 / 10%), 0 16px 48px rgb(0 0 0 / 10%), 0 24px 60px rgb(0 0 0 / 10%);
+    box-shadow: var(--shadow-lg);
+    z-index: 2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
