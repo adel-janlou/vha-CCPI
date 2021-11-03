@@ -331,7 +331,7 @@ a.hover-gold:hover{
 }
 a.a-work{
     color: white !important;
-    background-color: #07648d !important;
+    background-color: #0076d6 !important;
 }
 /* text-white */
 .text-white{
@@ -1186,4 +1186,14 @@ em
     z-index: 2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.button-box{
+    position: absolute;
+    bottom:  15px;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    padding: 10px;
+
 }
