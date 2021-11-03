@@ -93,52 +93,135 @@
         <button class="usa-menu-btn">Menu</button>
         <a href="https://www.va.gov" title="go to the VA homepage"></a>
     </div>
-    <nav role="navigation" class="usa-nav oneshadow" style="background-color: rgb(14, 38, 64);">
-        <div class="usa-nav__inner" >
+    <nav role="navigation" class="usa-nav" style="background-color: rgb(14, 38, 64);">
+      <div class="usa-nav__inner">
+          <button class="usa-nav__close"><img src="/assets/uswds-2.0.3/img/close.svg" alt="close"></button>
+          <ul class="usa-nav__primary usa-accordion">
+              <li class="usa-nav__primary-item">
+                  <a href="/home.html" title="VHA Innovation Ecosystem Homepage" class="usa-nav__link usa-link"><i
+                          class="fa fa-home icon-left text-white" aria-hidden="false"></i> Home</a>
+              </li>
+              <!-- who we are nav -->
+              <li class="usa-nav__primary-item">
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                      aria-controls="extended-nav-section-one"><span class="text-white">About</span></button>
+                  <ul id="extended-nav-section-one" class="usa-nav__submenu bg-submenu" hidden="hidden">
+                    <li class="usa-nav__submenu-item m-menu mybottom-border  ">
+                      <a href="./about-simlearn.html" class="">About SimLEARN</a>
+                    </li>
+                            <li class="usa-nav__submenu-item m-menu mybottom-border">
+                              <a href="./bio-simlearn.html" class=""> Biographies </a>
+                            </li>
+                            <li class="usa-nav__submenu-item m-menu mybottom-border">
+                              <a href="./home.html" class=""> Contact Us </a>
+                            </li>
+                            
+                            <li class="usa-nav__submenu-item m-menu   ">
+                              <a href="/discovery.html" class="">History</a>
+                            </li>
+                      
+                  </ul>
+              </li>
+                <!-- MEDIA -->
+                <li class="usa-nav__primary-item">
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" 
+                      aria-controls=""><span class="text-white">News & Media</span></button>
+              </li>
+              <!-- portfolio -->
+              <li class="usa-nav__primary-item">
+                  <button class="usa-accordion__button usa-nav__link " aria-expanded="false"
+                      aria-controls="extended-nav-section-two"><span class="text-white">Portfolios</span></button>
+                  <ul id="extended-nav-section-two" class="usa-nav__submenu bg-gradiant" hidden="hidden">
+                    <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
+                      <a href="/views/solutions/spark-seed-spread.html" class="">Assessment, Collaboration and Outreach (ACO)
+                        </a>
+                    </li> 
+                    <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
+                      <a href="/views/solutions/iNET-pro.html" class=""> Clinical Training and Engagement (CTE)</a>
+                    </li>
+                    <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
+                      <a href="/views/solutions/greenhouse-initiative.html" class="m-menu"> Emerging Healthcare Technology Integration (EHTI)</a>
+                    </li>
+                    <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
+                      <a href="/views/solutions/DOE-PP.html" class="m-menu"> Learning Management (LM)</a>
+                    </li>
+                    <li class="usa-nav__submenu-item m-menu border-white  padding-top-1">
+                      <a href="/views/solutions/precision-medicine.html" class="">Resuscitation Education and Innovation (REdI)</a>
+                    </li>
+                      
+                  </ul>
+              </li>
+              <!-- news + events nav -->
+              <li class="usa-nav__primary-item">
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                      aria-controls="extended-nav-section-five"><span class="text-white">Resources & FAQs</span></button>
+                  <ul id="extended-nav-section-five" class="usa-nav__submenu" hidden="hidden">
+                    <li class="usa-nav__submenu-item m-menu" style="font-size: 16px;font-weight:550">
+                      <a href="/views/news-events/iEX.html" class="">Frequently Asked Questions (FAQs) </a>
+                    </li>
+                      
+                     
+                  </ul>
+              </li>
+            
+          </ul>
+      </div> 
+  </nav>
+    <!-- <nav role="navigation" class="usa-nav oneshadow" style="background-color: rgb(14, 38, 64);"> -->
+        <!-- <div class="usa-nav__inner" >
             <button class="usa-nav__close"><img src="./assets/uswds-2.0.3/img/close.svg" alt="close"></button>
             <ul class="usa-nav__primary usa-accordion">
               <li class="usa-nav__primary-item">
                   <a href="/home.html" title="VHA Innovation Ecosystem Homepage" class="usa-nav__link usa-link"><i
                           class="fa fa-home icon-left text-white" aria-hidden="false"></i> Home</a>
-              </li>
+              </li> -->
              
-              <!-- who we are nav -->
-              <li class="usa-nav__primary-item">
+              <!-- about -->
+              <!-- <li class="usa-nav__primary-item">
                   <button class="usa-accordion__button usa-nav__link" aria-expanded="false" 
                       aria-controls="extended-nav-section-one"><span class="text-white">About</span></button>
                       <div id="extended-nav-section-one" class="grid-container usa-nav__submenu usa-megamenu oneshadow" 
                       style="background-color: #152e50;border:1px solid #fdb81e; border-top:0; padding-right: 25; display: table;" hidden="hidden">
-                      <div class="grid-row grid-gap-5">       
-                      <ul class="usa-nav__submenu-list" >
-                        <li class="usa-nav__submenu-item m-menu mybottom-border  ">
-                          <a href="./about-simlearn.html" class="">About SimLEARN</a>
-                        </li>
-                                <li class="usa-nav__submenu-item m-menu mybottom-border">
-                                  <a href="./bio-simlearn.html" class=""> Biographies </a>
-                                </li>
-                                <li class="usa-nav__submenu-item m-menu mybottom-border">
-                                  <a href="./home.html" class=""> Contact Us </a>
-                                </li>
-                                
-                                <li class="usa-nav__submenu-item m-menu mybottom-border  ">
-                                  <a href="/discovery.html" class="">History</a>
-                                </li>
-                              </ul>
+                      <div class="grid-row grid-gap-5">   
+                        <div class="usa-col myright ">
+                          <ul class="usa-nav__submenu-list" >
+                            <li class="usa-nav__submenu-item m-menu mybottom-border  ">
+                              <a href="./about-simlearn.html" class="">About SimLEARN</a>
+                            </li>
+                                    <li class="usa-nav__submenu-item m-menu mybottom-border">
+                                      <a href="./bio-simlearn.html" class=""> Biographies </a>
+                                    </li>
+                                   
+                                  </ul>
+                        </div>    
+                        <div class="usa-col  ">
+                          <ul class="usa-nav__submenu-list">
+                           
+                            <li class="usa-nav__submenu-item m-menu mybottom-border">
+                              <a href="./home.html" class=""> Contact Us </a>
+                            </li>
+                            
+                            <li class="usa-nav__submenu-item m-menu mybottom-border  ">
+                              <a href="/discovery.html" class="">History</a>
+                            </li>
+                          </ul>
+                        </div>  
+                     
                       </div>
                     </div>
-                    </li>
-                <!-- who we are nav -->
-                <li class="usa-nav__primary-item">
+                    </li> -->
+                <!-- MEDIA -->
+                <!-- <li class="usa-nav__primary-item">
                     <button class="usa-accordion__button usa-nav__link" aria-expanded="false" 
-                        aria-controls="extended-nav-section-one"><span class="text-white">News & Media</span></button>
-                </li>
-                <!-- solutions nav -->
-                <li class="usa-nav__primary-item">
+                        aria-controls=""><span class="text-white">News & Media</span></button>
+                </li> -->
+                <!-- portfolio -->
+                <!-- <li class="usa-nav__primary-item">
                     <button class="usa-accordion__button usa-nav__link " aria-expanded="false"
                         aria-controls="extended-nav-section-two"><span class="text-white">Portfolios</span></button>
                         <div id="extended-nav-section-two" class="grid-container usa-nav__submenu usa-megamenu oneshadow" style="background-color: #152e50;border:1px solid #fdb81e; border-top:0;display: table;" hidden="hidden">
                             <div class="grid-row grid-gap-5">
-                              <div class="usa-col  myright">
+                              <div class="usa-col myright ">
                                 <ul class="usa-nav__submenu-list">
                                   <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
                                     <a href="/views/solutions/spark-seed-spread.html" class="">Assessment, Collaboration and Outreach (ACO)
@@ -150,6 +233,13 @@
                                   <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
                                     <a href="/views/solutions/greenhouse-initiative.html" class="m-menu"> Emerging Healthcare Technology Integration (EHTI)</a>
                                   </li>
+                                 
+                                </ul>
+                              </div>
+                              
+                              <div class="usa-col  ">
+                                <ul class="usa-nav__submenu-list">
+                                 
                                   <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
                                     <a href="/views/solutions/DOE-PP.html" class="m-menu"> Learning Management (LM)</a>
                                   </li>
@@ -158,56 +248,12 @@
                                   </li>
                                 </ul>
                               </div>
-                              <!-- <div class="usa-col  myright">
-                                <ul class="usa-nav__submenu-list">
-                                  <li class="usa-nav__submenu-item mybottom-border">
-                                    <a href="/views/solutions/happen.html" class="m-menu">HAPPEN</a>
-                                  </li>
-                                  <li class="usa-nav__submenu-item  mybottom-border">
-                                    <a href="/views/solutions/NV-HAP.html" class="m-menu">National Organization for NV-HAP Prevention</a>
-                                  </li>
-                                  <li class="usa-nav__submenu-item mybottom-border">
-                                    <a href="/views/solutions/machine-learning.html" class="m-menu">Machine Learning</a>
-                                  </li>
-                                 
-                                  <li class="usa-nav__submenu-item mybottom-border">
-                                    <a href="/views/solutions/care-models.html" class="m-menu">Care Models</a>
-                                  </li>
-                                  <li class="usa-nav__submenu-item mybottom-border">
-                                    <a href="/views/solutions/veteran-facing.html" class="m-menu">Veteran-Facing Solutions</a>
-                                  </li>
-                                
-                                  <li class="usa-nav__submenu-item m-menu border-white mybottom-border padding-top-1">
-                                    <a href="/views/solutions/artificial-intelligence.html" class="m-menu">Artificial Intelligence </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="usa-col">
-                                <ul class="usa-nav__submenu-list">
-                                  <li class="usa-nav__submenu-item m-menu" style="font-size: 16px;font-weight:550">
-                                    <a href="/views/solutions/3d-printing-network.html" class="">VHA Advanced Manufacturing </a>
-                                  </li>
-                                  <li class="usa-nav__submenu-item s-menu mybottom-border ">
-                                    <a href="/views/solutions/3d-print-covid19.html" class=""> <small class="margin-right-1 margin-left-1">»</small>3D Printing Network COVID-19 Response</a>
-                                  </li>
-                                  <li class="usa-nav__submenu-item  mybottom-border">
-                                    <a href="/views/solutions/VR-AI.html" class="m-menu">Immersive Technology</a>
-                                  </li>
-                                   <li class="usa-nav__submenu-item mybottom-border">
-                                    <a href="/views/solutions/Project-convergence.html" class="m-menu">Project CONVERGENCE</a>
-                                  </li>
-                           
-                                    <li class="usa-nav__submenu-item  mybottom-border">
-                                    <a href="/views/solutions/hackathons.html" class="m-menu">Innovation Community Events</a>
-                                  </li>
-             
-                                </ul>
-                              </div> 
+                             
                             </div>
-                        </div> -->
-                </li>
+                        </div>
+                </li> -->
                 <!-- news + events nav -->
-                <li class="usa-nav__primary-item">
+                <!-- <li class="usa-nav__primary-item">
                     <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
                         aria-controls="extended-nav-section-five"><span class="text-white">Resources & FAQs</span></button>
                         <div id="extended-nav-section-five" class="grid-container usa-nav__submenu usa-megamenu oneshadow" style="background-color: #152e50;border:1px solid #fdb81e; border-top:0;" hidden="hidden">
@@ -215,13 +261,11 @@
                               <div class="usa-col border-white border-right">
                                 <ul class="usa-nav__submenu-list">
                                   <li class="usa-nav__submenu-item m-menu" style="font-size: 16px;font-weight:550">
-                                    <a href="/views/news-events/iEX.html" class="">Innovation Experience </a>
+                                    <a href="/views/news-events/iEX.html" class="">Frequently Asked Questions (FAQs) </a>
                                   </li>
                                  
                                  
-                                  <!-- <li class="usa-nav__submenu-item m-menu border-white border-top padding-top-1">
-                                    <a href="/views/news-events/media-archive.html" class="">Media Archives</a>
-                                  </li> -->
+                                 
                                 </ul>
                               </div>
                               <div class="usa-col border-white border-right">
@@ -244,16 +288,16 @@
                              
                             </div>
                         </div>
-                </li>
+                </li> -->
                
                
                 <!-- <div style="margin: auto; text-align: left">
                     <img src="./assets/images/placeholder/twitter1.png" alt="" style="width:; height: 30px; margin: 5px; text-align: left">
                     <img src="./assets/images/placeholder/facebook1.png" alt="" style="width:; height: 30px; margin: 5px; text-align: left;">
                 </div> --> 
-            </ul>
+            <!-- </ul>
         </div> 
-    </nav>
+    </nav> -->
     
 </header>
 
