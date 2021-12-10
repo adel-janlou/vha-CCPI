@@ -1214,3 +1214,16 @@ px
   background-size: cover; /* Resize the background image to cover the entire container */
 
   }
+
+
+
+  .bg-simlearn{
+    background-color: rgb(14, 38, 64);
+  }
+
+
+  .f18-line22-w400{
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+  }
