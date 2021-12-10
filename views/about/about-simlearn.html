@@ -58,22 +58,21 @@
 
   <main id="main">
     <!-- ======= About Section ======= -->
-    <!-- <svg viewBox="0 0 422 20.98" preserveAspectRatio="none" style="background:#FFFFFF;margin-top:0;padding-top: 0;">
+    <svg viewBox="0 0 422 20.98" preserveAspectRatio="none" style="background:#FFFFFF;margin-top:0;padding-top: 0;">
       <defs></defs>
       <g>
 <polygon class=" fl-shape" style="background:#FFFFFF;fill:#537494
 " points="0,0 422,0 422,20">
         </polygon>
       </g>
-    </svg> -->
+    </svg>
     <section>
       <div class="grid-container padding-3">
 
 
         <div class="grid-row grid-gap-3">
 
-
-
+          
         
           <div class="tablet:grid-col-7 text-left ">
             <h1 class="f48-700 padding-top-0 padding-bottom-0 " style="text-align: left;">
@@ -105,8 +104,9 @@
 
         </div>
         <div class="tablet:grid-col-5 padding-top-5 padding-right-3 display-flex flex-column flex-justify-center text-center">
-          <img style=" width:100%" src="/assets/images/about-page/img1.png" alt="About SimLEARN"><br>
-          <figcaption> <small>Learn more about SimLEARN by selecting above.</small> </figcaption>
+       <a href="#"data-toggle="modal" data-target="#usermodaltop"><img style=" width:100%" src="/assets/images/about-page/img1.png" alt="About SimLEARN"><br>
+          <figcaption> <small>Learn more about SimLEARN by selecting above.</small> </figcaption> </a> 
+         
 
         </div>
 
@@ -194,37 +194,7 @@
           
         </div>
 
-        <!--project3  -->
-        <!-- <div class="grid-row grid-gap-3 border-gray  oneshadow" style="background-color: #e1f3f8;">
-          <div class="tablet:grid-col-4 display-flex flex-column flex-justify-center padding-top-2 margin-top-1">
-
-            <img class="  flex-align-center  image-thumbnail oneshadow" src="/assets/images/about-page/img5.jpg"
-              alt="VHA SimLEARN National">
-          </div>
-          <div class="tablet:grid-col-8  ">
-            <h2 class="font-heading-md project-title"> VHA SimLEARN National Simulation Center</h2>
-            <p class="font-body-sm margin-0" style="padding-top: 15px;">The VHA SimLEARN National Simulation Center was
-              built on the campus of the new Orlando VA Medical Center, which is part of the exciting new "Medical City"
-              campus at Lake Nona.
-
-              <br><br> The Lake Nona development site includes other large clinical, education and research facilities.
-              A variety of Federal simulation research offices are in close proximity at the University of Central
-              Florida campus. This strategic placement facilitates enhanced opportunities for research in new simulation
-              technologies and methods.
-
-              <br><br> The VHA SimLEARN National Simulation Center serves as the operational hub for coordination of all
-              national VHA clinical simulation activities. <br><br>
-
-            </p>
-            <div class="text-center">
-              <a class="usa-button  shadowme a-work oneshadow  btn-me" href="#" target="_blank"><small>Read the Fact
-                  Sheet »</small></a> <a class="usa-button  shadowme a-work oneshadow  btn-me" href="#"
-                target="_blank"><small>About the NSC »</small></a>
-
-
-            </div>
-          </div>
-        </div> -->
+      
 
     </section>
     <!-- banner image  -->
@@ -269,9 +239,10 @@
 
             </p>
             <div class="text-center">
-              <a class="usa-button  shadowme a-work oneshadow  btn-me" href="#" target="_blank"><small>Read the Fact
-                  Sheet »</small></a> <a class="usa-button  shadowme a-work oneshadow  btn-me" href="#"
-                target="_blank"><small>About the NSC »</small></a>
+              <a class="usa-button  shadowme a-work oneshadow  btn-me" href="#"
+              target="_blank" ><small>Read the Fact
+                  Sheet »</small></a> 
+                  <a class="usa-button  shadowme a-work oneshadow  btn-me"  href="#"data-toggle="modal" data-target="#usermodalvideo"><small>About the NSC »</small></a>
 
 
             </div>
@@ -379,13 +350,68 @@
 
       </div>
 
-
-
+     
+     
 
     </section>
 
 
 
+ <!-- Aiden modal from gpo  -->
+            <!-- <a href="#"data-toggle="modal" data-target="#usermodal">Aiden  </a> -->
+
+            <div class="modal fade " id="usermodaltop" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog padding-3" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-simlearn text-white">
+                    <h5 class="modal-title" id="exampleModalLabel" >SimLearn</h5>
+                    <button type="button" class="close" style="opacity: 1;" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="row">
+                      <img style=" width:100%" src="/assets/images/about-page/img1.png" alt="About SimLEARN"><br>
+                      <figcaption> <small>Learn more about SimLEARN by selecting above.</small> </figcaption>
+                               
+                    </div>
+                   
+                    
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+          <!-- end Aiden modal from gpo  -->
+          <!-- video popup  -->
+            <!-- <a href="#"data-toggle="modal" data-target="#usermodal">Aiden  </a> -->
+
+            <div class="modal fade " id="usermodalvideo" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog padding-3" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-simlearn text-white">
+                    <h5 class="modal-title" id="exampleModalLabel" >VHA SimLEARN National Simulation Center</h5>
+                    <button type="button" class="close" style="opacity: 1;" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body" >
+                    <div class="row">
+                      <iframe class="" width="100%" height="400px"
+      src="  http://players.brightcove.net/2851863979001/default_default/index.html?directedMigration=true&videoId=4570069648001&autoplay=true&
+      "
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+                               
+                    </div>
+                   
+                    
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+          <!-- end Aiden modal from gpo  -->
 
 
 
