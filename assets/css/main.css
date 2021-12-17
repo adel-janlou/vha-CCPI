@@ -1334,13 +1334,11 @@ ul.b {
 
 /* table- input  */
 #myInput {
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    
     width: 100%;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
+    
     margin-bottom: 12px;
 }
 
@@ -1375,7 +1373,7 @@ ul.b {
     color: #212529;
     background-color: #fff;
     background-clip: padding-box;
-    border: 2px solid #7fcfcf;
+    border: 2px solid #07648d;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
