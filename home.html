@@ -1,746 +1,528 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
 <html>
+<!--<![endif]-->
 
 
-<head> 
-  <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?ver=true&amp;agency=VA"></script>
+<head>
+    <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?ver=true&amp;agency=VA"></script>
+    <title>VHA Innovation Ecosystem - </title>
+    <meta name="description" content="VHA Innovation Ecosystem Home">
 
-  <title>CCPI</title>
-  <meta name="description" content="Simlearn">
+    <!-- High Level meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- High Level meta data -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- test  -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/uswds-2.0.3/css/uswds.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- <link rel="shortcut icon" href="http://www.INNOVATIONECOSYSTEM.com.s3-website-us-east-1.amazonaws.com/favicon.ico">
+    <link rel="icon" href="/assets/images/favicon.png"> -->
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.11.1-web/css/all.css">
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- JS Scripts -->
+    <script type="text/javascript" src="/assets/uswds-2.0.3/js/uswds.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
-
-
-<!----BOOTSTRAP DATATABLES---->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <!-- js+jq for the header and footer -->
+    <script>
+        $(function () {
+            $("#header").load("/partials/header.html");
+            $("#footer").load("/partials/footer.html");
+        });
+    </script>
 
-<!-- test  -->
-  <!-- Links -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/uswds-2.0.3/css/uswds.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <!-- custom hero slider -->
-  <link rel="stylesheet" href="/assets/css/slick.css">
-  <link rel="stylesheet" href="/assets/css/slick-theme.css">
-  <!-- <link rel="shortcut icon" href="http://www.INNOVATIONECOSYSTEM.com.s3-website-us-east-1.amazonaws.com/favicon.ico">
-        <link rel="icon" href="/assets/images/favicon.png"> -->
-  <link rel="stylesheet" href="/assets/fontawesome-free-5.11.1-web/css/all.css">
+    <style>
+        .flip-box {
+            background-color: transparent;
 
-  <!-- JS Scripts -->
-  <script type="text/javascript" src="/assets/uswds-2.0.3/js/uswds.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- custom hero slider -->
-  <script type="text/javascript" src="/assets/js/slick.js"></script>
+            height: 350px;
 
+            perspective: 1000px;
+        }
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
 
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
 
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
 
-  
+        .flip-box-front-1 {
+            color: white;
+            padding: 15px;
+            background-color: #0f3560;
 
-  <script>
-    $(function () {
-      $("#header").load("/partials/header.html");
-      $("#footer").load("/partials/footer.html");
-    });
-  </script>
+        }
+
+        .flip-box-back-1 {
+            background-color: #0f3560;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front-2 {
+            color: white;
+            background-color: #2a72ce;
+
+        }
+
+        .flip-box-back-2 {
+            background-color: #2a72ce;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front-3 {
+            background-color: #3ba4e4;
+
+        }
+
+        .flip-box-back-3 {
+            background-color: #3ba4e4;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+
 
 </head>
 
-
 <body>
-  <!-- ======= Header ======= -->
-  <div id="header"></div>
 
+    <div id="header"></div>
+    <main id="main-content" role="main">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- introduction  -->
 
-  <!-- ======= Hero Section ======= -->
+        <section class=" margin-0 text-center ">
+            <img src="/assets/images/innovation/innovation.jpg" width="100%" alt="Simlearn Logo">
 
-  <main id="main">
 
-    <section class=" margin-0 text-center ">
-      <img src="/assets/images/page1-images/sim-top-1.png" width="100%" height="auto" alt="Simlearn Logo">
-
-
-      <!-- <div class="parallax"></div>
-      <div class="centered text-center">
-        <img src="/assets/images/page1-images/simlogo.png" alt="Simlearn Logo" style="width: 80%;">
-      </div> -->
-
-    </section>
-
-    <!-- End Hero -->
-
-    <svg viewBox="0 0 422 20.98" preserveAspectRatio="none" style="background:white;margin-top:0;padding-top: 0;">
-      <defs></defs>
-      <g>
-        <polygon class=" fl-shape" style="background:white;fill:#07648d" points="0,0 422,0 422,20">
-        </polygon>
-      </g>
-    </svg>
-
-    <section class="  small-padding 3  margin-bottom-0  bg-white">
-
-
-      <div class="grid-container">
-
-
-        <div class="grid-row grid-gap-5">
-
-
-          <div class="tablet:grid-col-11 ">
-            <h1 class=" text-dark-gray f48-700 ">
-              Who Are We?
-            </h1>
-
-
-           
-        
-            <p class="font-body-sm padding-top-1" style="line-height: 1.7; letter-spacing: .6px;">
-
-              The <strong>Simulation Learning, Education, Assessment, and Research Network (SimLEARN)</strong> is the
-              VHA's program
-              for simulation in health care training. Serving the largest integrated health care system in the
-              world, providing an ever-growing body of curricula and best practices that improve health care for
-              our nation's Veterans. The use of innovative technologies in a safe learning environment enhances
-              diagnostic, procedural and communication skills to support quality care and the best possible
-              outcomes. <br>
-              <a class="usa-button btn-me  shadowme a-work margin-bottom-1 margin-top-3 tablet:margin-bottom-3 oneshadow"
-                href="#" data-toggle="modal" data-target="#usermodal"><small>Watch Introduction Video
-                  »</small></a>
-
-            </p><br>
-
-          </div>
-          <!-- <div class="tablet:grid-col-4 display-flex flex-column flex-justify-center text-center padding-top-3">
-           
-
-
-            <div class="grid-row  padding-1 padding-top-3 border-base-lighter border bg-base-lightest"
-              style="border: 1px solid #134370;">
-
-              <div class="usa-card__media usa-card__media--inset">
-
-                <header class="usa-card__header  padding-top-0 padding-bottom-0">
-                  <h4 class="usa-card__heading  f15 margin-bottom-0 margin-top-0" style="color: #004b87;">
-
-
-                    <strong class="line-height-sans-6">Newsletters
-                    </strong>
-                  </h4>
-                </header>
-              </div>
-              <img src="/assets/images/page1-images/img-blue-placeholder.png" style=" opacity: .5;" alt="">
-
-              
-
-
-            </div>
-
-          </div> -->
-
-        </div>
-
-      </div>
-    </section>
-    <section class=" margin-bottom-3  margin-top-2 padding-top-5"
-      style="background: white;margin-top: 0 !important;padding-top: 0 !important;">
-      <div class="grid-container text-center">
-
-
-
-        <div class="grid-row grid-gap padding-top-2 padding-bottom-2 usa-card-group padding-5">
-          <!--11-->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2">
-            <a href="/views/courses/courses.html">
-              <img class="oneshadow wrapper-1 bg-dark" src="/assets/images/page1-images/VA-IE_Home_Thumbs1.png" alt="image placeholder">
-            </a>
-          
-          </div>
-          <!-- 22 -->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2">
-            <img class="oneshadow wrapper-1 bg-dark" src="/assets/images/innovation/FIV7foAXwAYTowJ.jpeg" alt="image placeholder">
-          </div>
-          <!-- 33 -->
-          <!-- <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2">
-            <img class="oneshadow" src="/assets/images/page1-images/VA-IE_Home_Thumbs3.png" alt="image placeholder">
-          </div> -->
-
-        </div>
-
-
-
-      </div>
-
-
-    </section>
-<!-- css animation  -->
-
-    <!-- <section
-      class=" small-padding margin-bottom-3 padding-bottom-1 margin-bottom-2 hero-standard hero-noimage hero-dark-background padding-top-3"
-      style="background: white;margin-top: 0 !important;padding-top: 0 !important;">
-      <div class="grid-container ">
-       
-        <div class="grid-row   margin-bottom-3 margin-top-2 text-white">
-
-
-          <div class="tablet:grid-col-6 text-left padding-top-1  ">
-
-            <div class="flip-box">
-              <div class="flip-box-inner ">
-                <div class="flip-box-front flip-box-front-1 padding-5">
-                 
-                </div>
-                <div class="flip-box-back flip-box-back-1 padding-3 padding-top-1">
-                  <h2 style="font-family: Museo Sans, sans-serif;
-                            font-weight: 200;
-                            font-size: 17px;line-height: 1.3!important;">
-                    The Simulation Learning, Education, Assessment, and Research Network (SimLEARN) is the VHA's program
-                    for simulation in health care training. Serving the largest integrated health care system in the
-                    world, providing providing an ever growing body of curricula and tools that improve overall Veteran
-                    well-being through simulation-based innovation and technologies provided in a safe learning
-                    environment. A variety of courses are available to VA health care professionals at the VHA SimLEARN
-                    VA Medical Centers
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="tablet:grid-col-6 text-left padding-top-1 ">
-
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front flip-box-front-2  padding-5">
-                  
-                </div>
-                <div class="flip-box-back flip-box-back-2  padding-3">
-                  <h2 style="font-family: Museo Sans, sans-serif;
-                            font-weight: 200;
-                            font-size: 17px;line-height: 1.3!important;">
-
-                    REdI oversees the robust resuscitation training program and ensures continuous betterment with
-                    innovative platforms. Additionally local VA medical facilities are offered standardization of mock
-                    code practices through turn key solutions via REdI’s Mock Code Training Program.
-
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        
-
-
-
-        </div>
-      </div>
-
-
-    </section> -->
-
-    <!-- FEature sTORIES  -->
-    <section class=" margin-bottom-3  margin-top-2 padding-top-5"
-      style="background: white;margin-top: 0 !important;padding-top: 0 !important;">
-      <div class="grid-container ">
-        <div>
-          <h2 class="f48-700" >Featured Stories <small class="float-right" 
-            style="font-size: 14px; padding-top: 30px;"> <a href="/views/news-events/news-media.html"> <i class="fas fa-plus-square padding-right-1 "></i>Read More Stories»</small></a>
-           </h2>
-          <!-- <h2 class="f48-700">Featured Stories </h2> -->
-
-        </div>
-
-
-
-        <div class="grid-row grid-gap padding-top-2 padding-bottom-2 usa-card-group">
-          <!--11-->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2"
-            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
-            <div class="usa-card__container">
-
-
-              <div class="usa-card__media usa-card__media--inset text-left">
-                <div class="usa-card__img">
-                  <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/leveraging.png"
-                    alt="Featured Stories place holder">
-                </div>
-                <header class="usa-card__header">
-                  <h4 class="f14-line22-w700" style="color: #004b87;">Leveraging Innovation and Technology to Advance
-                    Simulation Education
-
-
-                  </h4>
-                </header>
-              </div>
-
-              <div class="f14-line22-w700 padding-1  " style="font-weight: 400 !important;">
-                <p style="color:#1b1b1b; padding-bottom: 15px;">
-                  By: Cherie A. Bolden-Dickerson, BS <br>
-                  Project Manager <br>
-                  VHA SimLEARN National Simulation Center <br><br></p>
-
-              </div>
-
-            </div>
-            <div class="button-box">
-              <a class="usa-button btn-me btn-lg shadowme a-work oneshadow " href="#"  ><small>Read
-                  More
-                  »</small></a>
-
-
-            </div>
-
-          </div>
-          <!-- 22 -->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2"
-            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
-            <div class="usa-card__container">
-
-
-              <div class="usa-card__media usa-card__media--inset text-left">
-                <div class="usa-card__img">
-                  <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/Home-Page---Featured.png"
-                    alt="Featured Stories place holder">
-                </div>
-                <header class="usa-card__header">
-                  <h4 class="f14-line22-w700" style="color: #004b87;">
-                    Director’s Corner: FY22 Priorities
-
-
-                  </h4>
-                </header>
-              </div>
-
-              <div class="f14-line22-w700 padding-1 padding-bottom-4 " style="font-weight: 400 !important;">
-                <p style="color:#1b1b1b; padding-bottom: 15px;">
-
-                  By: Eric Bruns, MBA <br> Executive Director <br> SimLEARN
-                </p>
-
-              </div>
-
-            </div>
-            <div class="button-box">
-              <a class="usa-button btn-me btn-lg shadowme a-work oneshadow "
-                href="/views/who-we-are/necie-projects.html#project1"  ><small>Read
-                  More
-                  »</small></a>
-
-
-            </div>
-
-          </div>
-          <!-- 33 -->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2"
-            style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
-            <div class="usa-card__container">
-
-
-              <div class="usa-card__media usa-card__media--inset text-left">
-                <div class="usa-card__img">
-                  <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/Featured-Annual-Report.png"
-                    alt="Featured Stories place holder">
-                </div>
-                <header class="usa-card__header">
-                  <h4 class="f14-line22-w700" style="color: #004b87;">SimLEARN Annual Report 2021
-                    
-
-                   
-
-                  </h4>
-                </header>
-              </div>
-
-              <div class="f14-line22-w700 padding-1  " style="font-weight: 400 !important;">
-                <p style="color:#1b1b1b; padding-bottom: 15px;">
-                  Written by VHA SimLEARN Staff</p> <br>
-
-
-              </div>
-
-
-            </div>
-            <div class="button-box">
-              <a class="usa-button btn-me btn-lg shadowme a-work oneshadow" href="#"  ><small>Read
-                  More
-                  »</small></a>
-
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-        <!-- <div class="text-center margin-top-2" style="text-align: center;">
-          <a class="usa-button  shadowme a-work oneshadow "  href="#"  ><small>Read
-              More Stories
-              »</small></a>
-
-
-        </div> -->
-
-
-
-
-      </div>
-      </div>
-
-
-    </section>
-
-
-
-    <!-- ======= About Section ======= -->
-
-    <section style="background:#e1f3f8;">
-      <svg viewBox="0 0 422 20.98" preserveAspectRatio="none" style="background:#e1f3f8;;margin-top:0;padding-top: 0;">
-
-        <defs>
-        </defs>
-
-        <g >
-              <polygon class=" fl-shape" style="background:#e1f3f8;fill:#fff" points="0,0 422,0 422,20">
-          </polygon>
-        </g>
-      </svg>
-    </section>
-
-    <!-- main boxes  -->
-    <section
-      class=" usa-section--dark small-padding margin-bottom-3 padding-bottom-4 margin-bottom-0 hero-standard hero-noimage hero-dark-background"
-      style="background: #e1f3f8;margin-top: 0 !important;padding-top: 0 !important;">
-
-      <div class="grid-container ">
-        <div class="grid-row grid-gap-2">
-          <div class="tablet:grid-col">
-            <h2 class="f48-700 text-dark" style="margin-top:0 !important;">
-              Portfolios
-            </h2>
-          </div>
-        </div>
-
-      </div>
-
-
-      <div class="grid-container">
-        <!-- 11111 row-->
-        <div class="grid-row grid-gap padding-top-2 padding-bottom-2 usa-card-group">
-         
-
-          <!-- 55 -->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2"
-            style="box-shadow: 0px 5px 6px -6px black;">
-            <div class="usa-card__container">
-
-
-              <div class="usa-card__media usa-card__media--inset">
-                <div class="usa-card__img">
-                  <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/card5.jfif "
-                    alt="image place holder">
-                </div>
-                <header class="usa-card__header">
-                  <h4 class="usa-card__heading text-center f17" style="color: #004b87;">Resusitation Education and
-                    Innovation
-                  </h4>
-                </header>
-              </div>
-
-              <div class="usa-card__body padding-1 f15 ">
-                <p style="color:#1b1b1b; padding-bottom: 15px;">REdI oversees VAs standardized Resuscitation and Mock
-                  Code training programs. </p>
-
-              </div>
-
-            </div>
-            <br><br><br>
-            <div class="button-box">
-              <a class="usa-button btn-me shadowme a-work oneshadow" href="/views/portfolios/redi.html"  ><small>Read
-                  More
-                  »</small></a>
-
-
-            </div>
-
-          </div>
-           <!-- 44 -->
-           <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2"
-           style="box-shadow: 0px 5px 6px -6px black;">
-           <div class="usa-card__container">
-
-
-             <div class="usa-card__media usa-card__media--inset">
-               <div class="usa-card__img">
-                 <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/img5.png"
-                   alt="image place holder">
-               </div>
-               <header class="usa-card__header">
-                 <h4 class="usa-card__heading text-center f17" style="color: #004b87;">Learning Management
-
-
-                 </h4>
-               </header>
-             </div>
-
-             <div class="usa-card__body padding-1 f15 ">
-               <p style="color:#1b1b1b; padding-bottom: 15px;">LM oversees the development and updating of national
-                 curricula/training, foresight, and enabling of trainers to facilitate courses locally at their
-                 perspective facilities. </p>
-
-             </div>
-
-           </div>
-           <br><br><br>
-           <div class="button-box">
-             <a class="usa-button btn-me  shadowme a-work oneshadow" href="/views/portfolios/learning-management.html"  ><small>Read
-                 More
-                 »</small></a>
-           </div>
-         </div>
-        </div>
-
-        <!-- second row -->
-        <div class="grid-row grid-gap padding-top-2 padding-bottom-2 usa-card-group">
-          <!-- 11-->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2 margin-top-2"
-            style="box-shadow: 0px 5px 6px -6px black;">
-            <div class="usa-card__container">
-
-
-              <div class="usa-card__media usa-card__media--inset">
-                <div class="usa-card__img">
-                  <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/img2.jfif"
-                    alt="image place holder">
-                </div>
-                <header class="usa-card__header">
-                  <h4 class="usa-card__heading text-center f17" style="color: #004b87;">Assessment, Collaboration and Outreach
-                  </h4>
-                </header>
-              </div>
-
-              <div class="usa-card__body padding-1 f15 ">
-                <p style="color:#1b1b1b; padding-bottom: 15px;">ACO focuses on client-centered education that is
-                  adaptable to field needs using simulation-based training and best practices that effectively improves
-                  the utilization of resources and minimizes cost in Hospital Activations, Research, and Rural Health.
-                </p>
-
-              </div>
-
-            </div><br><br><br>
-            <div class="button-box">
-              <a class="usa-button btn-me  shadowme a-work oneshadow" href="/views/portfolios/assessment-collaboration-aco.html"  ><small>Read
-                  More
-                  »</small></a>
-
-
-            </div>
-
-
-          </div>
-          <!-- 222 -->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2"
-            style="box-shadow: 0px 5px 6px -6px black;">
-            <div class="usa-card__container">
-
-
-              <div class="usa-card__media usa-card__media--inset">
-                <div class="usa-card__img">
-                  <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/card2.jfif "
-                    alt="image place holder">
-                </div>
-                <header class="usa-card__header">
-                  <h4 class="usa-card__heading text-center f17" style="color: #004b87;">
-                    Clinical Training and Engagement
-                  </h4>
-                </header>
-              </div>
-
-              <div class="usa-card__body padding-1 f15 ">
-                <p style="color:#1b1b1b; padding-bottom: 15px;">
-
-                  CTE ensures all training Medical Information/ Material
-                  is accurate and up to date in accordance with VA policies and procedures as well as National, State,
-                  and Local laws. </p>
-
-              </div>
-
-            </div>
-            <br><br><br>
-            <div class="button-box">
-              <a class="usa-button btn-me  shadowme a-work oneshadow" href="/views/portfolios/clinical-training-cte.html"><small>Read
-                  More
-                  »</small></a>
-
-
-            </div>
-
-          </div>
-          <!-- 33 -->
-          <div class="tablet:grid-col  padding-top-1 bg-white margin-right-1  padding-bottom-2  margin-top-2"
-            style="box-shadow: 0px 5px 6px -6px black;">
-            <div class="usa-card__container">
-
-
-              <div class="usa-card__media usa-card__media--inset">
-                <div class="usa-card__img">
-                  <img class="image-thumbnail wrapper img-me" src="/assets/images/page1-images/card3.jfif "
-                    alt="image place holder">
-                </div>
-                <header class="usa-card__header">
-                  <h4 class="usa-card__heading text-center f17" style="color: #004b87;">Emerging Healthcare Technology
-                    Integration
-                  </h4>
-                </header>
-              </div>
-
-              <div class="usa-card__body padding-1 f15 ">
-                <p style="color:#1b1b1b; padding-bottom: 15px;">EHTI unifies emerging technologies with simulation and
-                  learning to accelerate the effective use of emerging health technologies during care delivery. </p>
-              </div>
-<br><br><br>
-            </div>
-            <div class="button-box">
-              <a class="usa-button btn-me  shadowme a-work oneshadow" href="/views/portfolios/ehti.html"  ><small>Read
-                  More
-                  »</small></a>
-
-
-            </div>
-
-          </div>
-
-
-        </div>
-        <!-- second row on foucus area  -->
-
-    </section>
-    <section style="background:white;">
-      <svg viewBox="0 0 422 20.98" preserveAspectRatio="none" style="background:white;;margin-top:0;padding-top: 0;">
-
-        <defs>
-        </defs>
-
-        <g>
-          <polygon class=" fl-shape" style="background:white;fill:#e1f3f8" points="0,0 422,0 422,20">
-          </polygon>
-        </g>
-      </svg>
-    </section>
-    <!-- ======= About Section ======= -->
-    <section>
-      <div class="grid-container">
-        <div class="grid-row" style="text-align: left;">
-          <div class="tablet:grid-col-4 text-center">
-            <img src="./assets/images/page1-images/book.png" alt="image place holder">
-          </div>
-          <div class="tablet:grid-col-8" style="padding: 6% 0 0 4%;">
-            <h4 class="f48-700">SimLEARN Newsletters</h4> <br>
-            <div class="grid-row grid-gap-4">
-              <div class="tablet:grid-col-10">
-                <p class="f24-line22-w700">Simulation Exchange Newsletter</p>
-                <p class="padding-bottom-3 font-body-sm padding-top-1 ">Simulation Exchange newsletter is a product of
-                  the VHA SimLEARN National Simulation Center. <br><br><br></p>
-                <div class="button-box">
-                  <button type="button" class="usa-button  shadowme a-work oneshadow ">Read The
-                    Latest Issue</button>
-
-
-                </div>
-
-
-              </div>
-              <!-- <div class="tablet:grid-col-6">
-                <p class="f24-line22-w700">Emerging Health Technology</p>
-                <p class="padding-bottom-3 font-body-sm padding-top-1" ">Monthly newsletter about Emerging Healthcare Technology (EHT). <br><br><br> </p>
-           
-              <div class=" button-box">
-                  <button type="button" class="usa-button  shadowme a-work oneshadow ">Read the Latest eZine</button>
-
-
-
-              </div>
-
+            <!-- <div class="parallax"></div>
+            <div class="centered text-center">
+              <img src="/assets/images/page1-images/simlogo.png" alt="Simlearn Logo" style="width: 80%;">
             </div> -->
 
+        </section>
+        <!-- svg white  -->
+        <section style="background:#fff;">
+            <svg viewBox="0 0 422 20.98" preserveAspectRatio="none"
+                style="background:#fff;margin-top:0;padding-top: 0;">
 
-          </div>
+                <defs>
+                </defs>
 
-        </div>
+                <g>
+                    <polygon class=" fl-shape" style="background:white;fill:#07648d" points="0,0 422,0 422,20">
+                    </polygon>
+                </g>
+            </svg>
+        </section>
 
-      </div>
-      </div>
-    </section><!-- End About Section -->
- <!-- Aiden modal from gpo  -->
-            <!-- <a href="#"data-toggle="modal" data-target="#usermodal">Aiden  </a> -->
-            <!-- <script>
-              $(document).ready(function(){
-                 
-                  var url = $("#simVideo").attr('src');
-                  
-                 
-                  $("#usermodal").on('hide.bs.modal', function(){
-                      $("#simVideo").attr('src', '');
-                  });
-                  
-                  
-                  $("#usermodal").on('show.bs.modal', function(){
-                      $("#simVideo").attr('src', url);
-                  });
-              });
-              </script> -->
-            <div class="modal fade " id="usermodal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header bg-simlearn text-white">
-                    <h5 class="modal-title" id="exampleModalLabel" >Introduction Video</h5>
-                    <button type="button" class="close" style="opacity: 1;" data-dismiss="modal" aria-label="Close" 
-                    onclick="document.getElementById('simVideo').hid">
-                      <span aria-hidden="true" class="text-white">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body" >
-                    <div class="row videoContainer">
-                      <iframe class="" width="100%" height="400px" id="simVideo"
-          src=" https://players.brightcove.net/2851863979001/default_default/index.html?videoId=6205569443001"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-                               
+        <section class="  small-padding 3  margin-bottom-0  bg-white">
+
+
+            <div class="grid-container">
+
+
+                <div class="grid-row grid-gap-5">
+
+
+                    <div class="tablet:grid-col-11 ">
+                        <h1 class=" text-dark-gray f48-700 ">
+                            Advancing a Value-Driven Health Care System for All Veterans​
+                        </h1>
+
+
+
+
+                        <p class="font-body-sm padding-top-1" style="line-height: 1.7; letter-spacing: .6px;">
+
+                            Authorized by <a href="https://www.congress.gov/bill/115th-congress/senate-bill/2372/text">
+                                <strong>Section 152 of the MISSION Act of 2018</strong>
+                            </a>, <strong>the Center for Care and Payment
+                                Innovation (CCPI)</strong> plays a critical role in ensuring the Department of Veterans
+                            Affairs (VA)
+                            maximizes quality of care while balancing costs – known as high-value health care – and
+                            delivers needed services to Veterans. <strong>CCPI</strong> works with partners across
+                            government and the
+                            health care industry to develop and test innovative approaches to Veteran care across a wide
+                            range of service areas​<br>
+                            Through these collaborative efforts, CCPI aims to:
+                        <ul style="line-height: 33px;">
+                            <li><strong>Improve Veterans' access to care and services;​</strong>
+                            </li>
+                            <li><strong>Improve quality, timeliness, and patient satisfaction; and</strong> ​</li>
+                            <li><strong>Create cost savings for the Department.</strong> </li>
+                        </ul>
+
+
+                        </p><br>
+
                     </div>
-                   
-                    
-                     </div>
-                 </div>
-             </div>
-         </div>
 
-          <!-- end Aiden modal from gpo  -->
 
-  </main><!-- End #main -->
-  <!-- ======= Footer ======= -->
-  <div id="footer"></div><!-- End Footer -->
+                </div>
 
+            </div>
+        </section>
+
+        <!-- idea section  boxes project  -->
+
+        <section id="" class="aquaback ">
+            <svg viewBox="0 0 422 20.98" preserveAspectRatio="none"
+                style="background:#e1f3f8;margin-top:0;padding-top: 0;">
+
+                <defs>
+                </defs>
+
+                <g>
+                    <polygon class=" fl-shape" style="background:#e1f3f8;fill:#fff " points="0,0 422,0 422,20">
+                    </polygon>
+                </g>
+            </svg>
+            <div id="" class="grid-container  padding-3 padding-top-1 ">
+                <h2 class="font-heading-xl text-dark-gray border-bottom">
+                    Strengthening Care for Veterans Now and in the Future​
+                </h2>
+
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-7 ">
+                        <p class="font-body-sm padding-top-1" style="line-height: 1.7; letter-spacing: .6px;">
+                            <br> <strong> MISSION:</strong> Accelerate VA’s transition to high-value care that creates
+                            efficiencies, promotes equity, and achieves the best health outcomes for all Veterans.​
+                            <br><br>
+
+                            ​
+
+                            <strong>VISION: </strong> CCPI collaborates across the government and health care industry
+                            to design, evaluate, and scale innovative payment and health care delivery approaches to
+                            drive value and better serve Veterans.​
+                        </p><br>
+                        <br>
+                    </div>
+                    <div class="tablet:grid-col-5 ">
+                        <img class="oneshadow image-thumbnail" src="/assets/images/innovation/Impact-Square.png"
+                            alt="VHA IE delivers four critical cornerstones needed to create a foundation">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <svg viewBox="0 0 422 20.98" preserveAspectRatio="none" style="background:#fff;margin-top:0;padding-top: 0;">
+
+            <defs>
+            </defs>
+
+            <g>
+                <polygon class=" fl-shape" style="background:#e1f3f8;fill:#e1f3f8; " points="0,0 422,0 422,20">
+                </polygon>
+            </g>
+        </svg>
+
+        <!-- Our Approach to Innovation ​ -->
+
+
+        <section class="  small-padding 3  margin-bottom-0  bg-white">
+
+
+            <div class="grid-container">
+
+
+                <div class="grid-row grid-gap-5">
+
+
+                    <div class="tablet:grid-col-12 ">
+                        <h1 class=" text-dark-gray f48-700 ">
+                            Our Approach to Innovation ​
+                        </h1>
+
+                        <p class="font-body-sm padding-top-1" style="line-height: 1.7; letter-spacing: .6px;">
+
+                            CCPI leads the designing, testing and implementation of pilot programs that improve health
+                            care services and payment options for Veterans. From concept to close, CCPI partners closely
+                            with VA medical centers and facilities, VA regional offices, VA program offices, Veteran
+                            organizations and industry to ensure the needs of Veterans are at the center of every pilot
+                            program we create.
+                        <p></p><br>
+                        <img src="/assets/images/innovation/PilotLifecycleGraphic.png" alt="CCPI infoGrapg">
+                        <p class="font-body-sm padding-top-1" style="line-height: 1.7; letter-spacing: .6px;">
+
+                            CCPI uses a standard framework for pilot program assessment, approval, and management. Using
+                            this framework allows us to create a structured approach to innovation that helps us:​
+                        <ul style="line-height: 33px;">
+                            <li><strong>Identify the need for care and payment innovation through data-driven
+                                    decision-making;​</strong>
+                            </li>
+                            <li><strong>Proactively identify high-risk, high-need, Veterans with various illnesses and
+                                    in different geographies;​</strong> ​</li>
+                            <li><strong>Ensure health equity is accounted for throughout a pilot’s design and
+                                    implementation;​</strong> </li>
+                            <li> <strong>Engage the VA Innovation Steering Committee to identify, evaluate, prioritize,
+                                    and recommend innovation opportunities;</strong> </li>
+                            <li> <strong>Leverage the <a
+                                        href="https://www.innovation.va.gov/careandpayment/about/about-ccpi.html">authority
+                                        granted by Section 152</a> of the MISSION Act to submit waiver requests for
+                                    Congressional approval.</strong></li>
+                        </ul>
+
+
+                        </p><br>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- dental section  -->
+        <section class="  small-padding  padding-bottom-4 margin-bottom-2 "
+            style="background: #e1f3f8;margin-top: 0 !important;padding-top: 0 !important;">
+            <div class="grid-container ">
+                <div class="grid-row grid-gap-4  margin-bottom-3 margin-top-2">
+
+                    <div class="tablet:grid-col-12 text-dark">
+                        <h1 class=" text-dark-gray f48-700 ">
+                            Getting More Veterans Smiling with VETSmile
+                        </h1>
+                        <p class="font-body-sm padding-top-1" style="line-height: 1.7; letter-spacing: .6px;">
+
+
+                            In July 2021, CCPI launched the <a
+                                href="https://www.innovation.va.gov/careandpayment/pilots/vetsmile.html">
+                                <strong>VETSmile pilot program</strong> </a> to improve dental care access for
+                            VA-enrolled Veterans currently ineligible for VA dental services. The pilot program is
+                            implemented in collaboration with community dental care providers nationwide. During its
+                            initial year, the <strong>VETSmile pilot</strong> expects to serve 3,900 Veterans through
+                            9,000 patient
+                            visits! ​
+
+                        </p>
+
+                        <hr>
+                        <br>
+
+
+
+                    </div>
+                    <div class="tablet:grid-col-4 padding-5 oneshadow "
+                        style="background: white;border-right: 1px solid #537494;">
+                        <div class=" text-dark text-center">
+                            <img src="/assets/images/innovation/icon-3.jpeg" style="width: 60%;" alt="icon-2">
+                            <p> <span class="count  "
+                                    style="font-size: 70px;font-weight: bolder; color: black;">9200000</span> M </p>
+                        </div>
+                        <div>
+
+                            <p class="text-center" style="font-size:20px; color: #4c6975; "> Veteran enrolled in VA
+                                Health Care</p>
+
+                        </div>
+                    </div>
+
+                    <div class="tablet:grid-col-4 padding-5 oneshadow "
+                        style="background: white;border-right: 1px solid #537494;">
+                        <div class=" text-dark text-center">
+                            <img src="/assets/images/innovation/icon-3.jpeg" style="width: 60%;" alt="icon-2">
+
+                            <p> <span class="count  "
+                                    style="font-size: 70px;font-weight: bolder; color: black;">7800000</span> M</p>
+                        </div>
+                        <div>
+
+                            <p class="text-center" style="font-size:20px; color: #4c6975; ">85% of Veterans without VA
+                                Dental Benefits </p>
+
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4 padding-5 oneshadow" style="background: white;">
+                        <div class=" text-dark text-center">
+                            <img src="/assets/images/innovation/icon-3.jpeg" style="width: 60%;" alt="icon-2">
+
+                            <p> <span class="count  "
+                                    style="font-size: 70px;font-weight: bolder; color: black;">1300000</span> M</p>
+                        </div>
+                        <div>
+
+                            <p class="text-center" style="font-size:20px; color: #4c6975; "> VETSmile eligible Veterans
+                                with the most limited access to dental care </p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+        <section
+            class=" small-padding margin-bottom-3 padding-bottom-1 padding-top"
+            style="background: white;margin-top: 0 !important;padding-top: 0 !important;">
+            <div class="grid-container">
+                <br>
+                <h2 class="text-dark"
+                    style="font-size: 48px; color: #002746;-webkit-font-smoothing: antialiased;">More about CCPI</h2>
+                <hr>
+                <br>
+                <p style=" font-size: 20px;color: #002746;-webkit-font-smoothing: antialiased;line-height: 1.7;
+                letter-spacing: .6px;">CCPI is organizationally aligned to the VHA Office of Healthcare Innovation and
+                    Learning (OHIL) as a sister organization to the Innovation Ecosystem (IE) and the Simulation
+                    Learning, Evaluation, Assessment and Research Network (SimLEARN), and under VHA’s Office of
+                    Discovery, Education, and Affiliate Networks (DEAN). </p>
+                </p>
+                <div class="grid-row   margin-bottom-3 margin-top-2 text-white">
+
+ <div class="tablet:grid-col-12 text-center padding-top-1  ">
+     <img src="/assets/images/innovation/hover-over.png" alt=""> 
+ </div>
+
+                    <div class="tablet:grid-col-4 text-left padding-top-1  ">
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner ">
+                                <div class="flip-box-front flip-box-front-1 padding-2">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                    font-weight: 500;
+                                    font-size: 40px;margin-top: 30%;"> (DEAN) </h2>
+                                </div>
+                                <div class="flip-box-back flip-box-back-1 padding-5">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                    font-weight: 500;
+                                    font-size: 30px;">Office of Discovery, Education, and Affiliate Networks</h2>
+                                    <a class="usa-button btn-me1  shadowme a-work margin-bottom-1 margin-top-3 tablet:margin-bottom-3 oneshadow" href="/views/news-events/speakers.html" target="_blank"><small>Learn More
+                                        »</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4 text-left padding-top-1 ">
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front flip-box-front-2  padding-5">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                    font-weight: 500;
+                                    font-size: 40px;margin-top: 30%;"> (IE)</h2>
+                                </div>
+                                <div class="flip-box-back flip-box-back-2  padding-2">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                    font-weight: 500;
+                                    font-size: 30px;">Innovation Ecosystem </h2> <br><br>
+                                    <a class="usa-button btn-me  shadowme  margin-bottom-1 margin-top-3 tablet:margin-bottom-3 oneshadow" href="/views/news-events/speakers.html" target="_blank"><small>Learn More
+                                        »</small></a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4 text-left padding-top-1 ">
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front flip-box-front-3  padding-2">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                    font-weight: 500;
+                                    font-size: 40px;margin-top: 30%;"> (SimLEARN) </h2>
+                                   
+                                </div>
+                                <div class="flip-box-back flip-box-back-3  padding-5">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                    font-weight: 500;
+                                    font-size: 26px;">Simulation Learning, Evaluation, Assessment and Research Network</h2>
+                                     <a class="usa-button btn-me  shadowme a-work margin-bottom-1 margin-top-3 tablet:margin-bottom-3 oneshadow" href="/views/news-events/speakers.html" target="_blank"><small>Learn More
+                                        »</small></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="tablet:grid-col-12 ">
+                        <img class="" src="/assets/images/fellow/Innovation_Fellowship_Infographic_r7.jpg"
+                            alt="place holdr image for fellows page">
+                            
+                    </div> -->
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        $(".nav .nav-link").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
