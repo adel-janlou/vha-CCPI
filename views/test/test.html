@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Safari Focus Issue</title>
+</head>
+<body>
+
+Main Window: HELLO<br />
+<span id="text" style="color: steelblue; font-size: 30px;"></span><br />
+
+<iframe id="frame" src="/views/test/test2.html"></iframe>
+
+<script type="text/javascript">
+  let timeout;
+  document.addEventListener('keydown', e => {
+    document.getElementById('text').innerHTML = "key: " + e.key;
+    clearTimeout(timeout);
+    timeout = setTimeout(()=>document.getElementById('text').innerHTML='', 500);
+  });
+
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    const theFrame = document.getElementById('frame');
+    theFrame.contentWindow.focus()
+    window.theFrame = theFrame;
+  });
+</script>
+
+</body>
+</html>

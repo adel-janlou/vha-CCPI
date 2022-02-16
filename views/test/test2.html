@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Frame: HELLO<br />
+<span id="text" style="color: steelblue; font-size: 30px;"></span>
+
+<script type="text/javascript">
+  let timeout;
+  document.addEventListener('keydown', e => {
+    document.getElementById('text').innerHTML = "key: " + e.key;
+    clearTimeout(timeout);
+    timeout = setTimeout(()=>document.getElementById('text').innerHTML='', 500);
+  });
+</script>
+
+</body>
+</html>

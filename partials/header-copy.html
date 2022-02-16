@@ -1,0 +1,252 @@
+<!-- This will skip to main content of a page. All main tags must have id of 'main-content' -->
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<!-- This section is the gov banner, should be present on all pages-->
+<div class="usa-banner">
+    <div class="usa-accordion">
+        <div class="usa-banner__header ">
+            <div class="usa-grid usa-banner__inner" style="max-width: 87rem;">
+                <div class="desktop:grid-col-6 grid-col-12 desktop:padding-0 padding-left-2">
+                    <div class="grid-col-auto">
+                        <img class="usa-banner__header-flag" src="/assets/uswds-2.0.3/img/us_flag_small.png"
+                            alt="U.S. flag">
+                    </div>
+                    <div class="grid-col-fill tablet:grid-col-auto">
+                        <p class="usa-banner__header-text">An official website of the United States government <span>
+                                <button class="usa-accordion__button usa-banner__button" aria-expanded="false"
+                                    aria-controls="gov-banner" id="banner-toggle">
+                                    <span class="usa-banner__button-text">Here’s how you know</span>
+                                </button></span></p>
+                        <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+                    </div>
+                </div>
+                <div id="crisis-line-btn" class="desktop:grid-col-6 grid-col-12 text-right">
+                    <div class="crisis-line">
+                        <div class="flex">
+                            <button data-target="#modal-crisisline" data-toggle="modal" data-backdrop="true"
+                                class="usa-button va-crisis-line__button text-left"
+                                style="max-width:18rem; padding: 1em 26px .5em .5em"> <span class="flex font-body-3xs">
+                                    <span class="vcl"><img src="/assets/images/logos/vcl-logo.png"
+                                            alt="Veteran Crisis Line Logo"
+                                            style="width: 10%; height: 10%;"></span>&nbsp;&nbsp;Talk
+                                    to the Veterans Crisis Line now</span> </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="crisis-line-container">
+
+            <button id="crisis-line-row" data-target="#modal-crisisline" data-toggle="modal" data-backdrop="true"
+                class="usa-button crisis-line-row__button text-left" style="background-color: #dcdfe3; color: black">
+                <div id="crisis-line-row-inner">
+                    <span class="flex font-body-3xs">
+                        <span class="vcl"><img src="/assets/images/logos/vcl-logo.png" alt="Veteran Crisis Line Logo"
+                                style="width: 10%; height: 10%;"></span>
+                        <span>&nbsp;&nbsp;Talk
+                            to the Veterans Crisis Line now</span>
+                </div>
+
+            </button>
+        </div>
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="hidden">
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds-2.0.3/img/icon-dot-gov.svg"
+                        alt="Dot gov">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>The .gov means it’s official.</strong>
+                            <br>
+                            Federal government websites often end in .gov or .mil. Before sharing sensitive
+                            information, make sure you’re on a federal government site.
+                        </p>
+                    </div>
+                </div>
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds-2.0.3/img/icon-https.svg"
+                        alt="Https">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>The site is secure.</strong>
+                            <br>
+                            The <strong>https://</strong> ensures that you are connecting to the official website
+                            and that any information you provide is encrypted and transmitted securely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--extended" style="background-color: rgb(14, 38, 64);">
+    <div class="usa-navbar">
+        <div id="extended-logo" class="usa-logo">
+            <em class="usa-logo__text">
+                <a href="./home.html" title="VHA Innovation Ecosystem"
+                aria-label="Home">
+                <span class="logo text-white">VA </span>
+                <span class="text-white text-thin"> | SimLEARN</span></a>
+            </em>
+
+        </div>
+        <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav" style="background-color: rgb(14, 38, 64);">
+        <div class="usa-nav__inner">
+            <button class="usa-nav__close"><img src="/assets/uswds-2.0.3/img/close.svg" alt="close"></button>
+            <ul class="usa-nav__primary usa-accordion">
+                <li class="usa-nav__primary-item">
+                    <a href="/home.html" title="VHA Innovation Ecosystem Homepage" class="usa-nav__link usa-link"><i
+                            class="fa fa-home icon-left text-white" aria-hidden="false"></i> Home</a>
+                </li>
+                <!-- about -->
+                <li class="usa-nav__primary-item">
+                    <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                        aria-controls="extended-nav-section-one"><span class="text-white">Who We Are</span></button>
+                    <ul id="extended-nav-section-one" class="usa-nav__submenu bg-submenu" hidden="hidden">
+                        <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/who-we-are/innovation-ecosystem.html" class="usa-link hover-gold">VHA Innovation Ecosystem Mission</a>
+                        </li>
+                        <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/who-we-are/innovation-network.html" class="usa-link hover-gold">Innovators Network</a>
+                        </li>
+                        <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/who-we-are/diffusion-of-excellence.html" class="usa-link hover-gold">Diffusion of Excellence</a>
+                        </li>
+                        <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/who-we-are/care-tranfomational-initiative.html" class="usa-link hover-gold">Care & Transformational Initiatives</a>
+                        </li>
+                        <!-- <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/who-we-are/innovation-community.html" class="usa-link hover-gold">VHA Innovation Community</a>
+                        </li> -->
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/who-we-are/fellowship.html" class="usa-link hover-gold">Fellowships</a>
+                        </li>
+                        <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/who-we-are/national-centers.html" class="usa-link hover-gold">VA National Centers for Innovation to Impact</a>
+                        </li>
+                       
+                        <!-- <li class="usa-nav__submenu-item text-white">
+                            <a href="/templates/template-NCCHIpage.html" class="usa-link">NCCHI</a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li class="usa-nav__primary-item">
+                    <a href="/home.html" title="VHA Innovation Ecosystem Homepage" class="usa-nav__link usa-link"> Home</a>
+                </li>
+                <!-- solutions nav -->
+                <li class="usa-nav__primary-item">
+                    <button class="usa-accordion__button usa-nav__link " aria-expanded="false"
+                        aria-controls="extended-nav-section-two"><span class="text-white">Solutions</span></button>
+                    <ul id="extended-nav-section-two" class="usa-nav__submenu bg-gradiant" hidden="hidden">
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/solutions/3d-printing-network.html" class="usa-link hover-gold">VHA 3D Printing Network</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/solutions/spark-seed-spread.html" class="usa-link hover-gold">Spark Seed Spread Investments</a>
+                        </li>
+                        <!-- <li class="usa-nav__submenu-item">
+                            <a href="/views/solutions/shark-tank.html" class="usa-link hover-gold">Shark Tank</a>
+                        </li> -->
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/solutions/DOE-PP.html" class="usa-link hover-gold">Promising Practices</a>
+                        </li>
+                        <!-- <li class="usa-nav__submenu-item">
+                            <a href="/views/solutions/VR-AI.html" class="usa-link hover-gold">Virtual Reality/Artificial Intelligence</a>
+                        </li> -->
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/solutions/hackathons.html" class="usa-link hover-gold">Innovation Community Events</a>
+                        </li>
+                       
+                        <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/solutions/innovation-accelator.html" class="usa-link hover-gold">Innovation Accelerator Program</a>
+                        </li>
+                        <li class="usa-nav__submenu-item text-white">
+                            <a href="/views/solutions/VA-Ventures.html" class="usa-link hover-gold">VA Ventures</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- news + events nav -->
+                <li class="usa-nav__primary-item">
+                    <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                        aria-controls="extended-nav-section-five"><span class="text-white">News & Events</span></button>
+                    <ul id="extended-nav-section-five" class="usa-nav__submenu" hidden="hidden">
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/news-events/iEX.html" class="usa-link hover-gold">Innovation Experience 2020</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/news-events/media-archive.html" class="usa-link hover-gold">Media Archives</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/news-events/events.html" class="usa-link hover-gold">Events</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/news-events/resources.html" class="usa-link hover-gold">Resources</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/views/news-events/publications.html" class="usa-link hover-gold">Publications</a>
+                        </li>
+                        <!-- <li class="usa-nav__submenu-item">
+                            <a href="/views/news-events/publications.html" class="usa-link hover-gold">Media Archives</a>
+                        </li> -->
+                    </ul>
+                </li>
+               
+            </ul>
+        </div> 
+    </nav>
+    
+</header>
+
+
+<!--Script-->
+<div id="modal-crisi3line" class="modal" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true"
+    style="display:none; padding: 3rem;">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="grid-row">
+                    <h1 class="font-family-serif font-serif-md tablet-lg:font-serif-lg grid-col-11 text-bold">
+                        We&rsquo;re here
+                        anytime, day or night - 24/7</h1>
+                    <button class="usa-button close grid-col-1 position-absolute right-0" type="button" id="va-vcl-close-btn" data-dismiss="modal"
+                        aria-label="Close"><span class="usa-sr-only">Close
+                            this modal</span> <i class="fa fa-times-circle fa-2x text-black" aria-hidden="true"
+                            title="close this modal"></i> </button>
+                </div>
+            </div>
+            <div class="modal-body">
+
+                <p class="font-sans-xs padding-bottom-3">If you are a Veteran in crisis or concerned about one, connect
+                    with
+                    our caring, qualified responders for confidential help. Many of them are Veterans themselves.</p>
+
+                <ul>
+                    <li class="display-flex"><i class="fas fa-fw fa-phone icon-left margin-right-2  margin-top-2 fa-lg"
+                            aria-hidden="true"></i><a href="tel:18002738255" tabindex='0' id="va-crisis-primary"> Call
+                            <strong>1-800-273-8255 and press 1</strong></a></li>
+                    <li class="display-flex"><i
+                            class="fas fa-fw fa-mobile-alt icon-left margin-right-2  margin-top-2 fa-lg"
+                            aria-hidden="true"></i><a href="sms:838255"> Text to <b>838255</b></a></li>
+                    <li class="display-flex"><i
+                            class="far fa-fw icon-left fa-comments margin-right-2  margin-top-2 fa-lg"></i><a
+                            href="https://www.veteranscrisisline.net/ChatTermsOfService.aspx?account=Veterans%20Chat">
+                            Chat
+                            <b>confidentially now</b></a></li>
+                    <li class="display-flex"><i class="fa fa-fw fa-deaf icon-left margin-right-2  margin-top-2 fa-lg"
+                            aria-hidden="true"></i><a href="tel:18007994889"> Call TTY if you have hearing loss
+                            <strong>1-800-799-4889</strong></a></li>
+                </ul>
+                <p class="font-sans-xs">Get more resources at <a
+                        href="https://www.veteranscrisisline.net/">VeteransCrisisLine.net</a>.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
