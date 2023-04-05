@@ -1958,4 +1958,9 @@ section {
   text-decoration: none;
 }
 
-
+.page-section__home-banner {
+  background-image: url(/assets/images/homepage/banner-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
