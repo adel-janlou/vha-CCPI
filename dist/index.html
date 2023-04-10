@@ -214,68 +214,68 @@
 
     <!-- ***** manin ******  -->
 
+    <script>
+        function openReport(cityName) {
+          var i;
+          var x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+    <main  id="main-content">
+        <div id="Report" class="city">
+            <img src="/dist/assets/images/homepage/gr.png" alt="top image ">
+          </div>
+          
+          <div id="Paris" class="city" style="display:none">
+            <img src="/dist/assets/images/homepage/gr-168.png" alt="top image ">
+          </div>
+          
+          <div id="Tokyo" class=" city" style="display:none">
+            <img src="/dist/assets/images/homepage/Gr-180.png" alt="top image ">
+          </div>
 
-    <main class="border-top-0" id="main-content">
-        <section class="usa-section bg-gray-10 padding-2">
 
-            <div id="London" class="w3-container city">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
+        <section class="  border-top-0">
+            <div class="grid-row  usa-card-group oneshadow" style="border-bottom: 14px solid #080E20;">
+                <!--11-->
+                <div class="tablet:grid-col   text-center " style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;"> 
+                    <button class="adele-btn  usa-button--big " onclick="openReport('Report')" style="background-color: transparent; border: 0 ;">AI Strategy Report</button>
+                </div>
+                <!-- 22 -->
+                <div class="tablet:grid-col  text-center" style="background-image: linear-gradient(to right, #29497B, #4674A6 ); border-right: 2px solid #080e20;">
+                    <button class="adele-btn  usa-button--big" onclick="openReport('Paris')" style="background-color: transparent; border: 0 ;">AI Use Case Inventory​</button>
+                    </div>
+                <!-- 33 -->
+                <div class="tablet:grid-col text-center" style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;">
+                    <button class="adele-btn  usa-button--big" onclick="openReport('Tokyo')" style="background-color: transparent; border: 0;">AI@VA Community</button>
+                  </div>
+      
               </div>
-              
-              <div id="Paris" class="w3-container city" style="display:none">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p> 
-              </div>
-              
-              <div id="Tokyo" class="w3-container city" style="display:none">
-                <h2>Tokyo</h2>
-                <p>Tokyo is the capital of Japan.</p>
-              </div>
 
-
-            <div class="w3-bar w3-black">
-                <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
-                <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
-                <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
-              </div>
-              
-              <div id="London" class="w3-container city">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
-              </div>
-              
-              <div id="Paris" class="w3-container city" style="display:none">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p> 
-              </div>
-              
-              <div id="Tokyo" class="w3-container city" style="display:none">
-                <h2>Tokyo</h2>
-                <p>Tokyo is the capital of Japan.</p>
-              </div>
-              
-              <script>
-              function openCity(cityName) {
-                var i;
-                var x = document.getElementsByClassName("city");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";  
-                }
-                document.getElementById(cityName).style.display = "block";  
-              }
-              </script>
-
-
-            <!-- <div class="w3-bar w3-black">
-                    <button type="" class="usa-button usa-button--big" onclick="openCity('London')" >AI Strategy Report </button>
-
-                    <button type="" class="usa-button usa-button--big" onclick="openCity('Paris')" >AI Use Case Inventory​ </button>
-
-                    <button type="" class="usa-button usa-button--big" onclick="openCity('Tokyo')" >AI@VA Community</button>
-
-                  </div> -->
         </section>
+      
+
+          
+          
+                
+          
+          
+          
+                
+
+           
+            
+
+              
+             
+              
+            
+
+
+        
 
 
     </main>
@@ -468,7 +468,7 @@
     </footer>
     <!-- jQuery-->
     <script>
-        function openCity(cityName) {
+        function openReport(cityName) {
             var i;
             var x = document.getElementsByClassName("city");
             for (i = 0; i < x.length; i++) {

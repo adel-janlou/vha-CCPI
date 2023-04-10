@@ -1405,31 +1405,26 @@ ul.b {
 }
 
 /* tab**** */
-.tab-container {
-    display: flex;
-  }
-  
-  .tab {
-    padding: 10px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  .tab:hover {
-    background-color: #ddd;
-  }
-  
-  .tab-content {
-    display: none;
-  }
-  
-  .tab-content p {
-    padding: 10px;
-  }
-  
-  /* Show the active tab content */
-  .tab-content.active {
-    display: block;
-  }
-  
+.adele-btn:active {
+background-color: #080E20 !important;
+border-top:  10px solid #FCB109 !important;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    
+    }
+    .adele-btn:focus {
+background-color: #080E20 !important;
+border-top:  10px solid #FCB109 !important;
+        color: whitesmoke;
+        width: 100%;
+        font-weight: bold;
+        height: 100%;
+        
+        }
+/* .adele-style{
+    background-image: linear-gradient(to right,#4674A6 ,   #29497B); 
+    border: 0 !important;
+     width: 100%;
+} */
