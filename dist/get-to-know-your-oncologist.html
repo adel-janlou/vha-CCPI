@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Mobile Specific Metas-->
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title and meta description-->
+        <title>Get to Know Your Oncologist Page | U.S. Web Design System (USWDS)</title>
+        <meta property="og:title" content="Get to Know Your Oncologist Page | U.S. Web Design System (USWDS)" />
+        <meta name="description" content="This is an example page." />
+        <meta property="og:description" content="This is an example page." />
+        <meta name="twitter:card" value="summary" />
+        <meta property="og:type" content="article" />
+        <!-- Favicons-->
+        <!-- 128x128-->
+        <link rel="shortcut icon" type="image/ico" href="assets/img/favicons/favicon.ico" />
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon.png" />
+        <!-- 192x192, as recommended for Android-->
+        <!-- http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android-->
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192.png" />
+        <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices-->
+        <link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-57.png" />
+        <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini-->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicons/favicon-72.png" />
+        <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch-->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favicons/favicon-114.png" />
+        <!-- 144x144 (precomposed) for iPad 3rd and 4th generation-->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicons/favicon-144.png" />
+        <!-- ANALYTICS-->
+        <!-- Slick Carousel CSS-->
+        <link rel="stylesheet" href="assets/vendor/slick/slick.css" />
+        <link rel="stylesheet" href="assets/vendor/slick/slick-theme.css" />
+        <!-- CSS-->
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- USWDS INIT-->
+        <script src="assets/vendor/uswds-init.min.js"></script>
+        <script rel="preload" href="assets/vendor/uswds.min.js" as="script"></script>
+    </head>
+    <body class="bg-gray-5">
+        <div class="usa-overlay"></div>
+        <section class="usa-banner position-relative" aria-label="Official government website">
+            <div class="usa-accordion">
+                <header class="usa-banner__header">
+                    <div class="usa-banner__inner position-relative">
+                        <div class="grid-col-auto"><img class="usa-banner__header-flag" src="assets/img/us_flag_small.png" alt="U.S. flag" /></div>
+                        <div class="grid-col-fill tablet:grid-col-auto">
+                            <p class="usa-banner__header-text">An official website of the United States government</p>
+                            <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+                        </div>
+                        <button class="usa-accordion__button usa-banner__button" type="button" aria-expanded="false" aria-controls="gov-banner-default"><span class="usa-banner__button-text">Here's how you know</span></button>
+                    </div>
+                </header>
+                <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+                    <div class="grid-row grid-gap-lg">
+                        <div class="usa-banner__guidance tablet:grid-col-6">
+                            <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true" />
+                            <div class="usa-media-block__body">
+                                <p><strong>Official websites use .gov</strong><br />A <strong>.gov</strong> website belongs to an official government organization in the United States.</p>
+                            </div>
+                        </div>
+                        <div class="usa-banner__guidance tablet:grid-col-6">
+                            <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-https.svg" role="img" alt="" aria-hidden="true" />
+                            <div class="usa-media-block__body">
+                                <p>
+                                    <strong>Secure .gov websites use HTTPS</strong><br />A <strong>lock</strong> (<span class="icon-lock"
+                                        ><svg class="usa-banner__lock-image" xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" role="img" aria-labelledby="banner-lock-title banner-lock-description" focusable="false">
+                                            <title id="banner-lock-title">Lock</title>
+                                            <desc id="banner-lock-description">A locked padlock</desc>
+                                            <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path></svg></span
+                                    >) or <strong>https://</strong> means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="usa-button usa-button--secondary va-crisis-line" href="#crisis-line-modal" aria-controls="crisis-line-modal" data-open-modal
+                ><div class="va-crisis-line-inner">
+                    <span class="va-crisis-line-icon" aria-hidden="true"><img src="assets/img/VCL-icon-white.svg" alt="" aria-hidden="true" /></span><span class="va-crisis-line-text">Talk to the <strong>Veterans Crisis Line</strong> now</span><img class="va-crisis-line-arrow" alt="" aria-hidden="true" src="assets/img/arrow-right-white.svg" /></div
+            ></a>
+        </section>
+        <header class="usa-header usa-header--extended site-header site-header-inverse">
+            <div class="usa-navbar">
+                <div class="usa-logo" id="-logo">
+                    <em class="usa-logo__text display-inline-block"
+                        ><a class="display-flex flex-align-center position-relative" href="index.html" title="Home"> <span class="usa-logo__text-preheading">VA</span><span class="divider">&nbsp; | &nbsp;</span><span class="text-uppercase text-ls-2">National Oncology Program</span></a></em
+                    >
+                </div>
+                <button class="usa-menu-btn">
+                    <div class="display-flex flex-align-center">
+                        <svg class="usa-icon usa-icon--size-3 margin-right-1" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#menu"></use></svg>Menu
+                    </div>
+                </button>
+            </div>
+            <nav class="usa-nav" aria-label="Primary navigation">
+                <div class="usa-nav__inner">
+                    <button class="usa-nav__close"><img src="assets/img/usa-icons/close.svg" role="img" alt="Close" /></button>
+                    <ul class="usa-nav__primary usa-accordion">
+                        <li class="usa-nav__primary-item">
+                            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-one"><span>About NOP</span></button>
+                            <ul class="usa-nav__submenu" id="extended-nav-section-one">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="about.html"><span>About Us</span></a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="get-to-know-your-oncologist.html"><span>Meet Your TeleOncology Team</span></a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="stories-in-oncology.html"><span>Stories in Oncology</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav-link" href="faqs.html"><span>FAQs</span></a>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-two"><span>Resources for Care</span></button>
+                            <ul class="usa-nav__submenu" id="extended-nav-section-two">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="oncology-services-and-tools.html"><span>Oncology Services &amp; Programs</span></a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="systems-of-excellence.html"><span>Systems of Excellence</span></a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="clinical-pathways.html"><span>Clinical Pathways</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav-link" href="learn-about-cancer-screening.html"><span>Cancer Screening for Veterans</span></a>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-three"><span>Learn More</span></button>
+                            <ul class="usa-nav__submenu" id="extended-nav-section-three">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="comms-and-ed-resources.html"><span>Communications &amp; Educational Resources</span></a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="newsroom.html"><span>Newsroom</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav-link" href="contact.html"><span>Contact Us</span></a>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav-link" href="careers.html"><span>Careers</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="usa-modal crisis-line-modal" id="crisis-line-modal" aria-labelledby="crisis-modal-heading" aria-describedby="crisis-modal-description">
+            <div class="usa-modal__content">
+                <div class="usa-modal__main">
+                    <h2 class="usa-modal__heading" id="crisis-modal-heading">
+                        <div class="display-flex flex-align-center"><img class="vcl-logo" src="assets/img/vcl-logo.png" alt="Veterans Crisis Line Logo" />We're here anytime, day or night – 24/7</div>
+                    </h2>
+                    <div class="usa-prose"><p id="crisis-modal-description">If you are a Veteran in crisis or concerned about one, connect with our caring, qualified responders for confidential help. Many of them are Veterans themselves.</p></div>
+                    <div class="crisis-links">
+                        <div class="crisis-link border-top border-base-lighter">
+                            <img class="usa-icon" src="assets/img/material-icons/phone.svg" aria-hidden="true" focusable="false" /><a class="usa-link" href="tel:988">Call <strong>988 and select 1</strong></a>
+                        </div>
+                        <div class="crisis-link border-top border-base-lighter">
+                            <img class="usa-icon" src="assets/img/material-icons/smartphone.svg" aria-hidden="true" focusable="false" /><a class="usa-link" href="sms:838255">Text <strong>838255</strong></a>
+                        </div>
+                        <div class="crisis-link border-top border-base-lighter"><img class="usa-icon" src="assets/img/material-icons/chat.svg" aria-hidden="true" focusable="false" /><a class="usa-link" href="https://www.veteranscrisisline.net/get-help-now/chat/">Start a Confidential Chat</a></div>
+                        <div class="crisis-link border-top border-base-lighter">
+                            <img class="usa-icon" src="assets/img/material-icons/hearingdisabled.svg" aria-hidden="true" focusable="false" /><a class="usa-link" href="tel:+18007994889">Call TTY if you have hearing loss <strong>800-799-4889</strong></a>
+                        </div>
+                        <div class="crisis-link border-top border-base-lighter"><a class="usa-link" href="https://www.veteranscrisisline.net/">Get more resources at VeteransCrisisLine.net</a></div>
+                    </div>
+                </div>
+                <button class="usa-button usa-modal__close" type="button" aria-label="Close this window" data-close-modal>
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#close"></use></svg>
+                </button>
+            </div>
+        </div>
+        <main class="border-top-0" id="main-content">
+            <section class="site-banner page-section__oncologist-banner overlay-gradient-horizontal">
+                <div class="height-full position-relative z-100 padding-2 desktop:padding-5">
+                    <div class="display-flex flex-justify-end flex-column height-full">
+                        <div class="text-white">
+                            <div class="text-bold font-heading-2xl desktop:font-heading-3xl">Get to Know Your TeleOncology Team</div>
+                            Meet the oncologists who are shaping the future of cancer care at VA.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="usa-section bg-white padding-bottom-0">
+                <div class="grid-container">
+                    <div class="usa-prose">
+                        <p class="measure-none">NTO allows Veterans to receive world-class oncology care and services, regardless of where they live. Working shoulder to shoulder with various partners, NTO delivers screenings, diagnostics, and treatment for medical oncology —including rehabilitation and palliative care— to improve access and outcomes for Veterans.</p>
+                        <h3>Categories on this page</h3>
+                        <ul class="usa-button-group padding-left-0">
+                            <li class="usa-button-group__item"><a class="usa-button" href="#leadership">NTO Leadership</a></li>
+                            <li class="usa-button-group__item"><a class="usa-button" href="#physicians">Physicians</a></li>
+                            <li class="usa-button-group__item"><a class="usa-button" href="#advanced">Advanced Practice Providers</a></li>
+                            <li class="usa-button-group__item"><a class="usa-button" href="#nurses">Care Coordination Registered Nurses</a></li>
+                            <li class="usa-button-group__item"><a class="usa-button" href="#pharmacy">Clinical Pharmacy Practitioners</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="usa-section bg-white" id="leadership">
+                <div class="grid-container">
+                    <div class="usa-prose"><h2>NTO Leadership</h2></div>
+                    <hr class="margin-y-2" />
+                    <div class="usa-accordion usa-accordion--bordered">
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="l-a1">Vida Almario Passero, MD, MBA</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="l-a1">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/leaders/v-passero.jpg" alt="Vida Almario Passero, MD, MBA Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Sub-Specialty: </strong>Hematology/Oncology; Chief Medical Officer, National TeleOncology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Pittsburgh Healthcare System</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Georgetown University, BA; West Virginia University School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Pittsburgh Medical Center</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>University of Pittsburgh Medical Center</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliation: </strong>University of Pittsburgh Medical Center</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Achievements/Publications:</strong></p>
+                                    <ul>
+                                        <li>Alan Winkelstein Fellowship Teaching Award, UPMC - 2020</li>
+                                        <li>Distinguished Leader Award, VA Video Connect - 2022</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>Our goal is to connect you with dedicated VA hematology/oncology teams located throughout the nation whose mission is to deliver care for you and closer to where you live.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="l-a2">Jenna Houranieh, PharmD, BCOP</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="l-a2">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/leaders/j-houranieh.jpg" alt="Jenna Houranieh, PharmD, BCOP Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology/Oncology Clinical Pharmacy Practitioner; National TeleOncology Clinical Pharmacy Program Manager</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA Medical Center</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Massachusetts College of Pharmacy and Health Sciences, Doctorate in Pharmacy, 2011</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>PGY 1 and PGY2 Hematology/Oncology Residency at the Southern Arizona VA Healthcare System in Tucson, Arizona 2012-2013</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology is platform of healthcare delivery designed to improve your access to specialized oncology care regardless of where you live. By collaborating with your local VA medical center, we strive to be an accessible extension of your cancer care team to make sure you feel supported on your entire cancer journey and receive the best treatment for your specific type of cancer. We look forward to taking care of you!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="usa-section bg-white" id="physicians">
+                <div class="grid-container">
+                    <div class="usa-prose"><h2>Physicians</h2></div>
+                    <hr class="margin-y-2" />
+                    <div class="usa-accordion usa-accordion--bordered">
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="a1">Murat O. Arcasoy, MD, FACP</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a1">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/murat-arcasoy-headshot.jpg" alt="Murat O. Arcasoy Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Benign/Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA Hospital / Duke University School of Medicine, Durham, North Carolina</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Aegean University School of Medicine, Izmir, Turkey</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>State University of New York Downstate Medical Center School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Yale University School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>An excellent option for outstanding medical evaluation and care in the subspecialty of Hematology-Oncology.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a2">Rhonda Bitting, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a2">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/user-blank.jpg" alt="User Icon" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Genitourinary</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Genitourinary</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Vanderbilt University</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of California, San Francisco</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology allows patients to receive care from experts in the field without having to travel to large academic institutions. It requires a leap of faith, but it works! Despite the distance, with the help of the team on the ground, we can establish relationships and provide excellent care.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a3">Joshua Briscoe, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a3">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/joshua-briscoe-headshot.jpg" alt="Joshua Briscoe Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Palliative Care</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Palliative Care</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA Healthcare System</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>West Virginia University School of Medicine, MD</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Duke University School of Medicine, Internal medicine & Psychiatry</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Duke University School of Medicine, Hospice & Palliative Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>This resource improves access to important clinical services to help support the health of veterans across the country.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a4">Lisa J. Cardo, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a4">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/user-blank.jpg" alt="User Icon" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Benign/Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Maryland</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>State University of New York, Downstate Medical Center, College of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>SUNY Downstate</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>SUNY Downstate Hematology and Oncology, Mount Sinai College of Medicine Transfusion Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>We are here for you!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a5">Sarah Colonna, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a5">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/sarah-colonna-headshot.jpg" alt="Sarah Colonna Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Breast Cancer, Cancer Genetics</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Salt Lake City, Utah</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>East Tennessee State University, Quillen College of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Wake Forest University</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Vanderbilt University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>The cancer team at the VA is very experienced at providing specialized care via video and patients will be pleasantly surprised for how a good relationship can develop over the screen over time. I want women and men with breast cancer to know that they are getting the most modern and effective breast cancer treatments and genomic testing from an experienced and academic team. I am honored and humbled to be able to provide breast cancer care for Veterans across the country. Our Veterans deserve the best.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a6">Daphne Friedman, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a6">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/daphne-friedman-headshot.jpg" alt="Daphne Friedman Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology and Hematologic Malignancies</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong> Hematologic Malignancies</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>University of Maryland</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Maryland</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliation: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong></p>
+                                    <ul>
+                                        <li>2008 - Young Investigator Award, Duke Cancer Center Annual Meeting</li>
+                                        <li>2006 - Fellow, Molecular Biology in Clinical Oncology AACR Workshop</li>
+                                        <li>2002 - Alpha Omega Alpha, University of Maryland</li>
+                                        <li>2002 - Janet M. Glasgow Memorial Achievement Citation, American Medical Women's Association</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a7">Franklin W. Huang, MD, PhD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a7">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/user-blank.jpg" alt="User Icon" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Prostate Cancer</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Genitourinary</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>San Francisco VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Massachusetts General Hospital</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Dana-Farber Cancer Institute; Brigham and Women's Hospital; Massachusetts General Hospital</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Achievements: </strong>PI of SFVA/PCF Precision Oncology of Center of Excellence; Associate Professor of Medicine, UCSF; Prostate Cancer Foundation Young Investigator Award</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>A team of care providers working to provide expert oncology care with compassion to Veterans</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a8">Gerald Hsu, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a8">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/gerald-hsu-headshot.jpg" alt="Gerald Hsu Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematologic malignancies</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Malignant hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>San Francisco VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Brigham & Women's Hospital</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>University of California, San Francisco</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong></p>
+                                    <ol>
+                                        <li>Nawas MT, Walker EJ, Richie MB, White AA, Hsu G. A Protean Protein. J Hosp Med. 2019 Feb 1;14(2):117-122. doi: 10.12788/jhm.3102. Epub 2018 Nov 28. PMID: 30534640.</li>
+                                        <li>Huppert LA, Hsiao EC, Cho KC, Marquez C, Chaudhry RI, Frank J, Goglin SE, Hsu G, Kathpalia P, Khanna R, Kompala T, Rao MN, Bower BA, Trafas V, Santhosh L, Schwartz BS, Babik JM. Virtual Interviews at Graduate Medical Education Training Programs: Determining Evidence-Based Best Practices. Acad Med. 2020 Dec 8. doi: 10.1097/ACM.0000000000003868. Epub ahead of print. PMID: 33298691.</li>
+                                        <li>Rencic J, Zhou M, Hsu G, Dhaliwal G. Circling Back for the Diagnosis. N Engl J Med. 2017 Nov 2;377(18):1778-1784. doi: 10.1056/NEJMcps1701742. PMID: 29091567.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a9">Margaret O. Johnson, MD, MPH</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a9">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/margaret-johnson-headshot.jpg" alt="Margaret O. Johnson Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Neuro-oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Rare cancers</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Tulane University School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Pennsylvania</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Neuro-oncology, The Preston Robert Tisch Brain Tumor Center, Duke University School of Medicine, Durham, NC; Hospice and Palliative Medicine, The Hospital of the University of Pennsylvania, Philadelphia, PA</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong></p>
+                                    <ol>
+                                        <li>Crooms RC, Johnson MO, Leeper H, Mehta A, McWhirter M, Sharma A. Easing the Journey-an Updated Review of Palliative Care for the Patient with High-Grade Glioma. Curr Oncol Rep. 2022 Apr;24(4):501-515. doi: 10.1007/s11912-022-01210-6. Epub 2022 Feb 22. PMID: 35192120.</li>
+                                        <li>Kim M, Ladomersky E, Mozny A, Kocherginsky M, O'Shea K, Reinstein ZZ, Zhai L, Bell A, Lauing KL, Bollu L, Rabin E, Dixit K, Kumthekar P, Platanias LC, Hou L, Zheng Y, Wu J, Zhang B, Hrachova M, Merrill SA, Mrugala MM, Prabhu VC, Horbinski C, James CD, Yamini B, Ostrom QT, Johnson MO, Reardon DA, Lukas RV, Wainwright DA. Glioblastoma as an age-related neurological disorder in adults. Neurooncol Adv. 2021 Sep 4;3(1):vdab125. doi: 10.1093/noajnl/vdab125. PMID: 34647022; PMCID: PMC8500689.</li>
+                                        <li>Kang JH, Swisher CB, Buckley ED, Herndon JE, Lipp ES, Kirkpatrick JP, Desjardins A, Friedman HS, Johnson MO, Randazzo DM, Ashley DM, Peters KB. Primary brain tumor patients admitted to a US intensive care unit: a descriptive analysis. CNS Oncol. 2021 Sep 1;10(3):CNS77. doi: 10.2217/cns-2021-0009. Epub 2021 Sep 21. PMID: 34545753; PMCID: PMC8461751.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a10">Sushma Jonna, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a10">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/sushma-jonna-headshot.jpg" alt="Sushma Jonna Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology/Oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Thoracic, Head & Neck</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Columbus VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Saint Louis University School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Internal Medicine Internship and Residency, Washington University School of Medicine/Barnes-Jewish Hospital</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Hematology and Medical Oncology Fellowship, Lombardi Comprehensive Cancer Center, Georgetown University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology is an opportunity to see a physician who specializes in your cancer closer to your home.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a11">Michael Kelley, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a11">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/michael-kelley-headshot.jpg" alt="Michael Kelley Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Thoracic oncology (e.g., lung cancer) </p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>University of Michigan</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Internal Medicine, Duke University </p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Medical Oncology, National Cancer Institute</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>Duke Cancer Institute, Duke University Medical Center</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong><a class="usa-link" href="https://www.ncbi.nlm.nih.gov/myncbi/michael.kelley.1/bibliography/public/" target="_blank">View Here</a></p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>VA's National TeleOncology service aims to partner with your local VA facility to provide the best oncology care as close to you as possible. We look forward to serving you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a12">Mark Maddox, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a12">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/mark-maddox-headshot.jpg" alt="Mark Maddox Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Thoracic Oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Thoracic</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Drexel University Medical School</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Hahnemann University Hospital</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Hahnemann University Hospital; University of Pennsylvania</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>By receiving your medical care through the National TeleOncology service, you will see a sub-specialty oncologist trained specifically in your cancer type and up-to-date with the best treatments available for your care. NTO allows us to disseminate the best oncologic care in the nation to your local VA.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a13">Haley Moss, MD, MBA</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a13">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/haley-moss-headshot.jpg" alt="Haley Moss Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Gynecologic Oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Gynecologic</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>University of Pennsylvania Perelman School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>NYU School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Achievements/Publications:</strong></p>
+                                    <ul>
+                                        <li>Davidson BA, Weber JM, Monuzsko KA, Troung T, Havrilesky LH, Moss HA. Evaluation of Surgical Morbidity After Hysterectomy During an Obesity Epidemic. Obstet Gynecol. 2022 Mar 10. PMID: 35271543</li>
+                                        <li>Peterson JA, Albright BB, Moss HA, Bianco A. Catastrophic Health Expenditures with Pregnancy and Delivery in the United States. Obstet Gynecol 2022 Mar 10. PMID: 35271537</li>
+                                        <li>Nitecki R, Albright BB, Johnson MS, Moss HA. Employment outcomes among cancer patients in the United States. Cancer Epidemiol. 2022 Feb;76:102059. PMID: 34826800</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>The opportunity to work for VA's TeleOncology program has been the most thrilling part of my job to date. Gynecologic malignancies are relatively rare, particularly in VA. Patients often need to travel far distances to receive care by an oncologist who specializes in the treatment of uterine, ovarian, or cervical cancer. Being able to virtually connect to Veterans all over the country has revolutionized our ability to provide high quality, evidence-based care for cancer patients no matter where they live and this is particularly beneficial for tumor types that are rarer within VA.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a14">Soo Park, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a14">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/soo-park-headshot.jpg" alt="Soo Park Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Melanoma and Non-Melanoma Skin Cancers</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Rare Cancers</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>San Diego VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Indiana University School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Washington University in St. Louis</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>University of California San Diego</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>Moores Comprehensive Cancer Center</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>Cancer is a complex diagnosis and best treated by specialists with expertise in specific cancers. TeleOncology can provide this expertise in cancer care to you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a15">Reema Anil Patel, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a15">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/reema-patel-headshot.jpg" alt="Reema Anil Patel Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Gastrointestinal tumors, bone and soft tissue sarcomas</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Gastrointestinal</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Saint Paul, Minnesota</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Quillen College of Medicine at East Tennessee State University</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Kentucky College of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>University of Kentucky College of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>University of Kentucky, Markey Cancer Center</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Awards: </strong></p>
+                                    <ul>
+                                        <li>Dr. Edward Romond Teaching Award.</li>
+                                        <li>Academy of Medical Educator: Excellence in Medical Education Award</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology is a great way for Veterans to receive state of the art care right in their backyard. It is a chance for me a serve a greater population of our Veterans and provide them with the care they need.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a16">Pradeep John Poonnen, MD, MPH</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a16">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/pradeep-poonnen-headshot.jpg" alt="Pradeep John Poonnen Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Genitourinary</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Genitourinary</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>MD/MPH, University of North Carolina, Chapel Hill</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Michigan, Ann Arbor</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong></p>
+                                    <ul>
+                                        <li>Poonnen P, Duffy JE, Hintze B, Shukla M, Brettin TS, Conrad NR, Yoo H, Guertin C, Looney JA, Vashistha V, Kelley MJ, Spector NL. (2019) Genomic Analysis of Metastatic Solid Tumors in Veterans: Findings From the VHA National Precision Oncology Program. JCO Precision Oncology 2019:3, 1-13. https://doi.org/10.1200/PO.19.00075</li>
+                                        <li>Dong OM and Poonnen P, Winski D, Reed SD, Vashistha V, Bates J, Kelley MJ and Voora D. (2022) Cost-Effectiveness of Tumor Genomic Profiling to Guide First-Line Targeted Therapy Selection in Patients with Metastatic Lung Adenocarcinoma. Value in Health; 25(4):582-594.</li>
+                                        <li>Vashistha V, Poonnen PJ, Snowdon JL, Skinner HG, McCaffrey V, Spector NL, et al. (2020) Medical oncologists’ perspectives of the Veterans Affairs National Precision Oncology Program. PLoS ONE 15(7): e0235861.</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology care brings academic subspecialty care to Veterans where they are and decreases the need to travel long distances to get that level of care. Although there is initially some hesitation in participating in TeleOncology (for patients and providers alike), I've been pleasantly surprised to find numerous patients really enjoy and appreciate the level of care and connection they have received through the National TeleOncology service.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a17">Thomas D. Rodgers Jr, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a17">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/tj-rodgers-headshot.jpg" alt="Thomas D. Rodgers Jr Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Durham VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Penn State College of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Rochester, Rochester, NY</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>University of Rochester, Rochester, NY</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>Duke University</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong></p>
+                                    <ul>
+                                        <li>Zinzani P, Rodgers T, Marino D, Frezzato M, Barbui A, Castellino C, Meli E, Fowler N, Salles G, Feinberg B, Kurukulasuriya N, Tillmanns S, Parche S, Dey D, Fingerle-Rowson G, Ambarkhane S, WinderlichM , and Nowakowski G. (2021). RE-MIND: Comparing tafasitamab + lenalidomide (L-MIND) with a realworld lenalidomide monotherapy cohort in relapsed or refractory diffuse large B-cell lymphoma. Clin Cancer Res. DOI: 10.1158/1078-0432.CCR-21-1471.</li>
+                                        <li>Rodgers, T.D., Casulo, C., Boissard, F. et al. (2021). Early Relapse in First-Line Follicular Lymphoma: A Review of the Clinical Implications and Available Mitigation and Management Strategies. Oncol Ther. https://doi.org/10.1007/s40487-021-00161-5.</li>
+                                        <li>Rodgers T, Barr P. (2021). Management of relapsed follicular lymphoma. Annals of lymphoma.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a18">Garth W Strohbehn, MD, MPhil</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a18">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/garth-strohbehn-headshot.jpg" alt="Garth W Strohbehn Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Thoracic and Head and Neck Oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Ann Arbor</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Yale School of Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Michigan</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>University of Chicago</p>
+                                    <p class="measure-none margin-top-0"><strong>NCI Affiliations: </strong>Assistant Professor of Medicine, University of Michigan Rogel Cancer Center</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Achievements/Publications: </strong><a class="usa-link" href="https://scholar.google.com/citations?user=Cw_5tVsAAAAJ&amp;hl" target="_blank">View Here</a></p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology exists for them. Providing Veterans all over the country with the most highly specialized, evidence-based care possible is a huge part of VA Oncology's mission.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="false" aria-controls="a19">Evan Vosburgh, MD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="a19">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/mds/evan-vosburgh-headshot.jpg" alt="Evan Vosburgh Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology / Medical Oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Malignant hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>West Haven, Connecticut VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Albany Medical College</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Albany Medical Center Hospital Internal Medicine</p>
+                                    <p class="measure-none margin-top-0"><strong>Fellowship: </strong>Boston University Medical Center</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong></p>
+                                    <ul>
+                                        <li>Xu EY, Vosburgh E, Wong C, Tang LH, Notterman DA. Genetic analysis of the cooperative tumorigenic effects of targeted deletions of tumor suppressors Rb1, Trp53, Men1, and Pten in neuroendocrine tumors in mice. Oncotarget. 2020 Jul 14;11(28):2718-2739. doi: 10.18632/oncotarget.27660. eCollection 2020 Jul 14. PubMed PMID: 32733644; PubMed Central PMCID: PMC7367653.</li>
+                                        <li>g C, Tang LH, Davidson C, Vosburgh E, Chen W, Foran DJ, Notterman DA, Levine AJ, Xu EY. Two well-differentiated pancreatic neuroendocrine tumor mouse models. Cell Death Differ. 2020 Jan;27(1):269-283. doi: 10.1038/s41418-019-0355-0. Epub 2019 Jun 3. PubMed PMID: 31160716; PubMed Central PMCID: PMC7206057.</li>
+                                        <li>Kobayashi S, Contractor T, Vosburgh E, Du YN, Tang LH, Clausen R, Harris CR. Alleles of Insm1 determine whether RIP1-Tag2 mice produce insulinomas or nonfunctioning pancreatic neuroendocrine tumors. Oncogenesis. 2019 Feb 22;8(3):16. doi: 10.1038/s41389-019-0127-1. PubMed PMID: 30796198; PubMed Central PMCID: PMC6386750.</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>All Veterans deserve the highest quality of care, and TeleOncology can bridge barriers to access such as distance, transportation, and local availability to experts of every discipline. I am dedicated to building this bridge while preserving the human touch by working with a team of dedicated providers on site and through internet connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="usa-section bg-gray-10" id="advanced">
+                <div class="grid-container">
+                    <div class="usa-prose"><h2>Advanced Practice Providers</h2></div>
+                    <hr class="margin-y-2" />
+                    <div class="usa-accordion usa-accordion--bordered">
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="b-a1">Patricia (Tricia) Cox, Nurse Practitioner</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="b-a1">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/apps/tricia-cox-headshot.jpg" alt="Patricia (Tricia) Cox Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Thoracic/Lung</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Thoracic, Head & Neck</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Nurse Practitioner</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Virginia</p>
+                                    <p class="measure-none margin-top-0"><strong>Publications: </strong></p>
+                                    <ul>
+                                        <li>American Journal of Nursing: “The Cancer Survivor's Prescription for Living”. Haylock, P.J., Mitchell, S.A., Cox, Tricia L., Temple, S.V., Curtiss, C.P. AJN, April 2007 - Volume 107 - Issue 4 - Pages 58-70.</li>
+                                        <li>American Community Cancer Center Journal: “Skin Cancer Screening; A Creative Business Model to Offer an Important Community Service”. Castle, Steven, Turner, John and Cox, Tricia. www.accc-cancer.org Sept-Oct 2014 pg 27-33.</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology is a comprehensive approach to integrated cancer care that can be provided where the veterans live. The ability to receive this level of cancer care anywhere in the VA system is a gift, both to the Veterans and the staff at the various sites receiving the coordinated care.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="b-a2">Jeanette Ha, Nurse Practitioner</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="b-a2">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/apps/jeanette-ha-headshot.jpg" alt="Jeanette Ha Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Gastrointestinal</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Gastrointestinal</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Los Angeles VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Functional Nurse Practitioner, Master of Nursing</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>NTO enables us to provide world class oncology services to veterans across the nation, regardless of where you live. With TeleOncology, you now have the options for cancer care that you might not previously have had. Our oncologists specialize in specific cancer types, and thus very knowledgeable to treat the type of cancer that you have.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="b-a3">Tamara Ann Lamb, MSN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="b-a3">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/apps/tammy-lamb-headshot.jpg" alt="Tamara Ann Lamb Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Sarasota, Florida</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Masters of Nursing, Otterbein College</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>It is a wonderful resource for Veterans that allows their care to be delivered to their local VA without having to be seen out of network.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="b-a4">Gladys Maria Rivero, Physician Assistant</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="b-a4">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/apps/gladys-rivero-headshot.jpg" alt="Gladys Maria Rivero Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Gastrointestinal</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Gastrointestinal</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Fayetteville VA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Physician Assistant, with a Master of Medical Science from Methodist University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>National TeleOncology allows you to see some of the best specialists in the field. We work together as a team (doctors, advanced practice providers, clinical pharmacists, nurses) on both sides of the screen to ensure that you get the best care and treatment closer to home.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="b-a5">Malissa Stanley, Adult Oncology Certified Nurse Practitioner</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="b-a5">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/apps/malissa-stanley-headshot.jpg" alt="Malissa Stanley Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>NTO Team: </strong>Ancillary support & gap coverage</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Idaho Falls, ID</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Master of Nursing, Idaho State University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>I want my veterans to know that TeleOncology can enable access to customized cancer care from expert oncology providers. We can diagnose, treat and follow patients at their local VA, CBOC and in the comfort of their own home. We are excited to expand our veterans access to quality cancer care.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="usa-section bg-white" id="nurses">
+                <div class="grid-container">
+                    <div class="usa-prose"><h2>Care Coordination Registered Nurses</h2></div>
+                    <hr class="margin-y-2" />
+                    <div class="usa-accordion usa-accordion--bordered">
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a1">Jacqueline Boreland, RN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a1">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/jackie-boreland-headshot.jpg" alt="Jacqueline Boreland Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Rare Cancers, Palliative</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Atlanta, GA</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Achievements/Publications: </strong></p>
+                                    <ul>
+                                        <li>DAISY Award for Extraordinary Nurses, April 2021</li>
+                                        <li>Certified Clinical Documentation Specialist - ACDIS, 2013</li>
+                                        <li>Oncology Certified Nurse - Oncology Nursing Credentialing Center, 2006</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>The TeleOncology program provides access to oncologists who are at the top of their field of practice. The program gives Veterans the opportunity to receive expert care closer to home which removes many barriers related to travel, time, and cost!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a2">Tiniska Jade Brooks, BSN, MBA</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a2">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/jade-brooks-headshot.jpg" alt="Tiniska Jade Brooks Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Thoracic</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Thoracic</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Houston, Texas</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Bachelor of Science in Nursing - University of Texas Medical Branch; Master of Business Administration specializing in Healthcare Management - University of Texas at Tyler</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>Fellowship: 2021 - 2022 VHA Diffusion of Excellence Fellow</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Achievements/Publications: </strong>Session 2: Enhancing treatment, education and care to veterans. Federal Practitioner - 0921AVAHO ABSTRACTS Session 2: Enhancing Treatment, Education And Care To Veterans. (n.d.). Retrieved July 8, 2022, from federalpracitioner.com</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>With the assistance of modern technology, we've expanded our commitment to provide specialized cancer care at your footsteps. Our team is dedicated and ready to serve you from coast to coast.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a3">Sarah Burgess, BSN, RN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a3">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/sarah-burgess-headshot.jpg" alt="Sarah Burgess Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Surgical oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Gastrointestinal</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Washington DC</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology is an exciting new program that allows Veteran's access to specialty oncology care, allowing them to be able to see experts from around the country without leaving their home VA.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a4">Leann Denney BSN, RN, OCN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a4">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/user-blank.jpg" alt="User Icon" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Benign/malignant hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Oklahoma</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>BSN at the University of Texas at Arlington</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>Taking care of veterans is more than a job, it is personal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a5">Eileen Foti, BSN, RN, OCN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a5">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/eileen-foti-headshot.jpg" alt="Eileen Foti Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Whole Health Nurse Educator and a nationally certified Oncology nurse</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Benign/malignant hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Durham, NC</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>BSN at the University of Texas at Arlington</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>The National TeleOncology Program (NTO) provides veterans with comprehensive and unparalleled Hematology and Oncology care.  Highly qualified and dedicated medical professionals and affiliates from across the nation are working collectively providing cancer care to our rural veterans in need. TeleOncology is easy, convenient, and dependable. No waiting. Staff from across the nation work tirelessly to provide the care, treatment, and follow up veterans deserve.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a6">Kimberly Ann Griffin, RN, MSN, OCN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a6">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/kim-griffin-headshot.jpg" alt="Kimberly Ann Griffin Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Breast/Gynecologic</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Gynecologic, Benign Hematology, Breast</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Florida</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>MSN Care Coordination - Capella University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>We are here for the Veteran and to offer more streamlined, convenient medical care to improve their health.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a7">Ruby Anne Hidalgo, BSN, MSN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a7">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/ruby-hidalgo-headshot.jpg" alt="Ruby Anne Hidalgo Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA, San Jose, CA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>MSN, BSN</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>We are the same friendly voice available for you to help you navigate through the maze of VA and cancer care. We are here for you and provide the same quality, and efficient nursing service you are used to. You can hear the sincerity in our voices through your phone or computer. We will always strive to meet your expectations within our means.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a8">Hannah S. Jones, BSN, MSN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a8">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/hannah-jones-headshot.jpg" alt="Hannah Jones Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Genitourinary</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Genitourinary, Benign/Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Salem, Mass.</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>BSN from Old Dominion University, and MSN Education from Western Governor's University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>Working with Veterans in the local oncology department and across the states has been very rewarding.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a9">Lisa Long, BSN, MSN, OCN</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a9">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/lisa-long-headshot.jpg" alt="Lisa Long Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Thoracic</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Thoracic, Head &amp; Neck, Benign Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Salem, Mass.</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>Being able to connect with Veterans in the capacity of this program is very exciting and reflects the ever-changing ways the VA is providing care.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="c-a10">Nichole Williamson</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="c-a10">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccrns/nichole-williamson-headshot.jpg" alt="Nichole Williamson Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Benign Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Benign Hematology, Gastrointestinal</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>Fresno, CA</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>BSN from Sentara College of Health Sciences, Virginia</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>VA's TeleOncology service allows Veterans to received care specific to their diagnosis by specialized Oncologists. However, the specialized care doesn't stop at the Oncologists, there is a whole TEAM behind each physician to assist in providing specialized care, to include Oncology Pharmacists and Oncology Care Nursing Coordinators. All members of the National TeleOncology service have been hand selected as specialists in their areas to provide to utmost care to our Veterans.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="usa-section bg-gray-10 border-bottom border-base-light" id="pharmacy">
+                <div class="grid-container">
+                    <div class="usa-prose"><h2>Clinical Pharmacy Practitioners</h2></div>
+                    <hr class="margin-y-2" />
+                    <div class="usa-accordion usa-accordion--bordered">
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="d-a1">Susan Bullington, PharmD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="d-a1">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccps/susan-bullington-headshot.jpg" alt="Susan Bullington Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Thoracic, Melanoma, and Central Nervous System Tumors</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Thoracic, Melanoma, and Rare Cancers</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Durham, NC</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Butler University - Doctor of Pharmacy</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>University of Michigan Hospitals - PGY1 Pharmacy Practice; The Ohio State University Medical Center - PGY2 Hematology/Oncology</p>
+                                    <p class="measure-none margin-top-0"><strong>Academic Achievements/Publications: </strong></p>
+                                    <ul>
+                                        <li>Crawford BS, Stauder AL, Bullington SM, Kiehl PJ, Dark ER, Aillich AJ. Impact of an Oral Antineoplastic Renewal Clinic on Medication Possession Ratio and Cost-Savings. Fed Pract. 2021 Mar;38(3):e8-e11.</li>
+                                        <li>Fenton TT, Crawford BS, Bullington SM. Implementation and evaluation of a 90-minute rituximab infusion protocol at the Richard L Roudebush VA Medical Center. Fed Pract. 2020 Jul;37(7):331-335.</li>
+                                        <li>Gyori DJ, Bullington SM, Crawford BS, Vernon, VP. Evaluation of appropriate use of bisphosphonates and denosumab in patients with cancer. J Oncol Pharm Pract. 2020 Mar;26(2):286-292.</li>
+                                    </ul>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>This program expands high quality subspecialty cancer care to Veterans closer to home.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="d-a2">Janelle Maland, PharmD</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="d-a2">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccps/janelle-maland-headshot.jpg" alt="Janelle Maland Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Benign/Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Columbia, Missouri</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Doctor of Pharmacy from Midwestern University</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology provides the best-in-class care to veterans which can allow them to stay within the VA system. I wish this service would have been available sooner.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="d-a3">Hope Schenk, PharmD, BCOP</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="d-a3">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccps/hope-schenk-headshot.jpg" alt="Hope Schenk Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Gastrointestinal, Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Rockwell, NC</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>Virginia Commonwealth University, Doctor of Pharmacy</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>Receiving care through a telemedicine program does not mean you are compromising the quality of care you receive. You will have your own team of healthcare professionals experienced in treating your specific type of cancer that will work with the team at your site to give you the best oncology care possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="usa-accordion__heading"><button class="usa-accordion__button" aria-expanded="true" aria-controls="d-a4">Ni-Chi Wu, PharmD, BCOP, BCPS</button></h4>
+                        <div class="usa-accordion__content usa-prose" id="d-a4">
+                            <div class="display-flex">
+                                <div class="flex-shrink-0 margin-right-3"><img class="circle-15" src="assets/img/pages/get-to-know/bios/ccps/ni-chi-wu-headshot.jpg" alt="Ni-Chi Wu Headshot" /></div>
+                                <div>
+                                    <p class="measure-none margin-top-0"><strong>Subspecialty: </strong>Benign/Malignant Hematology</p>
+                                    <p class="measure-none margin-top-0"><strong>NTO Teams: </strong>Genitourinary, Benign/Malignant Hematology, Breast, Gynecologic</p>
+                                    <p class="measure-none margin-top-0"><strong>Primary Location: </strong>VA Durham, NC</p>
+                                    <p class="measure-none margin-top-0"><strong>Education: </strong>UC San Diego Skaggs School of Pharmacy and Pharmaceutical Sciences, Doctorate in Pharmacy</p>
+                                    <p class="measure-none margin-top-0"><strong>Residency: </strong>PGY1 Pharmacy Practice Residency at the VA Maryland Healthcare System in Baltimore, Maryland. ASHP Foundation Oncology Patient Care Traineeship at the University of TX, MD Anderson Cancer Center</p>
+                                    <p class="measure-none margin-top-0"><strong>What I want Veterans to know about TeleOncology: </strong>TeleOncology clinicians are experienced practitioners with the passion to take care of cancer patients regardless of where you live. We work closely as teams to provide specialized cancer care for each Veteran. We are privileged to be part of your cancer care journey and look forward to serving you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-gray-10">
+            <div class="grid-container padding-y-8">
+                <div class="grid-row grid-gap">
+                    <div class="margin-bottom-4 desktop:grid-col-3 desktop:margin-bottom-0">
+                        <h4 class="font-serif-md margin-top-0 margin-bottom-1">VA Mission</h4>
+                        <p class="font-body-2xs margin-top-0 margin-bottom-2">To fulfill President Lincoln's promise<em>"To care for him who shall have borne that battle, and for his widow, and his orphan"</em>by serving and honoring the men and women who are America's Veterans.</p>
+                        <h4 class="font-serif-md margin-top-0 margin-bottom-1">Subscribe</h4>
+                        <p class="font-body-2xs text-bold margin-top-0 margin-bottom-2">Get the latest NOP news products delivered to your inbox!</p>
+                        <a class="usa-button" href="https://public.govdelivery.com/accounts/USVHA/subscriber/qualify">Subscribe Today!</a>
+                    </div>
+                    <div class="desktop:grid-col-6">
+                        <h4 class="font-serif-md margin-top-0 margin-bottom-1">Veteran Programs and Services</h4>
+                        <div class="grid-row grid-gap">
+                            <div class="tablet:grid-col-6">
+                                <ul class="usa-list usa-list--unstyled font-body-2xs tablet:margin-bottom-2">
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/">VA.gov</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/homeless/">For Homeless Veterans</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/womenvet/">For Women Veterans</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/centerforminorityveterans/">For Minority Veterans</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.ptsd.va.gov/">PTSD</a></li>
+                                </ul>
+                            </div>
+                            <div class="tablet:grid-col-6">
+                                <ul class="usa-list usa-list--unstyled font-body-2xs margin-bottom-4 tablet:margin-bottom-2">
+                                    <li><a class="usa-link text-no-underline" href="https://www.mentalhealth.va.gov/">Mental Health</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.publichealth.va.gov/">Public Health</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.accesstocare.va.gov/OurProviders">Find a VA Health Care Provider</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/adaptivesports/">Adaptive Sports and Special Events</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/vso/">Veterans Service Organizations (VSO)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4 class="font-serif-md margin-top-0 margin-bottom-1">Additional VA Resources</h4>
+                        <div class="grid-row grid-gap">
+                            <div class="tablet:grid-col-6">
+                                <ul class="usa-list usa-list--unstyled font-body-2xs tablet:margin-bottom-2">
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/">Explore VA</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/find-forms/">VA Forms</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/health/">Veterans Health Administration (VHA)</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.benefits.va.gov/BENEFITS/Applying.asp">Veterans Benefits Administration (VBA)</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.cem.va.gov/">National Cemetary Administration (NCA)</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/jobs/">Careers at VA</a></li>
+                                </ul>
+                            </div>
+                            <div class="tablet:grid-col-6">
+                                <ul class="usa-list usa-list--unstyled font-body-2xs margin-bottom-4 tablet:margin-bottom-2">
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/resources/the-pact-act-and-your-va-benefits/">The PACT Act and your VA Benefits</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/communitycare/">Veterans Choice Program</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/health-care/">Access to Care</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/opal/fo/dbwva.asp">Doing Business with VA</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://www.va.gov/OPA/index.asp">Public Affairs</a></li>
+                                    <li><a class="usa-link text-no-underline" href="https://news.va.gov/">News Releases</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop:grid-col-3">
+                        <h4 class="font-serif-md margin-top-0 margin-bottom-1">Connect with VA</h4>
+                        <ul class="usa-list usa-list--unstyled margin-bottom-4 tablet:margin-bottom-2">
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://news.va.gov/"
+                                    ><svg class="usa-icon margin-right-05 text-accent-warm-dark" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#rss_feed"></use></svg>News.va.gov</a
+                                >
+                            </li>
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://www.facebook.com/VeteransAffairs"
+                                    ><svg class="usa-icon margin-right-05 brand-facebook" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#facebook"></use></svg>Facebook</a
+                                >
+                            </li>
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://twitter.com/deptvetaffairs"
+                                    ><svg class="usa-icon margin-right-05 brand-twitter" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#twitter"></use></svg>Twitter</a
+                                >
+                            </li>
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://www.youtube.com/user/DeptVetAffairs"
+                                    ><svg class="usa-icon margin-right-05 brand-youtube" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#youtube"></use></svg>YouTube</a
+                                >
+                            </li>
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://www.flickr.com/photos/VeteransAffairs/"
+                                    ><svg class="usa-icon margin-right-05 brand-flickr" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#flickr"></use></svg>Flickr</a
+                                >
+                            </li>
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://www.instagram.com/deptvetaffairs/"
+                                    ><svg class="usa-icon margin-right-05 brand-instagram" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#instagram"></use></svg>Instagram</a
+                                >
+                            </li>
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://mobile.va.gov/appstore/"
+                                    ><svg class="usa-icon margin-right-05 text-base-darker" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#grid_view"></use></svg>VA Mobile Apps</a
+                                >
+                            </li>
+                            <li>
+                                <a class="usa-link text-no-underline display-inline-flex flex-align-center" href="https://www.va.gov/opa/socialmedia.asp"
+                                    ><svg class="usa-icon margin-right-05 text-base-darker" aria-hidden="true" focusable="false" role="img"><use xlink:href="assets/img/sprite.svg#list"></use></svg>Social Media Index</a
+                                >
+                            </li>
+                        </ul>
+                        <h4 class="font-serif-md margin-top-0 margin-bottom-1">In Crisis? Get Help Now</h4>
+                        <a class="usa-button usa-button--secondary" href="tel:+988">Veterans Crisis Line</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-primary-darker padding-top-8 padding-bottom-3 text-white position-relative font-serif-2xs">
+                <div class="position-absolute display-flex flex-justify-center width-full top-neg-205"><img class="square-10 margin-top-neg-205" src="assets/img/Seal-of-the-U-S-Department-of-Veterans-Affairs.svg" alt="Seal of the U.S. Department of Veterans Affairs" /></div>
+                <div class="grid-container">
+                    <div class="text-center margin-bottom-6 display-none desktop:display-block">
+                        <a class="usa-link text-white text-no-underline padding-1" href="https://department.va.gov/about/va-plans-budget-finances-and-performance/">VA Strategic Plan</a><a class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/privacy-policy/">Privacy</a><a class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/web/standards/disclaimer.cfm">Disclaimers</a><a class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/oig/">Inspector General</a><a class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/foia/">FOIA</a><a class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/ormdi/NOFEAR_Select.asp">No FEAR Act</a><a class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/accountability/">Whistleblower and Rights Protection</a
+                        ><a class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/vulnerability-disclosure-policy/">Website Policies</a><a class="usa-link text-white text-no-underline padding-1" href="https://www.data.va.gov/">Open Data</a>
+                    </div>
+                    <div class="text-center">Content last updated or reviewed on March 3, 2023</div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery-->
+        <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+        <!-- Slick Carousel-->
+        <script src="assets/vendor/slick/slick.min.js"></script>
+        <!-- Lity Lightbox-->
+        <script src="assets/vendor/lity/lity.min.js"></script>
+        <!-- Readmore-->
+        <script src="assets/vendor/readmore/readmore.min.js"></script>
+        <!-- USWDS Scripts-->
+        <script src="assets/vendor/uswds.min.js"></script>
+        <!-- Project Scripts-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
