@@ -1423,8 +1423,19 @@ border-top:  10px solid #FCB109 !important;
         height: 100%;
         
         }
-/* .adele-style{
-    background-image: linear-gradient(to right,#4674A6 ,   #29497B); 
-    border: 0 !important;
-     width: 100%;
-} */
+
+    
+        .wrap-layer{
+            position: relative;
+         }
+         .text-layer{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 0;
+            left: 0;
+            /* non-critical styles left out */
+         }
+
+
+            
