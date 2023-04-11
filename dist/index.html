@@ -43,7 +43,7 @@
     <script src="assets/vendor/uswds-init.min.js"></script>
     <script rel="preload" href="assets/vendor/uswds.min.js" as="script"></script>
     <!-- Include the Bootstrap CSS file -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -216,102 +216,140 @@
 
     <script>
         function openReport(cityName) {
-          var i;
-          var x = document.getElementsByClassName("city");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          document.getElementById(cityName).style.display = "block";  
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
         }
-        </script>
-    <main  id="main-content">
+    </script>
+    <main id="main-content">
 
 
         <!-- test  -->
-        
+
 
         <!-- test  -->
-  
+
 
         <div id="Report" class="city">
             <img src="/dist/assets/images/homepage/gr.png" alt="top image ">
-          </div>
-          
-          <div id="Paris" class="city" style="display:none">
+        </div>
+
+        <div id="Paris" class="city" style="display:none">
             <img src="/dist/assets/images/homepage/gr-168.png" alt="top image ">
-          </div>
-          
-          <div id="Tokyo" class=" city" style="display:none">
+        </div>
+
+        <div id="Tokyo" class=" city" style="display:none">
             <img src="/dist/assets/images/homepage/Gr-180.png" alt="top image ">
-          </div>
+        </div>
 
 
-         
+
         <section class="  border-top-0">
             <div class="grid-row  usa-card-group oneshadow" style="border-bottom: 14px solid #080E20;">
                 <!--11-->
-                <div class="tablet:grid-col   text-center " style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;"> 
-                    <button class="adele-btn  usa-button--big adele-active" onclick="openReport('Report')" style="background-color: transparent; border: 0 ;">AI Strategy Report</button>
+                <div class="tablet:grid-col   text-center "
+                    style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;">
+                    <button class="adele-btn  usa-button--big adele-active" onclick="openReport('Report')"
+                        style="background-color: transparent; border: 0 ;">AI Strategy Report</button>
                 </div>
                 <!-- 22 -->
-                <div class="tablet:grid-col  text-center" style="background-image: linear-gradient(to right, #29497B, #4674A6 ); border-right: 2px solid #080e20;">
-                    <button class="adele-btn  usa-button--big" onclick="openReport('Paris')" style="background-color: transparent; border: 0 ;">AI Use Case Inventory​</button>
-                    </div>
+                <div class="tablet:grid-col  text-center"
+                    style="background-image: linear-gradient(to right, #29497B, #4674A6 ); border-right: 2px solid #080e20;">
+                    <button class="adele-btn  usa-button--big" onclick="openReport('Paris')"
+                        style="background-color: transparent; border: 0 ;">AI Use Case Inventory​</button>
+                </div>
                 <!-- 33 -->
-                <div class="tablet:grid-col text-center" style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;">
-                    <button class="adele-btn  usa-button--big" onclick="openReport('Tokyo')" style="background-color: transparent; border: 0;">AI@VA Community</button>
-                  </div>
-      
-              </div>
+                <div class="tablet:grid-col text-center "
+                    style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;">
+                    <button class="adele-btn  usa-button--big " onclick="openReport('Tokyo')"
+                        style="background-color: transparent; border: 0;">AI@VA Community</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="mid-image ">
+            <div class="grid-row grid-gap-1 padding-3">
+                <div class="tablet:grid-col-2 text-center"></div>
+                <div class="tablet:grid-col-6 text-left  text-white padding-top-5"> <br>
+                    <h2 style="font-weight:700 ;">VA Artificial Intelligence Vision Statement</h2>
+                    <br>
+                    <p class="font-body-sm padding-bottom-5" style="border-bottom: 3px solid #fff;">
+                        The VA’s Artificial Intelligence (AI) vision is to improve outcomes and experiences for our
+                        Veterans by developing trustworthy AI capabilities to support the Department of Veterans Affairs
+                        mission.
+                        <br>
+
+                    </p>
+                    <h2 style="font-weight:700 ;" class="margin-top:5px;">
+                        Mission Statement<br>
+
+                    </h2>
+                    <p class="font-body-sm padding-bottom-5" >
+                        The Department of Veterans Affairs will build robust capacity
+                        in AI to develop and apply innovative AI solutions and transform
+                        the VA by facilitating a learning environment that supports the
+                        delivery of world-class benefits and services to our Veterans
+                        <br> <br><br>
+
+                    </p>
+
+                </div>
+                <div class="tablet:grid-col text-center">
+
+
+                </div>
+
+            </div>
 
         </section>
-      
+        <!-- old man image section  -->
+        <section class="second-image padding-bottom-0">
+            <div class="grid-row grid-gap-1 padding-3 padding-bottom-0" >
+                <div class="tablet:grid-col-6 text-center  padding-bottom-0" id="oldman">
+                    <img src="/dist/assets/images/homepage/oldman.png" alt="">
+                </div>
+                
+               
+                <div class="tablet:grid-col text-center padding-5 "> <br> 
+                    <h1 style="font-weight:700; font-size: 3.5rem;">Why AI at VA? </h1>
+                    <br>
+                    <p class=" padding-bottom-5" style="border-bottom: 3px solid gray; font-size: 30px;">
+                        VA is leading the development of AI solutions to benefit Veterans, their caregivers and survivors.
 
-        <div class="wrap-layer">
-            <div class="text-layer text-white text center padding-5 margin-top-5">
-               <h2>VA Artificial Intelligence Vision Statement</h2>
-               <p>
-                The VA’s Artificial Intelligence (AI) vision is to improve outcomes and experiences for our Veterans by developing trustworthy AI capabilities to support the Department of Veterans Affairs mission.
+                        <br>
 
+                    </p>
+                    <p class="font-body-lg">
+                        To learn more, join the AI@VA Community.<br> <br>
+                        <button type="" class="usa-button btn-me" style="background-color: #FCB109; color: #000">SUBSCRIBE</button>
 
-
-                Mission Statement
-                The Department of Veterans Affairs will build robust capacity
-                 in AI to develop and apply innovative AI solutions and transform
-                 the VA by facilitating a learning environment that supports the 
-                delivery of world-class benefits and services to our Veterans
-               </p>
-            </div>
-            <div class="background-layer">
+                    </p>
                    
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1719" height="720.128" viewBox="0 0 1719 720.128">
-            <defs>
-              <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-                <stop offset="0" stop-color="#090e1f"/>
-                <stop offset="1" stop-color="#6291c3"/>
-              </linearGradient>
-            </defs>
-            <path id="Path_1205" data-name="Path 1205" d="M1709.5,1692-9.5,1557.57v-585.7h1719Z" transform="translate(9.5 -971.872)" fill="url(#linear-gradient)"/>
-          </svg>
-          
-                   </div>
-         </div>
-          
-                
-          
-       
+
+                </div>
                 
 
-           
-            
-
-              
-             
-              
-            
+        </section>
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </main>
@@ -525,7 +563,7 @@
     <!-- USWDS Scripts-->
     <script src="assets/vendor/uswds.min.js"></script>
     <!-- Project Scripts-->
-    
+
 </body>
 
 </html>

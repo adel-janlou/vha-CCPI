@@ -1437,5 +1437,31 @@ border-top:  10px solid #FCB109 !important;
             /* non-critical styles left out */
          }
 
+/* midle section with background  */
+.mid-image {
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/dist/assets/images/homepage/BG_1.svg);
+}
+.second-image {
+    background: url(/dist/assets/images/homepage/BG-2.svg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+  
+}
+
+@media (max-width:629px)
+{
+    #oldman
+    {
+        display: none;
+    }
+}
+
 
             
