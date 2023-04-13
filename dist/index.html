@@ -48,6 +48,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -138,7 +139,7 @@
                             aria-controls="extended-nav-section-one"><span class="text-white">About</span></button>
                         <ul id="extended-nav-section-one" class="usa-nav__submenu bg-submenu" hidden="hidden">
                             <li class="usa-nav__submenu-item m-menu  ">
-                                <a href="/views/about/bio-CCPI.html" class="">Meet the Team</a>
+                                <a href="#" class="">Meet the Team</a>
                             </li>
 
 
@@ -237,11 +238,11 @@
             <img src="/dist/assets/images/homepage/gr.png" alt="top image ">
         </div>
 
-        <div id="Paris" class="city" style="display:none">
+        <div id="community" class="city" style="display:none">
             <img src="/dist/assets/images/homepage/gr-168.png" alt="top image ">
         </div>
 
-        <div id="Tokyo" class=" city" style="display:none">
+        <div id="inventory" class=" city" style="display:none">
             <img src="/dist/assets/images/homepage/Gr-180.png" alt="top image ">
         </div>
 
@@ -258,25 +259,25 @@
                 <!-- 22 -->
                 <div class="tablet:grid-col  text-center"
                     style="background-image: linear-gradient(to right, #29497B, #4674A6 ); border-right: 2px solid #080e20;">
-                    <button class="adele-btn  usa-button--big" onclick="openReport('Paris')"
-                        style="background-color: transparent; border: 0 ;">AI Use Case Inventory​</button>
+
+                    <button class="adele-btn  usa-button--big" onclick="openReport('community')"
+                        style="background-color: transparent; border: 0 ;">AI Use Case Inventory</button>
                 </div>
                 <!-- 33 -->
                 <div class="tablet:grid-col text-center "
                     style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;">
-                    <button class="adele-btn  usa-button--big " onclick="openReport('Tokyo')"
+                    <button class="adele-btn  usa-button--big " onclick="openReport('inventory')"
                         style="background-color: transparent; border: 0;">AI@VA Community</button>
                 </div>
 
             </div>
         </section>
 
-
-
-        <section class="mid-image ">
+        
+        <section class="mid-image " >
             <div class="grid-row grid-gap-1 padding-3">
                 <div class="tablet:grid-col-2 text-center"></div>
-                <div class="tablet:grid-col-6 text-left  text-white padding-top-5"> <br>
+                <div class="tablet:grid-col-6 text-left  text-white padding-top-5" > <br>
                     <h2 style="font-weight:700 ;">VA Artificial Intelligence Vision Statement</h2>
                     <br>
                     <p class="font-body-sm padding-bottom-5" style="border-bottom: 3px solid #fff;">
@@ -290,7 +291,7 @@
                         Mission Statement<br>
 
                     </h2>
-                    <p class="font-body-sm padding-bottom-5" >
+                    <p class="font-body-sm padding-bottom-5">
                         The Department of Veterans Affairs will build robust capacity
                         in AI to develop and apply innovative AI solutions and transform
                         the VA by facilitating a learning environment that supports the
@@ -310,36 +311,85 @@
         </section>
         <!-- old man image section  -->
         <section class="second-image padding-bottom-0">
-            <div class="grid-row grid-gap-1 padding-3 padding-bottom-0" >
-                <div class="tablet:grid-col-6 text-center  padding-bottom-0" id="oldman">
-                    <img src="/dist/assets/images/homepage/oldman.png" alt="">
-                </div>
-                
-               
-                <div class="tablet:grid-col text-center padding-5 "> <br> 
-                    <h1 style="font-weight:700; font-size: 3.5rem;">Why AI at VA? </h1>
-                    <br>
-                    <p class=" padding-bottom-5" style="border-bottom: 3px solid gray; font-size: 30px;">
-                        VA is leading the development of AI solutions to benefit Veterans, their caregivers and survivors.
+            <div class="grid-row grid-gap-1 padding-3 padding-bottom-0 veteran padding-top-0">
 
-                        <br>
+                <div class="tablet:grid-col-6 text-center  padding-bottom-0 padding-top-0">
+                    <!-- <img class="veteran"src="/dist/assets/images/homepage/oldman.png" alt="image-holder "> -->
+                </div>
+
+
+                <div class="tablet:grid-col text-center padding-5  padding-top-0 " style="background-color: #f2f4f4c9;">
+                    <br><br>
+                    <h1 style="font-weight:700; font-size: 3.5rem;">Why AI at VA? </h1> <br>
+
+                    <p class=" padding-bottom-5" style="border-bottom: 3px solid gray; font-size: 30px;">
+                        VA is leading the development of AI solutions to benefit Veterans, their caregivers and
+                        survivors. <br>
+
+
 
                     </p>
                     <p class="font-body-lg">
                         To learn more, join the AI@VA Community.<br> <br>
-                        <button type="" class="usa-button btn-me" style="background-color: #FCB109; color: #000">SUBSCRIBE</button>
+                        <button type="" class="usa-button btn-me"
+                            style="background-color: #FCB109; color: #000">SUBSCRIBE</button> <br><br>
 
                     </p>
-                   
+
 
                 </div>
-                
+            </div>
+
 
         </section>
 
 
+        <!-- box and text  section  -->
+
+        <section class="bg-white padding-top-2">
+            <div class="grid-container padding-top-2">
+
+                <!-- text area italic  -->
+                <div class="grid-row grid-gap text-center margin-top-2 margin-bottom-3">
+                    <div class="tablet:grid-col-3"></div>
+                    <div class="tablet:grid-col-6 ">
+                        <p class="font-family-serif  text-center" style="font-size: 30px;"> <i>
+                                VA develops and contributes to AI policies,
+                                processes and strategies, with a focus on
+                                delivering AI excellence to Veterans </i>
+                        </p>
+                    </div>
+                    <div class="tablet:grid-col-3"></div>
+                </div>
+
+                <!-- box area  -->
+                <div class="grid-row  text-center ">
+                    <div class="tablet:grid-col-2"></div>
+                    <div class="tablet:grid-col-8">
+                        <div class="grid-row  text-center grid-gap-3">
+                            <div class="tablet:grid-col-6 bg-primary-darker margin-top-1 margin-bottom-1"> <br> <br> <br>ghykvtkuytkuy </div>
+                            <div class="tablet:grid-col-6 bg-gray-5 margin-top-1 margin-bottom-1"> <br> <br>kiuytvkuytkuytkuyt </div>
 
 
+                        </div>
+                        <div class="tablet:grid-col-2"></div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </section>
 
 
 
@@ -541,7 +591,7 @@
         </div>
     </footer>
     <!-- jQuery-->
-    <script>
+    <!-- <script>
         function openReport(cityName) {
             var i;
             var x = document.getElementsByClassName("city");
@@ -551,7 +601,7 @@
             document.getElementById(cityName).style.display = "block";
         }
 
-    </script>
+    </script> -->
 
     <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
     <!-- Slick Carousel-->

@@ -1425,17 +1425,6 @@ border-top:  10px solid #FCB109 !important;
         }
 
     
-        .wrap-layer{
-            position: relative;
-         }
-         .text-layer{
-            position: absolute;
-            width: 100%;
-            height: auto;
-            top: 0;
-            left: 0;
-            /* non-critical styles left out */
-         }
 
 /* midle section with background  */
 .mid-image {
@@ -1443,7 +1432,7 @@ border-top:  10px solid #FCB109 !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(/dist/assets/images/homepage/BG_1.svg);
+    background-image: url(/dist/assets/images/homepage/BGASSET.svg);
 }
 .second-image {
     background: url(/dist/assets/images/homepage/BG-2.svg);
@@ -1455,13 +1444,31 @@ border-top:  10px solid #FCB109 !important;
   
 }
 
-@media (max-width:629px)
+.veteran{
+    background-image: url(/dist/assets/images/homepage/oldman.png);
+    background-repeat: no-repeat;
+    height: 100%;
+  
+    background-position: bottom left
+    
+   }
+
+/* @media (max-width:629px)
 {
-    #oldman
+   .veteran
     {
         display: none;
     }
 }
+ */
 
+ /* .text-new-back{
 
-            
+    background-image: url(/dist/assets/images/homepage/new-back.png);
+ }
+
+   */
+
+   .usa-link:visited {
+    color: #005ea2 !important;
+}
