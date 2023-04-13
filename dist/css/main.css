@@ -1472,3 +1472,9 @@ border-top:  10px solid #FCB109 !important;
    .usa-link:visited {
     color: #005ea2 !important;
 }
+.box-2{
+    background-image: url(/dist/assets/images/homepage/Box-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
