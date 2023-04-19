@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Specific Metas-->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title and meta description-->
+    <title>VA | Artificial Intelligence</title>
+    <meta property="og:title" content="Landing Page | U.S. Web Design System (USWDS)" />
+    <meta name="description" content="This is an example page." />
+    <meta property="og:description" content="This is an example page." />
+    <meta name="twitter:card" value="summary" />
+    <meta property="og:type" content="article" />
+    <!-- Favicons-->
+    <!-- 128x128-->
+    <link rel="shortcut icon" type="image/ico" href="assets/img/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon.png" />
+    <!-- 192x192, as recommended for Android-->
+    <!-- http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android-->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192.png" />
+    <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices-->
+    <link rel="apple-touch-icon-precomposed" href="assets/img/favicons/favicon-57.png" />
+    <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini-->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicons/favicon-72.png" />
+    <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch-->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favicons/favicon-114.png" />
+    <!-- 144x144 (precomposed) for iPad 3rd and 4th generation-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicons/favicon-144.png" />
+    <!-- ANALYTICS-->
+
+    <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!-- CSS-->
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <!-- USWDS INIT-->
+    <script src="assets/vendor/uswds-init.min.js"></script>
+    <script rel="preload" href="assets/vendor/uswds.min.js" as="script"></script>
+    <!-- Include the Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<style>
+    .grid-container {
+
+        max: width 75px;
+        rem !important;
+    }
+
+    .flip-box {
+        background-color: transparent;
+
+        height: 350px;
+
+        perspective: 1000px;
+    }
+
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-box-front-1 {
+        color: white;
+        padding: 15px;
+        background-color: #0f3560;
+
+    }
+
+    .flip-box-back-1 {
+        background-color: #0f3560;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .flip-box-front-2 {
+        color: white;
+        background-color: #2a72ce;
+
+    }
+
+    .flip-box-back-2 {
+        background-color: #2a72ce;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .flip-box-front-3 {
+        background-color: #3ba4e4;
+
+    }
+
+    .flip-box-back-3 {
+        background-color: #3ba4e4;
+        color: white;
+        transform: rotateY(180deg);
+    }
+</style>
+
+
+<body class="white">
+    <div class="usa-overlay"></div>
+    <section class="usa-banner position-relative" aria-label="Official government website">
+        <div class="usa-accordion">
+            <header class="usa-banner__header">
+                <div class="usa-banner__inner position-relative">
+                    <div class="grid-col-auto"><img class="usa-banner__header-flag" src="assets/img/us_flag_small.png"
+                            alt="U.S. flag" /></div>
+                    <div class="grid-col-fill tablet:grid-col-auto">
+                        <p class="usa-banner__header-text">An official website of the United States government</p>
+                        <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+                    </div>
+                    <button class="usa-accordion__button usa-banner__button" type="button" aria-expanded="false"
+                        aria-controls="gov-banner-default"><span class="usa-banner__button-text">Here's how you
+                            know</span></button>
+                </div>
+            </header>
+            <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+                <div class="grid-row grid-gap-lg">
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-dot-gov.svg" role="img"
+                            alt="" aria-hidden="true" />
+                        <div class="usa-media-block__body">
+                            <p><strong>Official websites use .gov</strong><br />A <strong>.gov</strong> website belongs
+                                to an official government organization in the United States.</p>
+                        </div>
+                    </div>
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-https.svg" role="img"
+                            alt="" aria-hidden="true" />
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Secure .gov websites use HTTPS</strong><br />A <strong>lock</strong> (<span
+                                    class="icon-lock"><svg class="usa-banner__lock-image"
+                                        xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64"
+                                        role="img" aria-labelledby="banner-lock-title banner-lock-description"
+                                        focusable="false">
+                                        <title id="banner-lock-title">Lock</title>
+                                        <desc id="banner-lock-description">A locked padlock</desc>
+                                        <path fill="#000000" fill-rule="evenodd"
+                                            d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z">
+                                        </path>
+                                    </svg></span>) or <strong>https://</strong> means you've safely connected to the
+                                .gov website. Share sensitive information only on official, secure websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="usa-button usa-button--secondary va-crisis-line" href="#crisis-line-modal"
+            aria-controls="crisis-line-modal" data-open-modal>
+            <div class="va-crisis-line-inner">
+                <span class="va-crisis-line-icon" aria-hidden="true"><img src="assets/img/VCL-icon-white.svg" alt=""
+                        aria-hidden="true" /></span><span class="va-crisis-line-text">Talk to the <strong>Veterans
+                        Crisis Line</strong> now</span><img class="va-crisis-line-arrow" alt="" aria-hidden="true"
+                    src="assets/img/arrow-right-white.svg" />
+            </div>
+        </a>
+    </section>
+    <header class="usa-header usa-header--extended" style="background-color: rgb(14, 38, 64);">
+        <div class="usa-navbar">
+            <div id="extended-logo" class="usa-logo">
+                <em class="usa-logo__text">
+                    <a href="#" title="SimLearn | Home Page" aria-label="Home">
+                        <span class="logo text-white">VA </span>
+                        <span class="text-white text-thin"> | Artificial Intelligence</span></a>
+                </em>
+
+            </div>
+            <button class="usa-menu-btn">Menu</button>
+        </div>
+        <nav role="navigation" class="usa-nav" style="background-color: rgb(14, 38, 64);">
+            <div class="usa-nav__inner">
+                <button class="usa-nav__close"><img src="/assets/uswds-2.0.3/img/close.svg" alt="close"></button>
+                <ul class="usa-nav__primary usa-accordion">
+                    <li class="usa-nav__primary-item">
+                        <a href="#" title="SimLearn| Home page" class="usa-nav__link usa-link"><i
+                                class="fa fa-home icon-left text-white" aria-hidden="false"></i> Home</a>
+                    </li>
+                    <!-- ABOUUUT -->
+                    <li class="usa-nav__primary-item">
+                        <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                            aria-controls="extended-nav-section-one"><span class="text-white">About</span></button>
+                        <ul id="extended-nav-section-one" class="usa-nav__submenu bg-submenu" hidden="hidden">
+                            <li class="usa-nav__submenu-item m-menu  ">
+                                <a href="#" class="">Meet the Team</a>
+                            </li>
+
+
+
+
+                        </ul>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                        <a href="#" title="Engage with AI@VA" class="usa-nav__link usa-link"> Engage with AI@VA
+                        </a>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                        <a href="#" title="Trustworthy AI" class="usa-nav__link usa-link"> Trustworthy AI </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="usa-nav__secondary">
+
+
+
+
+
+            </div>
+        </nav>
+
+
+    </header>
+    <div class="usa-modal crisis-line-modal" id="crisis-line-modal" aria-labelledby="crisis-modal-heading"
+        aria-describedby="crisis-modal-description">
+        <div class="usa-modal__content">
+            <div class="usa-modal__main">
+                <h2 class="usa-modal__heading" id="crisis-modal-heading">
+                    <div class="display-flex flex-align-center"><img class="vcl-logo" src="assets/img/vcl-logo.png"
+                            alt="Veterans Crisis Line Logo" />We're here anytime, day or night – 24/7</div>
+                </h2>
+                <div class="usa-prose">
+                    <p id="crisis-modal-description">If you are a Veteran in crisis or concerned about one, connect with
+                        our caring, qualified responders for confidential help. Many of them are Veterans themselves.
+                    </p>
+                </div>
+                <div class="crisis-links">
+                    <div class="crisis-link border-top border-base-lighter">
+                        <img class="usa-icon" src="assets/img/material-icons/phone.svg" aria-hidden="true"
+                            focusable="false" /><a class="usa-link" href="tel:988">Call <strong>988 and select
+                                1</strong></a>
+                    </div>
+                    <div class="crisis-link border-top border-base-lighter">
+                        <img class="usa-icon" src="assets/img/material-icons/smartphone.svg" aria-hidden="true"
+                            focusable="false" /><a class="usa-link" href="sms:838255">Text <strong>838255</strong></a>
+                    </div>
+                    <div class="crisis-link border-top border-base-lighter"><img class="usa-icon"
+                            src="assets/img/material-icons/chat.svg" aria-hidden="true" focusable="false" /><a
+                            class="usa-link" href="https://www.veteranscrisisline.net/get-help-now/chat/">Start a
+                            Confidential Chat</a></div>
+                    <div class="crisis-link border-top border-base-lighter">
+                        <img class="usa-icon" src="assets/img/material-icons/hearingdisabled.svg" aria-hidden="true"
+                            focusable="false" /><a class="usa-link" href="tel:+18007994889">Call TTY if you have hearing
+                            loss <strong>800-799-4889</strong></a>
+                    </div>
+                    <div class="crisis-link border-top border-base-lighter"><a class="usa-link"
+                            href="https://www.veteranscrisisline.net/">Get more resources at VeteransCrisisLine.net</a>
+                    </div>
+                </div>
+            </div>
+            <button class="usa-button usa-modal__close" type="button" aria-label="Close this window" data-close-modal>
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="assets/img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- ***** manin ******  -->
+
+    <script>
+        function openReport(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+
+
+
+
+    <main>
+
+        <!-- first banner section  -->
+        <section class=" simlearn  text-right naii text-dark">
+            <div class="margin-0  text-right" style="padding: 4.5rem; "> <br><br>
+                <p width="40%" style="z-index: 999; font-size: 46px;">
+
+                    VA | Artificial Intelligence
+                </p>
+                <br><br> <br>
+
+            </div>
+
+
+
+
+
+        </section>
+        <!-- SVG  -->
+        <section style="background: #fff;">
+            <svg viewBox="0 0 422 20.98" preserveAspectRatio="none"
+                style="background: #fff;margin-top:0;padding-top: 0;">
+
+                <defs>
+                </defs>
+
+                <g>
+                    <polygon class=" fl-shape" style="background: #fff;fill: #23346c;" points="0,0 422,0 422,20">
+                    </polygon>
+                </g>
+            </svg>
+        </section>
+
+        <!-- fliping cart , portfolio  -->
+        <section class="grid-container margin-bottom-3 padding-bottom-1 padding-top-3 "
+            style="background: white;margin-top: 0 !important;padding-top: 0 !important;">
+            <div class="grid-container">
+                <div class="tablet:grid-col-12 text-left ">
+                    <h1 class="f48-700 padding-top-0 padding-bottom-0 " style="text-align: left;border-bottom: 0.125rem dotted #7fcfcf;
+                    ">
+                        About Artificial Intelligence
+                    </h1>
+
+                    <p class="font-body-sm " style="line-height: 1.7; letter-spacing: .6px;">
+                        <strong>Artificial Intelligence (AI)</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br> <br>
+                    </p>
+
+
+
+                </div>
+                <div class="tablet:grid-col-12 text-left padding-3 padding-top-0 padding-bottom-0"
+                    style="border-left: 5px solid black;">
+                    <p class="f18-line22-w700"> Mission</p>
+                    <p class="font-body-sm ">
+                        The Department of Veterans Affairs will build robust capacity in AI to develop and apply
+                        innovative AI solutions and transform the VA by facilitating a learning environment that
+                        supports the delivery of world-class benefits and services to our Veterans
+
+
+                    </p>
+                    <p class="f18-line22-w700"> Vision</p>
+                    <p class="font-body-sm ">
+                        The VA’s Artificial Intelligence (AI) vision is to improve outcomes and experiences for our
+                        Veterans by developing trustworthy AI capabilities to support the Department of Veterans Affairs
+                        mission.
+                    </p>
+
+
+                </div>
+                <div class="grid-row   margin-bottom-3 margin-top-2 text-white  ">
+
+                    <div class="tablet:grid-col-12 text-center padding-top-1  ">
+                        <img src="/dist/assets/images/homepage/hover-over.png" alt="hover-over the boxes below">
+                    </div>
+
+                    <div class="tablet:grid-col-4 text-left padding-top-1  ">
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner ">
+                                <div class="flip-box-front flip-box-front-1 padding-2">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                font-weight: 500;
+                                font-size: 35px;margin-top: 30%;"> <i>AI Strategy Report</i> </h2> <br> Read more
+                                </div>
+                                <div class="flip-box-back flip-box-back-1 padding-5">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                font-weight: 500;
+                                font-size: 25px;"><br> <br> VA develops AI policies, processes and strategies, with
+                                        Veterans at the forefront</h2>
+                                    <a style="color: #0f3560 !important;
+                                background-color: #ffffff !important;"
+                                        class="usa-button btn-me1  shadowme a-work margin-bottom-1 margin-top-3 tablet:margin-bottom-3 oneshadow"
+                                        href="/views/news-events/speakers.html" target="_blank"><small>Learn More
+                                            »</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4 text-left padding-top-1 ">
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front flip-box-front-2  ">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                font-weight: 500;
+                                font-size: 35px;margin-top: 30%;"> <i>AI Use Case Inventory​</i> </h2><br> Read more
+                                </div>
+                                <div class="flip-box-back flip-box-back-2  padding-2">
+                                    <h2 style="font-family: Museo Sans, sans-serif;font-size: 25px;"> <br> <br>
+                                        VA actively supports programs aiming to incorporate trustworthy AI
+                                        into current practices to improve and expedite Veteran care and services. </h2>
+
+                                    <a class="usa-button btn-me  shadowme  margin-bottom-1 margin-top-3 padding-2
+                                tablet:margin-bottom-3 oneshadow" href="#" target="_blank" style="color: #0f3560 !important;
+                                background-color: #ffffff !important;"><small>Learn More
+                                            »</small></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4 text-left padding-top-1 ">
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front flip-box-front-3  ">
+                                    <h2 style="font-family: Museo Sans, sans-serif;
+                                font-weight: 500;
+                                font-size: 35px;margin-top: 30%;"> <i>AI@VA Community</i> </h2><br> Read more
+
+                                </div>
+                                <div class="flip-box-back flip-box-back-3  padding-2">
+                                    <h2 style="font-family: Museo Sans, sans-serif;font-size: 25px;"> <br> <br>
+                                        VA actively supports programs aiming to incorporate trustworthy AI
+                                        into current practices to improve and expedite Veteran care and services. </h2>
+
+                                    <a class="usa-button btn-me  shadowme  margin-bottom-1 margin-top-3 padding-2
+                                tablet:margin-bottom-3 oneshadow" href="#" target="_blank" style="color: #0f3560 !important;
+                                background-color: #ffffff !important;"><small>Learn More
+                                            »</small></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- old man image section  -->
+        <section class="second-image padding-bottom-0">
+            <div class="grid-row grid-gap-1 padding-3 padding-bottom-0 veteran padding-top-0">
+
+                <div class="tablet:grid-col-5 text-center  padding-bottom-0 padding-top-0">
+                    <!-- <img class="veteran"src="/dist/assets/images/homepage/oldman.png" alt="image-holder "> -->
+                </div>
+
+
+                <div class="tablet:grid-col text-center   padding-top-2  " style="background-color: #f2f4f4c9;">
+                    <br><br><br><br>
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 58px;">Why AI at VA?
+                    </h1> <br>
+
+                    <p class=" padding-bottom-5"
+                        style="border-bottom: 3px solid gray; font-size:25px;font-family:Arial, Helvetica, sans-serif">
+                        <b>VA is leading the development of AI solutions to benefit Veterans, their caregivers and
+                            survivors.</b> <br>
+
+
+
+                    </p>
+                    <p style="font-size:25px;font-family:Arial, Helvetica, sans-serif">
+                        To learn more, join the AI@VA Community.<br> <br> </p>
+                    <a href="https://www.research.va.gov/naii/join.cfm#signup "> <button type=""
+                            class="usa-button btn-me"
+                            style="background-color: #FCB109; color: #000">SUBSCRIBE</button></a>
+                    <br><br>
+
+
+
+
+                </div>
+                <div class="tablet:grid-col-1 text-center  padding-bottom-0 padding-top-0">
+                    <!-- <img class="veteran"src="/dist/assets/images/homepage/oldman.png" alt="image-holder "> -->
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- box and text  section  -->
+
+        <section class="bg-white padding-top-2">
+            <div class="grid-container padding-top-2">
+
+                <!-- text area italic  -->
+                <div class="grid-row grid-gap text-center margin-top-2 margin-bottom-3">
+                    <div class="tablet:grid-col-3"></div>
+                    <div class="tablet:grid-col-6 ">
+                        <p class="  text-center"
+                            style="font-size: 36px; font-family: Georgia, 'Times New Roman', Times, serif; "> <i>
+                                VA develops and contributes to AI policies,
+                                processes and strategies, with a focus on
+                                delivering AI excellence to Veterans </i>
+                        </p>
+                    </div>
+                    <div class="tablet:grid-col-3"></div>
+                </div>
+
+                <!-- box area  row one -->
+                <div class="grid-row  text-center ">
+                    <div class="tablet:grid-col-2"></div>
+                    <div class="tablet:grid-col-8">
+                        <div class="grid-row  text-center grid-gap">
+                            <div class="tablet:grid-col-6  margin-top-1 margin-bottom-1" style="background:#0A1133; ">
+                                <div class="text-white padding-3  ">
+                                    <p style="font-size: 21px; font-family:Georgia, 'Times New Roman', Times, serif">
+                                    </p>
+
+                                    VA AI Strategy Report
+                                    </p>
+                                    <a href="https://www.research.va.gov/naii/VA_AI%20Strategy_V2-508.pdf "> <button
+                                            type="" class="padding-2 btn-me "
+                                            style="background-color: #FCB109; color: #000"><strong>VIEW </strong>
+                                            REPORT</button></a>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+                            <div class="tablet:grid-col-6  margin-top-1 margin-bottom-1">
+                                <div class="box-2 padding-3   text-white">
+
+                                    <p style="font-size: 21px; font-family:Georgia, 'Times New Roman', Times, serif">
+                                    </p>
+
+                                    VA AI Inventory
+                                    </p>
+                                    <a href="https://www.research.va.gov/naii/ai-inventory.cfm "><button type=""
+                                            class="padding-2 btn-me "
+                                            style="background-color: #FCB109; color: #000"><strong>VIEW </strong> AI USE
+                                            CASE</button></a>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="tablet:grid-col-2"></div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <!-- box area  row two-->
+                <div class="grid-row  text-center  padding-bottom-3">
+                    <div class="tablet:grid-col-2"></div>
+                    <div class="tablet:grid-col-8">
+                        <div class="grid-row  text-center grid-gap flex- flex-justify">
+                            <div class="tablet:grid-col-6  margin-top-1 box-2  flex-align-self-stretch">
+                                <div class="text-white padding-3    flex-align-self-end">
+                                    <p style="font-size: 36px; font-family:Georgia, 'Times New Roman', Times, serif">
+                                        <i>Promoting the Use of Trustworthy AI in the
+                                            Federal Government</i>
+                                    </p>
+                                    <a
+                                        href="https://www.federalregister.gov/documents/2020/12/08/2020-27065/promoting-the-use-of-trustworthy-artificial-intelligence-in-the-federal-government ">
+                                        <button type="" class="padding-2 btn-me "
+                                            style="background-color: #FCB109; color: #000"><strong>VIEW </strong> THE
+                                            EXECUTIVE ORDER</button>
+
+                                    </a>
+
+
+                                </div>
+                            </div>
+                            <!-- second col of second row -->
+
+
+                            <div class="tablet:grid-col  flex-align-self-stretch ">
+
+                                <div class="box-2   text-white padding-2 margin-bottom-2 margin-top-1 flex-align-self-start"
+                                    style="background:#0A1133; ">
+                                    <p style="font-size: 21px; font-family:Georgia, 'Times New Roman', Times, serif">
+                                    </p><br>
+                                    Ensuring AI Advances Equity
+                                    </p>
+                                    <a
+                                        href="https://www.federalregister.gov/documents/2023/02/22/2023-03779/further-advancing-racial-equity-and-support-for-underserved-communities-through-the-federal ">
+                                        <button type="" class="padding-2 btn-me "
+                                            style="background-color: #FCB109; color: #000"><strong>VIEW </strong>
+                                            THE EXECUTIVE ORDER</button> <br>
+                                    </a>
+
+
+                                </div>
+
+
+
+
+                                <div class="box-2 padding-3   text-white box-2 flex-align-self-end">
+                                    <p style="font-size: 21px; font-family:Georgia, 'Times New Roman', Times, serif">
+                                        <br>
+                                        National AI Research
+                                        and Development Strategy
+                                    </p>
+                                    <a href="https://www.nitrd.gov/pubs/National-AI-RD-Strategy-2019.pdf ">
+
+                                        <button type="" class="padding-2 btn-me "
+                                            style="background-color: #FCB109; color: #000"><strong>VIEW </strong>
+                                            THE EXECUTIVE ORDER</button>
+                                    </a>
+
+
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-2"></div>
+                </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer class="bg-gray-10">
+        <div class="grid-container padding-y-8">
+            <div class="grid-row grid-gap">
+                <div class="margin-bottom-4 desktop:grid-col-3 desktop:margin-bottom-0">
+                    <h4 class="font-serif-md margin-top-0 margin-bottom-1">VA Mission</h4>
+                    <p class="font-body-2xs margin-top-0 margin-bottom-2">To fulfill President Lincoln's promise<em>"To
+                            care for him who shall have borne that battle, and for his widow, and his orphan"</em>by
+                        serving and honoring the men and women who are America's Veterans.</p>
+                    <h4 class="font-serif-md margin-top-0 margin-bottom-1">Subscribe</h4>
+                    <p class="font-body-2xs text-bold margin-top-0 margin-bottom-2">Get the latest NOP news products
+                        delivered to your inbox!</p>
+                    <a class="usa-button"
+                        href="https://public.govdelivery.com/accounts/USVHA/subscriber/qualify">Subscribe Today!</a>
+                </div>
+                <div class="desktop:grid-col-6">
+                    <h4 class="font-serif-md margin-top-0 margin-bottom-1">Veteran Programs and Services</h4>
+                    <div class="grid-row grid-gap">
+                        <div class="tablet:grid-col-6">
+                            <ul class="usa-list usa-list--unstyled font-body-2xs tablet:margin-bottom-2">
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/">VA.gov</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/homeless/">For
+                                        Homeless Veterans</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/womenvet/">For Women
+                                        Veterans</a></li>
+                                <li><a class="usa-link text-no-underline"
+                                        href="https://www.va.gov/centerforminorityveterans/">For Minority Veterans</a>
+                                </li>
+                                <li><a class="usa-link text-no-underline" href="https://www.ptsd.va.gov/">PTSD</a></li>
+                            </ul>
+                        </div>
+                        <div class="tablet:grid-col-6">
+                            <ul
+                                class="usa-list usa-list--unstyled font-body-2xs margin-bottom-4 tablet:margin-bottom-2">
+                                <li><a class="usa-link text-no-underline" href="https://www.mentalhealth.va.gov/">Mental
+                                        Health</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.publichealth.va.gov/">Public
+                                        Health</a></li>
+                                <li><a class="usa-link text-no-underline"
+                                        href="https://www.accesstocare.va.gov/OurProviders">Find a VA Health Care
+                                        Provider</a></li>
+                                <li><a class="usa-link text-no-underline"
+                                        href="https://www.va.gov/adaptivesports/">Adaptive Sports and Special Events</a>
+                                </li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/vso/">Veterans
+                                        Service Organizations (VSO)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="font-serif-md margin-top-0 margin-bottom-1">Additional VA Resources</h4>
+                    <div class="grid-row grid-gap">
+                        <div class="tablet:grid-col-6">
+                            <ul class="usa-list usa-list--unstyled font-body-2xs tablet:margin-bottom-2">
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/">Explore VA</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/find-forms/">VA
+                                        Forms</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/health/">Veterans
+                                        Health Administration (VHA)</a></li>
+                                <li><a class="usa-link text-no-underline"
+                                        href="https://www.benefits.va.gov/BENEFITS/Applying.asp">Veterans Benefits
+                                        Administration (VBA)</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.cem.va.gov/">National
+                                        Cemetary Administration (NCA)</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/jobs/">Careers at
+                                        VA</a></li>
+                            </ul>
+                        </div>
+                        <div class="tablet:grid-col-6">
+                            <ul
+                                class="usa-list usa-list--unstyled font-body-2xs margin-bottom-4 tablet:margin-bottom-2">
+                                <li><a class="usa-link text-no-underline"
+                                        href="https://www.va.gov/resources/the-pact-act-and-your-va-benefits/">The PACT
+                                        Act and your VA Benefits</a></li>
+                                <li><a class="usa-link text-no-underline"
+                                        href="https://www.va.gov/communitycare/">Veterans Choice Program</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/health-care/">Access
+                                        to Care</a></li>
+                                <li><a class="usa-link text-no-underline"
+                                        href="https://www.va.gov/opal/fo/dbwva.asp">Doing Business with VA</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://www.va.gov/OPA/index.asp">Public
+                                        Affairs</a></li>
+                                <li><a class="usa-link text-no-underline" href="https://news.va.gov/">News Releases</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop:grid-col-3">
+                    <h4 class="font-serif-md margin-top-0 margin-bottom-1">Connect with VA</h4>
+                    <ul class="usa-list usa-list--unstyled margin-bottom-4 tablet:margin-bottom-2">
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://news.va.gov/"><svg class="usa-icon margin-right-05 text-accent-warm-dark"
+                                    aria-hidden="true" focusable="false" role="img">
+                                    <use xlink:href="assets/img/sprite.svg#rss_feed"></use>
+                                </svg>News.va.gov</a>
+                        </li>
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://www.facebook.com/VeteransAffairs"><svg
+                                    class="usa-icon margin-right-05 brand-facebook" aria-hidden="true" focusable="false"
+                                    role="img">
+                                    <use xlink:href="assets/img/sprite.svg#facebook"></use>
+                                </svg>Facebook</a>
+                        </li>
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://twitter.com/deptvetaffairs"><svg
+                                    class="usa-icon margin-right-05 brand-twitter" aria-hidden="true" focusable="false"
+                                    role="img">
+                                    <use xlink:href="assets/img/sprite.svg#twitter"></use>
+                                </svg>Twitter</a>
+                        </li>
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://www.youtube.com/user/DeptVetAffairs"><svg
+                                    class="usa-icon margin-right-05 brand-youtube" aria-hidden="true" focusable="false"
+                                    role="img">
+                                    <use xlink:href="assets/img/sprite.svg#youtube"></use>
+                                </svg>YouTube</a>
+                        </li>
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://www.flickr.com/photos/VeteransAffairs/"><svg
+                                    class="usa-icon margin-right-05 brand-flickr" aria-hidden="true" focusable="false"
+                                    role="img">
+                                    <use xlink:href="assets/img/sprite.svg#flickr"></use>
+                                </svg>Flickr</a>
+                        </li>
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://www.instagram.com/deptvetaffairs/"><svg
+                                    class="usa-icon margin-right-05 brand-instagram" aria-hidden="true"
+                                    focusable="false" role="img">
+                                    <use xlink:href="assets/img/sprite.svg#instagram"></use>
+                                </svg>Instagram</a>
+                        </li>
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://mobile.va.gov/appstore/"><svg
+                                    class="usa-icon margin-right-05 text-base-darker" aria-hidden="true"
+                                    focusable="false" role="img">
+                                    <use xlink:href="assets/img/sprite.svg#grid_view"></use>
+                                </svg>VA Mobile Apps</a>
+                        </li>
+                        <li>
+                            <a class="usa-link text-no-underline display-inline-flex flex-align-center"
+                                href="https://www.va.gov/opa/socialmedia.asp"><svg
+                                    class="usa-icon margin-right-05 text-base-darker" aria-hidden="true"
+                                    focusable="false" role="img">
+                                    <use xlink:href="assets/img/sprite.svg#list"></use>
+                                </svg>Social Media Index</a>
+                        </li>
+                    </ul>
+                    <h4 class="font-serif-md margin-top-0 margin-bottom-1">In Crisis? Get Help Now</h4>
+                    <a class="usa-button usa-button--secondary" href="tel:+988">Veterans Crisis Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary-darker padding-top-8 padding-bottom-3 text-white position-relative font-serif-2xs">
+            <div class="position-absolute display-flex flex-justify-center width-full top-neg-205"><img
+                    class="square-10 margin-top-neg-205"
+                    src="assets/img/Seal-of-the-U-S-Department-of-Veterans-Affairs.svg"
+                    alt="Seal of the U.S. Department of Veterans Affairs" /></div>
+            <div class="grid-container">
+                <div class="text-center margin-bottom-6 display-none desktop:display-block">
+                    <a class="usa-link text-white text-no-underline padding-1"
+                        href="https://department.va.gov/about/va-plans-budget-finances-and-performance/">VA Strategic
+                        Plan</a><a class="usa-link text-white text-no-underline padding-1"
+                        href="https://www.va.gov/privacy-policy/">Privacy</a><a
+                        class="usa-link text-white text-no-underline padding-1"
+                        href="https://www.va.gov/web/standards/disclaimer.cfm">Disclaimers</a><a
+                        class="usa-link text-white text-no-underline padding-1" href="https://www.va.gov/oig/">Inspector
+                        General</a><a class="usa-link text-white text-no-underline padding-1"
+                        href="https://www.va.gov/foia/">FOIA</a><a
+                        class="usa-link text-white text-no-underline padding-1"
+                        href="https://www.va.gov/ormdi/NOFEAR_Select.asp">No FEAR Act</a><a
+                        class="usa-link text-white text-no-underline padding-1"
+                        href="https://www.va.gov/accountability/">Whistleblower and Rights Protection</a><a
+                        class="usa-link text-white text-no-underline padding-1"
+                        href="https://www.va.gov/vulnerability-disclosure-policy/">Website Policies</a><a
+                        class="usa-link text-white text-no-underline padding-1" href="https://www.data.va.gov/">Open
+                        Data</a>
+                </div>
+                <div class="text-center">Content last updated or reviewed on March 3, 2023</div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery-->
+    <!-- <script>
+        function openReport(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+
+    </script> -->
+
+    <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel-->
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <!-- Lity Lightbox-->
+    <script src="assets/vendor/lity/lity.min.js"></script>
+    <!-- Readmore-->
+    <script src="assets/vendor/readmore/readmore.min.js"></script>
+    <!-- USWDS Scripts-->
+    <script src="assets/vendor/uswds.min.js"></script>
+    <!-- Project Scripts-->
+
+</body>
+
+</html>

@@ -1480,5 +1480,10 @@ border-top:  10px solid #FCB109 !important;
 }
 
 
-
+.naii{
+    background-image: url(/dist/assets/images/homepage/R2b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
   
