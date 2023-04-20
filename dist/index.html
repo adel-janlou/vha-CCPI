@@ -234,44 +234,65 @@
         <!-- test  -->
 
 
-        <div id="Report" class="city">
-            <img src="/dist/assets/images/homepage/gr.png" alt="top image ">
-        </div>
+        <div id="report" class=" city">
+            <img src="/dist/assets/images/homepage/gr.png" alt="top image " style="width: 100%;">
+          </div>
+        
+          <div id="community" class=" city" style="display:none">
+            <img src="/dist/assets/images/homepage/Gr-180.png" alt="top image " style="width: 100%;">
+          </div>
+        
+          <div id="inventory" class="city" style="display:none">
+            <img src="/dist/assets/images/homepage/gr-168.png" alt="top image " style="width: 100%;">
+          </div>
 
-        <div id="community" class="city" style="display:none">
-            <img src="/dist/assets/images/homepage/Gr-180.png" alt="top image ">
-        </div>
-
-        <div id="inventory" class=" city" style="display:none">
-            <img src="/dist/assets/images/homepage/gr-168.png" alt="top image ">
-        </div>
 
 
 
-        <section class="  border-top-0 text-white">
+          <section class="  border-top-0 text-white">
             <div class="grid-row  usa-card-group  " style="border-bottom: 14px solid #080E20;">
-                <!--11-->
+             
                 <div class="tablet:grid-col   text-center "
                     style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;">
-                    <button class="adele-btn  usa-button--big adele-active text-white" onclick="openReport('Report')"
-                        style="background-color: transparent; border: 0 ;">AI Strategy Report</button>
+                    <button class=" w3-button tablink w3-red" onclick="openCity(event,'report')"
+                        style="background-color: transparent; border: 0 ; width: 100%;">AI Strategy Report</button>
                 </div>
-                <!-- 22 -->
+          
                 <div class="tablet:grid-col  text-center"
                     style="background-image: linear-gradient(to right, #29497B, #4674A6 ); border-right: 2px solid #080e20;">
 
-                    <button class="adele-btn  usa-button--big text-white" onclick="openReport('community')"
-                        style="background-color: transparent; border: 0 ;">AI Use Case Inventory</button>
+                    <button class=" w3-button tablink" onclick="openCity(event,'community')"
+                        style="background-color: transparent; border: 0 ; width: 100%;">AI Use Case Inventory</button>
                 </div>
-                <!-- 33 -->
+           
                 <div class="tablet:grid-col text-center "
                     style="background-image: linear-gradient(to right,#4674A6 ,   #29497B); border-right: 2px solid #080e20;">
-                    <button class="adele-btn  usa-button--big text-white" onclick="openReport('inventory')"
-                        style="background-color: transparent; border: 0;">AI@VA Community</button>
+                    <button class=" w3-button tablink" onclick="openCity(event,'inventory')"
+                        style="background-color: transparent; border: 0;width: 100%;">AI@VA Community</button>
                 </div>
 
             </div>
         </section>
+
+          
+         
+        
+        
+        <script>
+        function openCity(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " w3-red";
+        }
+        </script>
 
 
         <section class="mid-image ">
