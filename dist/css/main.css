@@ -5,6 +5,7 @@ html * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 } */
+
 body {
     font-family: sans-serif !important;
     color: #002746;
@@ -1417,7 +1418,7 @@ border-top:  10px solid #FCB109 !important;
     } */
 
 
-        /* .w3-red, .w3-hover-red:hover {
+        .w3-red, .w3-hover-red:hover {
            
             background-color: #080E20 !important;
 border-top:  10px solid #FCB109 !important;
@@ -1425,14 +1426,9 @@ border-top:  10px solid #FCB109 !important;
     
     height: 100%;
     font-weight: bold;
-        } */
-
-        .w3-red, .w3-hover-red:hover {
-           
-            background-color: #080E20 !important;
-border-top:  10px solid #FCB109 !important;
-   border-image: url(/assets/images/homepage/images/homepage/ROTATORHIGHLIGHT.svg);
         }
+
+        
 
 .w3-btn,.w3-button {
     border: none;
@@ -1480,7 +1476,7 @@ border-top:  10px solid #FCB109 !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(/dist/assets/images/homepage/BGASSET.svg);
+    background-image: url(/dist/assets/images/homepage/BG.svg);
 }
 .second-image {
     background: url(/dist/assets/images/homepage/BG-2.svg);
@@ -1521,13 +1517,18 @@ border-top:  10px solid #FCB109 !important;
     color: #005ea2 !important;
 }
 .box-2{
-    background-image: url(/dist/assets/images/homepage/Box-1.svg);
+    background-image: url(/dist/assets/images/homepage/2.svg);
     background-repeat: no-repeat;
     background-size: cover;
    
 }
 
-
+.box-pro{
+    background-image: url(/dist/assets/images/homepage/3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
 .naii{
     background-image: url(/dist/assets/images/homepage/R2b.png);
     background-repeat: no-repeat;
