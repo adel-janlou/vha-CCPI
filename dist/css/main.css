@@ -1417,15 +1417,22 @@ border-top:  10px solid #FCB109 !important;
     } */
 
 
-        .w3-red, .w3-hover-red:hover {
+        /* .w3-red, .w3-hover-red:hover {
+           
             background-color: #080E20 !important;
 border-top:  10px solid #FCB109 !important;
     color: whitesmoke;
     
     height: 100%;
     font-weight: bold;
-        }
+        } */
 
+        .w3-red, .w3-hover-red:hover {
+           
+            background-color: #080E20 !important;
+border-top:  10px solid #FCB109 !important;
+   border-image: url(/assets/images/homepage/images/homepage/ROTATORHIGHLIGHT.svg);
+        }
 
 .w3-btn,.w3-button {
     border: none;
