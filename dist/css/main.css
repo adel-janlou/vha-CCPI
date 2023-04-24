@@ -1476,9 +1476,9 @@ border-top:  10px solid #FCB109 !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(/dist/assets/images/homepage/BG.svg);
+    background-image: url(/dist/assets/images/homepage/BG.png);
 }
-.second-image {
+/* .second-image {
     background: url(/dist/assets/images/homepage/BG-2.svg);
     
     background-repeat: no-repeat;
@@ -1486,7 +1486,7 @@ border-top:  10px solid #FCB109 !important;
     background-position: center;
    
   
-}
+} */
 
 .veteran{
     background-image: url(/dist/assets/images/homepage/oldman.png);
