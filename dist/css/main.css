@@ -1425,11 +1425,10 @@ border-top:  10px solid #FCB109 !important;
     color: whitesmoke;
     
     height: 100%;
-    font-weight: bold;
+    
+    
         }
-
         
-
 .w3-btn,.w3-button {
     border: none;
     display: inline-block;
@@ -1478,7 +1477,7 @@ border-top:  10px solid #FCB109 !important;
     background-position: center;
     background-image: url(/dist/assets/images/homepage/BG.png);
 }
-/* .second-image {
+.second-image {
     background: url(/dist/assets/images/homepage/BG-2.svg);
     
     background-repeat: no-repeat;
@@ -1486,7 +1485,7 @@ border-top:  10px solid #FCB109 !important;
     background-position: center;
    
   
-} */
+}
 
 .veteran{
     background-image: url(/dist/assets/images/homepage/oldman.png);
@@ -1535,4 +1534,11 @@ border-top:  10px solid #FCB109 !important;
     background-size: cover;
     background-position: center;
 }
-  
+/*  
+ 
+@media (max-width: 767px) {
+
+    .image-class {
+      display: none;
+    }
+  } */
