@@ -699,7 +699,7 @@ ul.striped-list>li {
     border-radius: 10px;
 }
 
-/* .wrapper:hover  {
+.wrapper:hover  {
        
          
           transform: translateY(-10px);
@@ -708,7 +708,7 @@ ul.striped-list>li {
           -moz-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0px 5px 6px -6px black;
          
-      } */
+      }
 .breadcrumb {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
@@ -1411,7 +1411,7 @@ ul.b {
 
 /* .adele-btn:active {
 background-color: #080E20 !important;
-border-top:  10px solid #FCB109 !important;
+border-top:  10px solid #fac921!important;
     color: whitesmoke;
     
     height: 100%;
@@ -1424,7 +1424,7 @@ border-top:  10px solid #FCB109 !important;
 
     background-color: #080E20 !important;
 
-    border-top: 10px solid #FCB109 !important;
+    border-top: 10px solid #fac921!important;
     border-top-style: outset;
 
     color: whitesmoke;
@@ -1525,14 +1525,14 @@ border-top:  10px solid #FCB109 !important;
 }
 
 .box-2 {
-    background-image: url(/dist/assets/images/homepage/2.svg);
+    background-image: url(/dist/assets/images/homepage/box-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .box-pro {
-    background-image: url(/dist/assets/images/homepage/3.svg);
+    background-image: url(/dist/assets/images/homepage/Box-1.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -1560,4 +1560,13 @@ border-top:  10px solid #FCB109 !important;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+
+.wrapper-me:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    -webkit-box-shadow: 0px 5px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0px 5px 6px -6px black;
 }
