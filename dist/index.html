@@ -216,13 +216,13 @@
     <!-- ***** manin ******  -->
 
     <script>
-        function openReport(cityName) {
+        function openReport(adeleName) {
             var i;
-            var x = document.getElementsByClassName("city");
+            var x = document.getElementsByClassName("tab");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            document.getElementById(cityName).style.display = "block";
+            document.getElementById(adeleName).style.display = "block";
         }
     </script>
     <main id="main-content">
@@ -237,15 +237,15 @@
         <!-- test  -->
 
 
-        <div id="report" class=" city">
+        <div id="report" class=" tab">
             <img src="/dist/assets/images/homepage/1.png" alt="top image " style="width: 100%;">
           </div>
         
-          <div id="community" class=" city" style="display:none">
+          <div id="community" class=" tab" style="display:none">
             <img src="/dist/assets/images/homepage/3.png" alt="top image " style="width: 100%;">
           </div>
         
-          <div id="inventory" class="city" style="display:none">
+          <div id="inventory" class="tab" style="display:none">
             <img src="/dist/assets/images/homepage/2.png" alt="top image " style="width: 100%;">
           </div>
 
@@ -259,20 +259,20 @@
             #070e21 dark border-bottom -->
                 <div class="tablet:grid-col   text-center script-btn "
                 style=" background-image: linear-gradient(to right, #003e73,#003a62, #01395e,#080e20); ">
-                    <button class=" w3-button tablink w3-red padding-2" onclick="openCity(event,'report')"
+                    <button class=" w3-button tablink w3-red padding-2" onclick="opentab(event,'report')"
                         style="background-color: transparent; border: 0 ; width: 100%;font-size: 26px;font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;">AI Strategy Report</button>
                 </div>
           
                 <div class="tablet:grid-col  text-center script-btn"
                 style=" background-image:linear-gradient(to right, #003e73,#003a62, #01395e,#080e20); ">
 
-                    <button class=" w3-button tablink" onclick="openCity(event,'community')"
+                    <button class=" w3-button tablink" onclick="opentab(event,'community')"
                         style="background-color: transparent; border: 0 ; width: 100%;font-size: 26px;font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;">AI Use Case Inventory</button>
                 </div>
            
                 <div class="tablet:grid-col text-center script-btn"
                 style=" background:#003e73 ;">
-                    <button class=" w3-button tablink" onclick="openCity(event,'inventory')"
+                    <button class=" w3-button tablink" onclick="opentab(event,'inventory')"
                         style="background-color: transparent; border: 0;width: 100%; font-size: 26px;font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;">AI@VA Community</button>
                 </div>
 
@@ -284,9 +284,9 @@
         
         
         <script>
-        function openCity(evt, cityName) {
+        function opentab(evt, adeleName) {
           var i, x, tablinks;
-          x = document.getElementsByClassName("city");
+          x = document.getElementsByClassName("tab");
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
           }
@@ -294,7 +294,7 @@
           for (i = 0; i < x.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
           }
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(adeleName).style.display = "block";
           evt.currentTarget.className += " w3-red";
         }
         </script>
@@ -329,7 +329,7 @@
 
                     </h2>
                     <p class="padding-bottom-5" style="line-height: 1.7;letter-spacing: .6px;font: size 22px ;font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;">
-                        The Department of Veterans Affairs will build robust capacity
+                        The Department of Veterans Affairs will build robust capatab
                         in AI to develop and apply innovative AI solutions and transform
                         the VA by facilitating a learning environment that supports the
                         delivery of world-class benefits and services to our Veterans
