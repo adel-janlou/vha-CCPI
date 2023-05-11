@@ -1580,3 +1580,21 @@ border-top:  10px solid #fac921!important;
     font-size: 48px;
     font-weight: 700;
 }
+
+.btn-naii{
+    min-width: 272px;
+    background-color: white;
+     color: #000;
+     border-radius: 0.5rem;   
+     padding:15px !important; 
+     border:.25rem solid #fac921;
+     margin-bottom: 40px;
+}
+.btn-naii:hover{
+    background-color: #00355f !important;
+    color: white !important;
+border-radius: 0.5rem;   
+padding:15px !important; 
+border:.25rem solid #fac921;
+margin-bottom: 40px;
+}
