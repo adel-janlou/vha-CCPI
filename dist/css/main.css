@@ -1558,13 +1558,13 @@ border-top:  10px solid #fac921!important;
 }
 
 
-.wrapper-me:hover {
+/* .wrapper-me:hover {
     transform: translateY(-10px);
     transition: all 0.3s;
     -webkit-box-shadow: 0px 5px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0px 5px 6px -6px black;
-}
+} */
 .bg-blue-90v, .hover\:bg-blue-90v:hover {
     background-color: #0e1d33 !important;
 }
@@ -1595,6 +1595,11 @@ border-top:  10px solid #fac921!important;
     color: white !important;
 border-radius: 0.5rem;   
 padding:15px !important; 
-border:.25rem solid #fac921;
+border:.25rem solid white;
 margin-bottom: 40px;
+transform: translateY(-10px);
+transition: all 0.3s;
+-webkit-box-shadow: 0px 5px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0px 5px 6px -6px black;
 }
