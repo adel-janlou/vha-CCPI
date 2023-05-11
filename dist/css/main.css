@@ -1570,3 +1570,18 @@ border-top:  10px solid #fac921!important;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0px 5px 6px -6px black;
 }
+.bg-blue-90v, .hover\:bg-blue-90v:hover {
+    background-color: #0e1d33 !important;
+}
+.adele-bg-first{
+
+    background-image: url(/dist/assets/images/homepage/Adele-first-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.f48-700 {
+    color:#0e2640;
+    font-size: 48px;
+    font-weight: 700;
+}
