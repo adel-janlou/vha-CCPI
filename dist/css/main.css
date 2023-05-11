@@ -1504,21 +1504,16 @@ border-top:  10px solid #fac921!important;
     background-position: bottom left
 }
 
-/* @media (max-width:629px)
+@media (max-width:629px)
 {
-   .veteran
+   .hide-image
     {
         display: none;
     }
 }
- */
 
-/* .text-new-back{
 
-    background-image: url(/dist/assets/images/homepage/new-back.png);
- }
 
-   */
 
 .usa-link:visited {
     color: #005ea2 !important;
