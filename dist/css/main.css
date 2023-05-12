@@ -1437,7 +1437,7 @@ border-top:  10px solid #fac921!important;
 .w3-btn, .w3-button {
     border: none;
     display: inline-block;
-    padding: 16px 16px;
+    padding: 30px 10px !important;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
@@ -1607,10 +1607,10 @@ border-top:  10px solid #fac921!important;
 }
 button:focus-visible, a:focus-visible {
     /* remove default focus style */
-    outline: none;
-    /* custom focus styles */
-    box-shadow: 0 0 2px 2px #51a7e8;
-    color: lime;
+    
+    outline:0.25rem solid #2491ff !important;
+    outline-offset:0;
+    bborder: 0.25rem solid #2491ff;
   }
 .btn-naii {
     min-width: 272px;
@@ -1636,6 +1636,9 @@ button:focus-visible, a:focus-visible {
 }
 
 /* USA Footer */
+.bg-blue-90v, .hover\:bg-blue-90v:hover {
+    background-color: #0e1d33 !important;
+}
 
 .usa-footer {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
