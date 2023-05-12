@@ -95503,13 +95503,16 @@ body {
   transition-timing-function: ease-in-out;
   transition-property: background-color;
 }
-
+.va-crisis-line-inner {
+  background: #8b0a03;
+}
 .va-crisis-line .va-crisis-line-arrow {
   height: 13px;
   width: 29px;
   padding-right: 0.5em;
   padding-left: 0.5em;
   margin-bottom: -2px;
+  
 }
 
 .va-crisis-line .va-crisis-line-icon {
@@ -95519,6 +95522,7 @@ body {
 .va-crisis-line .va-crisis-line-text {
   display: inline-block;
   padding: 0.5rem;
+  background: #8b0a03;
 }
 
 @media all and (min-width: 64em) {

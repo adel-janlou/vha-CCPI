@@ -70,9 +70,9 @@
         <div id="tab-container">
             <div id="report" class="tab">
                 <div class="grid-container">
-                    <div class="grid-row">
-                        <div class="tablet:grid-col-6 text-right">
-                            <img src="/dist/assets/images/homepage/vai-ai-brochure.png" class="padding-top-2 padding-bottom-2"/>
+                    <div class="grid-row grid-gap">
+                        <div class="tablet:grid-col-6 tab-img text-right">
+                            <img src="/dist/assets/images/homepage/vai-ai-brochure.png" class="brochure padding-top-2 padding-bottom-2"/>
                         </div>
                         <div class="tablet:grid-col-6 flex-align-self-center">
                             <h2>AI Strategy Report</h2>
@@ -84,7 +84,7 @@
             <div id="community" class="tab" style="display:none">
                 <div class="grid-container">
                     <div class="grid-row grid-gap">
-                        <div class="tablet:grid-col-6">
+                        <div class="tablet:grid-col-6 tab-img">
                             <img src="/dist/assets/images/homepage/vaai-home-inventory.png" />
                         </div>
                         <div class="tablet:grid-col-6 flex-align-self-center">
@@ -97,8 +97,8 @@
             <div id="inventory" class="tab" style="display:none">
                 <div class="grid-container">
                     <div class="grid-row grid-gap">
-                        <div class="tablet:grid-col-6">
-                            <img src="/dist/assets/images/homepage/globe-cropped-full-upper.png" class="padding-top-2" />
+                        <div class="tablet:grid-col-6 tab-img text-right">
+                            <img src="/dist/assets/images/homepage/globe-cropped-full-upper.png" class="globe" />
                         </div>
                         <div class="tablet:grid-col-6 flex-align-self-center">
                             <h2>AI@VA Community</h2>
@@ -113,21 +113,16 @@
             <div class="grid-row usa-card-group" style="border-bottom: 24px solid #080E20;">
                 <div class="tablet:grid-col text-center script-btn"
                 style=" background-image: linear-gradient(to right, #003e73,#003a62, #01395e,#080e20); ">
-                    
-                    <button class="w3-button tablink w3-red padding-2" onclick="opentab(event,'report')"
-                        style="background-color: transparent; border: 0 ; width: 100%;font-size: 26px;font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;"><div class="caret"></div>AI Strategy Report</button>
+                   <button class="w3-button tablink w3-red padding-2" onclick="opentab(event,'report')"><div class="caret"></div>AI Strategy Report</button>
                 </div>
           
-                <div class="tablet:grid-col  text-center script-btn"
+                <div class="tablet:grid-col text-center script-btn"
                 style=" background-image:linear-gradient(to right, #003e73,#003a62, #01395e,#080e20); ">
-
-                    <button class=" w3-button tablink" onclick="opentab(event,'community')"
-                        style="background-color: transparent; border: 0 ; width: 100%;font-size: 26px;font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;"><div class="caret"></div>AI Use Case Inventory</button>
+                    <button class="w3-button tablink" onclick="opentab(event,'community')"><div class="caret"></div>AI Use Case Inventory</button>
                 </div>
            
                 <div class="tablet:grid-col text-center script-btn" style=" background:#003e73 ;">
-                    <button class=" w3-button tablink" onclick="opentab(event,'inventory')"
-                        style="background-color: transparent; border: 0;width: 100%; font-size: 26px;font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;"><div class="caret"></div>AI@VA Community</button>
+                    <button class=" w3-button tablink" onclick="opentab(event,'inventory')"><div class="caret"></div>AI@VA Community</button>
                 </div>
 
             </div>
@@ -149,104 +144,63 @@
         }
         </script>
 
-        <section class="mid-image" >
-            <div class="grid-row grid-gap-1 padding-3">
-                <div class="tablet:grid-col-2 "></div>
-                <div class="tablet:grid-col-5 text-left  text-white padding-top-5 padding-bottom-5"> <br>
-                    <h2 style="font-size:36px ; font-family: Merriweather, 'Times New Roman', Times, serif">VA Artificial
-                        Intelligence Vision Statement</h2>
-                    <br>
-                    <p class="padding-bottom-5" style="line-height: 1.7;letter-spacing: .6px; font-size: 22px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;">
-                        <strong>
-                              The VA’s Artificial Intelligence (AI) vision is to improve outcomes and experiences for our
-                            Veterans by developing trustworthy AI capabilities to support the Department of Veterans
-                            Affairs mission.
-                        </strong>
-                    </p>
-                            
-                    <hr class="" style="margin-inline-start: 0;max-width: 400px; border: .5px solid white; ">
-                    <br>
-                    
-                    <h2 style="font-size:36px ; font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;"
-                        class="margin-top:5px;">
-                        <i> Mission Statement</i> <br>
+        <section class="mid-image">
+            <div class="grid-container">
+                <div class="grid-row grid-gap-1 padding-bottom-15">
+                    <div class="tablet:grid-col-7 text-left text-white padding-top-5 padding-bottom-5">
+                        <h2>VA Artificial Intelligence Vision Statement</h2>
+                        <p class="padding-bottom-4">
+                            <strong>
+                                The VA’s Artificial Intelligence (AI) vision is to improve outcomes and experiences for our
+                                Veterans by developing trustworthy AI capabilities to support the Department of Veterans
+                                Affairs mission.
+                            </strong>
+                        </p>       
 
-                    </h2>
-                    <p class="padding-bottom-5" style="line-height: 1.7; letter-spacing: .6px; font-size: 22px; font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;">
-                        The Department of Veterans Affairs will build robust capatab
-                        in AI to develop and apply innovative AI solutions and transform
-                        the VA by facilitating a learning environment that supports the
-                        delivery of world-class benefits and services to our Veterans
+                        <h2><i> Mission Statement</i></h2>
 
-                    </p>
-
+                        <p class="padding-bottom-5 mission-statement">
+                            The Department of Veterans Affairs will build robust capatab
+                            in AI to develop and apply innovative AI solutions and transform
+                            the VA by facilitating a learning environment that supports the
+                            delivery of world-class benefits and services to our Veterans
+                        </p>
+                    </div>
                 </div>
-               
-
-            </div>
-
+        </div>
         </section>
-        <!-- old man image section  -->
-        <section class="second-image padding-bottom-0 " style="border-bottom: 10px solid #fac921!important; ;"> 
         
-
-            <!-- <img src="/dist/assets/images/homepage/Screenshot 2023-04-25 at 11.00.46 AM.png" alt=""> -->
-            <div class="grid-row grid-gap-1 padding-3 padding-bottom-0 veteran padding-top-0 ">
-
-                <div class="tablet:grid-col-5 text-center  padding-bottom-0 padding-top-0">
-                    <!-- <img class="veteran"src="/dist/assets/images/homepage/oldman.png" alt="image-holder "> -->
-                </div>
-
-
-                <div class="tablet:grid-col text-center   padding-top-2  " style="background-color: #f2f4f4c9;">
-                    <br><br>
-                    <h1 style="font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important; font-size: 58px;">Why AI at VA?
-                    </h1> <br>
-
-                    <p class=" padding-bottom-5"
-                        style=" font-size:25px;    font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;">
-                        <b>VA is leading the development of AI solutions to benefit Veterans, their caregivers and
-                            survivors.</b> 
-
-
-                            
-                    </p>
-                    <hr style="max-width: 300px; border: .5px solid #707070; ">
-                    <p style="font-size:25px;    font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;">
-                        To learn more, join the AI@VA Community.<br> <br> </p>
-                    <a href="https://www.research.va.gov/naii/join.cfm#signup " > <button 
-                            class="usa-button wrapper-me oneshadow"
-                            style="background-color: white; color: #000; 
-                               border-radius: 0.5rem;   width: 250px ; padding:15px !important; border:.25rem solid #fac921">SUBSCRIBE</button></a>
-                    <br><br>
-
-
-
-
-                </div>
-                <div class="tablet:grid-col-3 text-center  padding-bottom-0 padding-top-0">
-                    <!-- <img class="veteran"src="/dist/assets/images/homepage/oldman.png" alt="image-holder "> -->
+        <section id="why"> 
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="tablet:grid-col-6 flex-align-self-end">
+                        <img class="veteran flex-align-self-end"src="/dist/assets/images/homepage/why-ww2-vet.png" alt="image-holder ">
+                    </div>
+                    <div class="tablet:grid-col-6 text-center">
+                        <h1>Why AI <em>at</em> VA?</h1>
+                        <p class="text-left"><strong>VA is leading the development of AI solutions to benefit Veterans, their caregivers and survivors.</strong></p>
+                        <hr>
+                        <p>To learn more, join the AI@VA Community. </p>
+                        <a href="https://www.research.va.gov/naii/join.cfm#signup"> 
+                            <button class="usa-button wrapper-me oneshadow btn-naii margin-bottom-10">SUBSCRIBE</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-
         </section>
 
 
         <!-- box and text  section  -->
 
-        <section class="bg-white padding-top-2">
+        <section id="box-links" class="bg-white padding-top-2">
             <div class="grid-container padding-top-2">
-
-                <!-- text area italic  -->
                 <div class="grid-row grid-gap text-center margin-top-2 margin-bottom-3">
                     <div class="tablet:grid-col-3"></div>
                     <div class="tablet:grid-col-6 ">
-                        <p class="text-center"
-                            style="font-size: 36px;font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif!important;"> <i>
+                        <p class="box-description">                           
                                 VA develops and contributes to AI policies,
                                 processes and strategies, with a focus on
-                                delivering AI excellence to Veterans </i>
+                                delivering AI excellence to Veterans
                         </p>
                     </div>
                     <div class="tablet:grid-col-3"></div>

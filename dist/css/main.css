@@ -1499,40 +1499,76 @@ border-top:  10px solid #fac921!important;
     background-image: url(/dist/assets/images/homepage/mid-image-bg.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
-
-.second-image {
-    background: url(/dist/assets/images/homepage/BG-2.svg);
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-
-}
-
-.veteran {
-    background-image: url(/dist/assets/images/homepage/oldman.png);
-    background-repeat: no-repeat;
-    height: 100%;
-
-    background-position: bottom left
-}
-
-/* @media (max-width:629px)
-{
-   .veteran
-    {
-        display: none;
+@media (max-width: 1500px) {
+    .mid-image {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     }
 }
- */
-
-/* .text-new-back{
-
-    background-image: url(/dist/assets/images/homepage/new-back.png);
- }
-
-   */
+@media (max-width: 1000px) {
+    .mid-image {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    }
+}
+.mid-image h2 {
+    font-size:36px; 
+    font-family: 'Georgia','Merriweather', 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.mid-image p {
+    line-height: 1.7;
+    letter-spacing: .6px; 
+    font-size: 22px; 
+    font-weight: 500;
+    font-family: 'Arial',Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif !important;
+}
+p.mission-statement {
+    font-size: 18px;
+    line-height: 2.2rem;
+}
+#why {
+    margin-top: -130px;
+    padding-top: 130px;
+    background: url(/dist/assets/images/homepage/why-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    border-bottom: 10px solid #fac921!important;
+    padding-bottom: 0 !important;
+}
+#why h1 {
+    font-family: 'Georgia','Merriweather Web',Georgia,Cambria,Times New Roman,Times,serif!important; 
+    font-size: 58px;
+    font-weight: 500 !important;
+}
+#why p {
+    font-size:25px; 
+    font-family: 'Arial','Source Sans Pro Web',Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;
+    padding: 0 20px;
+    margin: 0 0 30px 0;
+}
+#why hr {
+    max-width: 300px; 
+    border: .5px solid rgba(10, 17, 51, .2);
+    margin-bottom: 30px;
+}
+.yellow-btn {
+    background-color: white; color: #000; 
+    border-radius: 10px;   
+    width: 250px; 
+    padding:15px !important; 
+    border: 3px solid #fac921; 
+    margin-bottom: 75px; 
+    font-size: 21px;
+}
+img.veteran {
+    width: 700px;
+    max-width: unset;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: -150px;
+    margin-bottom: -4px;
+}
 
 .usa-link:visited {
     color: #005ea2 !important;
@@ -1559,14 +1595,6 @@ border-top:  10px solid #fac921!important;
     background-position: center;
 }
 
-/*  
- 
-@media (max-width: 767px) {
-
-    .image-class {
-      display: none;
-    }
-  } */
 /* script-btn */
 .script-btn {
     display: flex;
@@ -1574,8 +1602,6 @@ border-top:  10px solid #fac921!important;
     align-items: center;
     justify-content: center;
 }
-
-
 
 .wrapper-me:hover {
     transform: translateY(-10px);
@@ -1589,29 +1615,53 @@ border-top:  10px solid #fac921!important;
 #tab-container {
     background-image: url(/dist/assets/images/homepage/vaai-home-tab-bg.jpg);
     background-size: cover;
-    
+    height: 536px;
 }
-#tab-container img {
+.tab {
+    
+    overflow: hidden;
+}
+img.brochure {
+    width: 500px !important;
+    height: auto;
+}
+img.globe {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+#tab-containerr img {
+    display: block;
+    max-width:100%;
     width: auto;
-    max-height: 533px;
+    height: auto;    
 }
 .tab h2 {
     font-family: 'Merriweather Web',Georgia,Cambria,Times New Roman,Times,serif!important;
     font-size: 50px;
     font-style: italic;
+    margin-top: 0;
 }
 .tab span {
     font-family: 'Source Sans Pro Web',Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;
     font-weight: 900;
     font-size: 26px;
 }
+h2 {
+    -webkit-font-smoothing: antialiased;
+}
+.w3-button {
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent; 
+    border: 0; 
+    width: 100%;
+    font-size: 31px;
+    font-family: 'Georgia',Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif !important;
+}
 button:focus-visible, a:focus-visible {
-    /* remove default focus style */
-    
-    outline:0.25rem solid #2491ff !important;
-    outline-offset:0;
-    bborder: 0.25rem solid #2491ff;
-  }
+    outline: 0.25rem solid #2491ff !important;
+    outline-offset: 0;
+}
 .btn-naii {
     min-width: 272px;
     background-color: white;
@@ -1633,6 +1683,16 @@ button:focus-visible, a:focus-visible {
     -webkit-box-shadow: 0px 5px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0px 5px 6px -6px black;
+}
+p.box-description {
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 1;
+    font-family: 'Georgia',Cambria,Times New Roman,Times,serif !important;
+    text-align: center;
+    font-style: italic;
+    color: #0A1133;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* USA Footer */
