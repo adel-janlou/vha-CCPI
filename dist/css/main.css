@@ -1496,8 +1496,12 @@ border-top:  10px solid #fac921!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
     background-image: url(/dist/assets/images/homepage/mid-image-bg.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+=======
+    background-image: url(/dist/assets/images/homepage/BG_1.svg);
+>>>>>>> fc3d4636eeb94db4baa1a7f06995b4f9ca309f8b
 }
 
 .second-image {
@@ -1518,21 +1522,16 @@ border-top:  10px solid #fac921!important;
     background-position: bottom left
 }
 
-/* @media (max-width:629px)
+@media (max-width:629px)
 {
-   .veteran
+   .hide-image
     {
         display: none;
     }
 }
- */
 
-/* .text-new-back{
 
-    background-image: url(/dist/assets/images/homepage/new-back.png);
- }
 
-   */
 
 .usa-link:visited {
     color: #005ea2 !important;
@@ -1576,13 +1575,18 @@ border-top:  10px solid #fac921!important;
 }
 
 
+<<<<<<< HEAD
 
 .wrapper-me:hover {
+=======
+/* .wrapper-me:hover {
+>>>>>>> fc3d4636eeb94db4baa1a7f06995b4f9ca309f8b
     transform: translateY(-10px);
     transition: all 0.3s;
     -webkit-box-shadow: 0px 5px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0px 5px 6px -6px black;
+<<<<<<< HEAD
 }
 
 /* TT Additions */
@@ -1620,10 +1624,38 @@ button:focus-visible, a:focus-visible {
     padding: 15px !important;
     border: 0.25rem solid #fac921;
     margin-bottom: 40px
+=======
+} */
+.bg-blue-90v, .hover\:bg-blue-90v:hover {
+    background-color: #0e1d33 !important;
+}
+.adele-bg-first{
+
+    background-image: url(/dist/assets/images/homepage/Adele-first-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.f48-700 {
+    color:#0e2640;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.btn-naii{
+    min-width: 272px;
+    background-color: white;
+     color: #000;
+     border-radius: 0.5rem;   
+     padding:15px !important; 
+     border:.25rem solid #fac921;
+     margin-bottom: 40px;
+>>>>>>> fc3d4636eeb94db4baa1a7f06995b4f9ca309f8b
 }
 .btn-naii:hover{
     background-color: #00355f !important;
     color: white !important;
+<<<<<<< HEAD
     border-radius: 0.5rem;   
     padding:15px !important; 
     border:.25rem solid white;
@@ -1938,3 +1970,15 @@ button:focus-visible, a:focus-visible {
     }
   }
 
+=======
+border-radius: 0.5rem;   
+padding:15px !important; 
+border:.25rem solid white;
+margin-bottom: 40px;
+transform: translateY(-10px);
+transition: all 0.3s;
+-webkit-box-shadow: 0px 5px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0px 5px 6px -6px black;
+}
+>>>>>>> fc3d4636eeb94db4baa1a7f06995b4f9ca309f8b
