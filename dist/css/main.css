@@ -1709,13 +1709,20 @@ p.box-description {
     margin: 0;
     padding: 0;
 }
+.sub-page h2 {
+    font-family: 'Georgia','Cambria','Times New Roman','Times',serif !important;
+    font-weight: 500;
+    font-size: 40px;
+}
 .sub-page-upper {
     background: #fff;
+    z-index: 2;
 }
 .sub-page-upper img {
     width: 400px;
     height: auto;
     padding: 10px 0;
+    z-index: 1;
 }
 span.blue {
     color: #0071BB;
@@ -1723,11 +1730,29 @@ span.blue {
 body.sub-page p {
     font-family: 'Arial', 'Source Sans Pro Web', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
 }
 body.sub-page p.lg {
     font-size: 24px;
     line-height: 30px;
+}
+.mid-blue {
+    padding: 50px 0 85px 0;
+    background: rgb(0,31,58);
+    background: linear-gradient(90deg, rgba(0,31,58,1) 0%, rgba(0,62,115,1) 47%);
+    color: #fff;
+    border-top: 11px solid #FAC922;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.mid-blue h2 {
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.mid-blue-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 /* USA Footer */
 .bg-blue-90v, .hover\:bg-blue-90v:hover {
