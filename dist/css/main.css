@@ -1752,7 +1752,9 @@ body.sub-page p.lg {
 }
 .sm-container {
     max-width: 1200px;
-    
+}
+.xsm-container {
+    max-width: 800px;
 }
 .sub-page-sm-content {
     max-width: 1200px !important;
@@ -1767,11 +1769,20 @@ body.sub-page p.lg {
     background-position: bottom center;
 }
 .promo-text {
-    background: #0473bc;
-    background-image: url('/dist/assets/images/about-bg.png');
+    background: #003e73;
+    background-image: url('/dist/assets/images/about-feature-txt-bg.png');
     background-repeat: no-repeat;
+    background-size: auto 100%;
     padding: 30px 0;   
     color: #fff;
+    border-top: 11px solid #FAC922;
+}
+.promo-text h3 {
+    font-size: 32px;
+    font-style: italic;
+    font-family: 'Georgia','Cambria','Times New Roman','Times',serif !important;
+    font-weight: 500;
+    text-align: center;
 }
 /* USA Footer */
 .bg-blue-90v, .hover\:bg-blue-90v:hover {
