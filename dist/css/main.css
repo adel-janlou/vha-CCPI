@@ -1693,6 +1693,9 @@ p.box-description {
 }
 
 /* Subpages */
+.sub-page-header {
+    z-index: 1;
+}
 .sub-page-title {
     background: #0473bc;
     background-image: url('/dist/assets/images/about-bg.png');
@@ -1716,13 +1719,19 @@ p.box-description {
 }
 .sub-page-upper {
     background: #fff;
-    z-index: 2;
+    padding: 20px 0;
 }
 .sub-page-upper img {
-    width: 400px;
+    width: 95%;
     height: auto;
     padding: 10px 0;
+    position: relative;
+    margin-bottom: -100px;
+    margin-left: -100px;
     z-index: 1;
+}
+.sub-page-upper-content {
+    margin-left: -100px;
 }
 .blue {
     color: #0071BB;
@@ -1744,6 +1753,7 @@ body.sub-page #main-content p.lg {
     color: #fff;
     border-top: 11px solid #FAC922;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    z-index: -1 !important;
 }
 .mid-blue h2 {
     text-align: center;
