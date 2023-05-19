@@ -1724,7 +1724,7 @@ p.box-description {
     padding: 10px 0;
     z-index: 1;
 }
-span.blue {
+.blue {
     color: #0071BB;
 }
 body.sub-page p {
@@ -1750,9 +1750,24 @@ body.sub-page p.lg {
     max-width: 450px;
     margin: 0 auto;
 }
-.mid-blue-content {
-    max-width: 800px;
+.sm-container {
+    max-width: 1000px;
+    
+}
+.sub-page-sm-content {
+    max-width: 1200px !important;
     margin: 0 auto;
+}
+.sub-page-feature {
+    margin-top: -100px;
+    padding-top: 100px;
+    background: url(/dist/assets/images/homepage/why-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.sub-page-feature {
+
 }
 /* USA Footer */
 .bg-blue-90v, .hover\:bg-blue-90v:hover {
