@@ -1751,7 +1751,7 @@ body.sub-page p.lg {
     margin: 0 auto;
 }
 .sm-container {
-    max-width: 1000px;
+    max-width: 1200px;
     
 }
 .sub-page-sm-content {
@@ -1766,8 +1766,12 @@ body.sub-page p.lg {
     background-size: cover;
     background-position: bottom center;
 }
-.sub-page-feature {
-
+.promo-text {
+    background: #0473bc;
+    background-image: url('/dist/assets/images/about-bg.png');
+    background-repeat: no-repeat;
+    padding: 30px 0;   
+    color: #fff;
 }
 /* USA Footer */
 .bg-blue-90v, .hover\:bg-blue-90v:hover {
