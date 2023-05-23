@@ -15,6 +15,13 @@ body {
 h1, h2, h3, p {
     -webkit-font-smoothing: antialiased;
 }
+h2, h3 {
+    font-family: 'Merriweather', 'Georgia';
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
 .centered {
     margin: auto;
 }
@@ -1409,30 +1416,15 @@ ul.b {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-/* tab**** */
-
-/* .adele-btn:active {
-background-color: #080E20 !important;
-border-top:  10px solid #fac921!important;
-    color: whitesmoke;
-    
-    height: 100%;
-    font-weight: bold;
-    
-    } */
-
 
 .w3-red, .w3-hover-red:hover {
-
     background-color: #080E20 !important;
     border-top: 10px solid #fac921!important;
     border-top-style: outset;
     color: whitesmoke;
     width: 100%;
     height: 100%;
-    
-    /* margin-top: -2px;
-    padding: 20px; */
+
 }
 
 
@@ -1737,7 +1729,6 @@ p.box-description {
     color: #0071BB;
 }
 body.sub-page #main-content p {
-    font-family: 'Arial', 'Source Sans Pro Web', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 30px;
@@ -1745,6 +1736,18 @@ body.sub-page #main-content p {
 body.sub-page #main-content p.lg {
     font-size: 24px;
     line-height: 30px;
+}
+.blue-gradient {
+    padding: 50px 0 125px 0;
+    background: rgb(0,31,58);
+    background: linear-gradient(90deg, rgba(0,31,58,1) 0%, rgba(0,62,115,1) 47%);
+    color: #fff;
+    border-top: 11px solid #FAC922;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    z-index: -1 !important;
+}
+.blue-gradient h2 {
+    font-size: 55px;
 }
 .mid-blue {
     padding: 50px 0 85px 0;
@@ -1808,7 +1811,48 @@ body.sub-page #main-content p.lg {
     background-size: cover;
     background-position: bottom center;
 }
-
+.engage-blue {
+    
+}
+.engage-blue img {
+    width: 270px;
+    height: auto;
+}
+.engage-blue p a {
+    color: #fff;
+}
+.summit-series {
+    background: url(/dist/assets/images/homepage/why-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin-top: -130px;
+    z-index: -3;
+    position: relative;
+    opacity: 1;
+    z-index: -1;
+}
+.summit-series-inner {
+    background: url(/dist/assets/images/summit-bg-lg.png); 
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+    background-size: cover; 
+    
+}
+.summit-series .right-column img {
+    border: 10px solid #fff;
+}
+.yellow-more-info {
+    background: rgb(250,201,34);
+    background: linear-gradient(90deg, rgba(250,201,34,0) 0%, rgba(250,201,34,1) 53%);
+    color: #000;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.yellow-more-info a {
+    color: #000 !important;
+}
 /* USA Footer */
 .bg-blue-90v, .hover\:bg-blue-90v:hover {
     background-color: #0e1d33 !important;

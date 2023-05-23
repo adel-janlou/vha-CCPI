@@ -35,7 +35,8 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
 
     <!-- CSS-->
     <link rel="stylesheet" href="/dist/css/styles.css" />
@@ -52,6 +53,7 @@
 </head>
 
 <body class="bg-gray-5 sub-page page-about">
+    <div id="head"></div>
     <div id="header"></div>
     <div id="crisis-modal"></div>
     <main id="main-content">
@@ -70,7 +72,7 @@
             <div class="grid-container">
                 <div class="grid-row">
                     <div class="tablet:grid-col-6">
-                        <img src="/dist/assets/images/about-brochure.png" class=""/>
+                        <img src="/dist/assets/images/engage-header.png" class=""/>
                     </div>
                     <div class="tablet:grid-col-5 flex-align-self-center">
                         <div class="sub-page-upper-content">
@@ -85,64 +87,54 @@
         </div>
       </section>
 
-    <section class="mid-blue">
+    <section class="engage-blue blue-gradient">
         <div class="grid-container sm-container">
-            <div class="grid-row">
-                <div class="tablet:grid-col-12">
+            <div class="grid-row flex-justify-center grid-gap-6">
+                <div class="tablet:grid-col-6">
                     <h2>AI Tech Sprints</h2>
-                    <p>The AI Tech Sprints are a series of competitions hosted by the VA National Artificial Intelligence Institute (NAII). Through a three-month competitive engagement, teams strive to provide a new approach to innovation to meet Veteran needs. The competitions encourage collaboration between industry, academia and VA, as participants create AI-enabled tools that leverage federal data to address specific Veteran health care issues.​</p>
+                    <p class="text-bold">The AI Tech Sprints are a series of competitions hosted by the VA National Artificial Intelligence Institute (NAII). Through a three-month competitive engagement, teams strive to provide a new approach to innovation to meet Veteran needs. The competitions encourage collaboration between industry, academia and VA, as participants create AI-enabled tools that leverage federal data to address specific Veteran health care issues.​</p>
                     <p>During the 2022 AI Tech Sprint, teams worked to produce prototype learning platforms for the All Services Personnel and Institutional Readiness Engine (ASPIRE) project with mentors from many federal agencies and AI experts to create or refine a computer-based platform to test and train users in important tech skills. The ultimate goal is to create a testing and training system that will be used across the federal workforce. ​</p>
-                    <p><a href="#">Click here to learn more about the AI Tech Sprints.</a></p>
+                    <p class="text-bold"><a href="#">Click here to learn more about the AI Tech Sprints.</a></p>
+                </div>
+                <div class="tablet:grid-col-auto">
+                  <img src="/dist/assets/images/engage-tech-sprint.png"/>
                 </div>
             </div>
         </div>      
     </section>
 
-    <section class="sub-page-feature"> 
-        <div class="grid-container sm-container">
-            <div class="grid-row">
-                <div class="tablet:grid-col-5 flex-align-self-bottom">
-                    <img src="/dist/assets/images/about-amvet-cut.png" />
-                </div>
-                <div class="tablet:grid-col-7 flex-align-self-center">
-                    <h2>VA National Artificial Intelligence Institute</h2>
-                    <p class="blue text-bold">The VA National Artificial Intelligence Institute (NAII) is a joint initiative of the VA Office of Research and Development and the Secretary's Center for Strategic Partnerships.</p>
-                    <p>Founded in 2019, the NAII continues to expand AI efforts, resulting in promising AI research and collaborations that demonstrate great potential to leverage AI to improve Veteran care. The NAII is considered the preeminent organization for AI research, implementation, policy and collaboration at VA.</p>
-                </div>
-            </div>
-        </div>        
-    </section>
+    <section class="summit-series"> 
+      <div class="summit-series-inner">
+      <div class="grid-container sm-container">
+            <div class="grid-row grid-gap-4">
+                <div class="tablet:grid-col-7 flex-align-self-bottom left-column flex-align-self-end">
+                    <div class="yellow-more-info">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="79.21" height="54.169" viewBox="0 0 79.21 54.169">
+                        <path id="Path_1151" data-name="Path 1151" d="M6625.834,2311.872H6576.4a2.353,2.353,0,0,0-2.354,2.354V2336.4h-22.53a2.463,2.463,0,0,0-2.279,1.452,2.573,2.573,0,0,0,2.323,3.658h22.486v22.155a2.375,2.375,0,0,0,2.376,2.375h49.417a2.375,2.375,0,0,0,2.376-2.375v-49.418a2.376,2.376,0,0,0-2.376-2.376Zm-2.734,49.059h-43.948v-19.419h22.488l-7.923,7.922a2.559,2.559,0,0,0,3.619,3.619l12.267-12.266a2.578,2.578,0,0,0,0-3.619l-12.267-12.266a2.556,2.556,0,0,0-3.619,3.577l7.923,7.922h-22.488v-19.419H6623.1Z" transform="translate(-6549 -2311.872)" fill="#0a1133"/>
+                      </svg>
+                      
+                      For more information on the<br /> 2022 BRAIN Summit, <a href="#">click here</a>.
 
-    <section class="white-section">
-        <div class="grid-container sm-container">
-            <div class="grid-row">
-                <div class="grid-col-12">
-                    <h2>​AI Network</h2>
-                    <p class="text-bold">VA launched the AI Network, which consists of AI researchers and practitioners across a growing number of VA medical centers (VAMCs) to help advance AI research and maximize the benefits of AI for Veterans. Experts in different areas of AI, medicine and/or health care are encouraged to join the AI Network to help develop and launch AI solutions to improve VA operations and address issues of importance to Veterans' health.</p>
-                    <p>The AI Network is also utilized in efforts to build AI R&D capacity across the VA enterprise by establishing centers with different areas of expertise. Engagement with partners across government, industry and academia will help expand AI R&D capacity to ensure that AI use cases for today and the future are enabled.</p>
+                    </div>
+                </div>
+                <div class="tablet:grid-col-5 flex-align-self-center right-column">
+                    <img src="/dist/assets/images/engage-summit-panel.jpg" class="oneshadow"/>
+                    <h2>AI Summit Series</h2>
+                    <p class="blue text-bold">NAII launched the AI Summit Series in 2022 to bring together AI professionals and stakeholders to address the various ways AI can improve health outcomes and health care services for Veterans and the public.</p>
+                    <p class="text-bold">The inaugural event of the series, the Brain Health and Rehabilitation through Artificial Intelligence Network (BRAIN) Summit, highlighted how AI is impacting three areas of critical importance to Veteran health: brain cancer, traumatic brain injury (TBI) and rehabilitation, and mental health.​</p>
+                    <p>More than 500 attendees gathered to hear about the potential of AI regarding Veteran health care, including how the technology can help with suicide prevention, applying AI learning to address TBI and brain cancer, and emerging applications and AI regulation.​</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="promo-text">
-        <div class="grid-container xsm-container">
-            <div class="grid-row">
-                <div class="grid-col-12">
-                    <h3>VA is committed to creating and implementing 
-                        AI solutions for the health and well-being of our
-                        nation's Veterans that is transparent, unbiased 
-                        and adheres to the highest level of oversight.</h3>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     </main>
     <div id="footer"></div>
     <script>
-        $('#header').load('partials/head.html');
-        $('#crisis-modal').load('partials/crisis-modal.html');
+        //$('#head').load('partials/head.html');
+        //$('#crisis-modal').load('partials/crisis-modal.html');
+        $('#header').load('partials/header.html');
         $('#footer').load('partials/footer.html');
     </script>
 
