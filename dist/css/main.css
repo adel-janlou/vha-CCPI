@@ -1843,8 +1843,12 @@ body.sub-page #main-content p.lg {
     background-repeat: no-repeat;
     background-position: bottom left; 
     background-size: cover; 
-    
 }
+@media (min-width: 1800px) {
+    .summit-series-inner {
+      background-position: bottom -200px left;
+    }
+  }
 .summit-series .right-column img {
     border: 10px solid #fff;
 }
