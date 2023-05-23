@@ -1722,7 +1722,7 @@ p.box-description {
     margin-left: -100px;
     z-index: 1;
 }
-.sub-page-upper-content {
+body.page-about .sub-page-upper-content {
     margin-left: -100px;
 }
 .blue {
@@ -1807,9 +1807,15 @@ body.sub-page #main-content p.lg {
 }
 .engage-upper {
     background: url(/dist/assets/images/homepage/why-bg.svg);
+    background: url(/dist/assets/images/engage-top-combined-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+}
+@media (min-width: 1800px) {
+  .engage-upper {
+    background-position: bottom -120px center;
+  }
 }
 .engage-blue {
     
