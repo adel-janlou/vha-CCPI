@@ -1902,7 +1902,17 @@ body.sub-page #main-content p.lg {
     background-repeat: no-repeat;
     background-position: top left; 
     background-size: contain;
-  
+}
+.trustworthy-blue .btn-naii {
+    font-size: 26px;
+    font-family: 'Merriweather', 'Georgia';
+    color: #1E2D3E;
+}
+.trustworthy-blue .btn-naii:hover {
+    color: #fff;
+}
+.trustworthy-blue .btn-naii:hover svg path {
+    fill: #fff;      
 }
 .usa-footer {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
