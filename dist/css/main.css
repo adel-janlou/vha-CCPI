@@ -1867,13 +1867,50 @@ body.sub-page #main-content p.lg {
 .bg-blue-90v, .hover\:bg-blue-90v:hover {
     background-color: #0e1d33 !important;
 }
-
+.trustworthy-upper {
+    background: #fff;
+    padding: 40px 0;
+    background: url(/dist/assets/images/trustworthy-header-cropped.png); 
+    background-repeat: no-repeat;
+    background-position: bottom right; 
+    background-size: contain; 
+}
+.sub-page .trustworthy-upper h2 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 24px;
+    font-weight: 700;
+}
+.sub-page .trustworthy-upper h3 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 32px;
+    font-weight: 700;
+}
+.trustworthy-upper img {
+    width: 400px;
+    height: auto;
+}
+.trustworthy-blue h2 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 24px;
+    font-weight: 700;
+}
+.trustworthy-blue a {
+    color: unset;
+}
+.trustworthy-feature .grid-container {
+    background-image: url(/dist/assets/images/trustworthy-veteran.png); 
+    background-repeat: no-repeat;
+    background-position: top left; 
+    background-size: contain;
+  
+}
 .usa-footer {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.06rem;
     line-height: 1.5;
     overflow: hidden;
-  }
+}
+
   
   .usa-footer > .grid-container {
     margin-left: auto;
