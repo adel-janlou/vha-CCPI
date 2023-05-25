@@ -1486,12 +1486,15 @@ ul.b {
 
 /* midle section with background  */
 .mid-image {
-    min-height: 700px;
+    
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url(/dist/assets/images/homepage/mid-image-bg.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    color: #fff;
+    padding: 50px 0 175px 0;
 }
 @media (max-width: 1500px) {
     .mid-image {
@@ -1503,25 +1506,38 @@ ul.b {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
     }
 }
+.mid-image-content {
+    background: rgb(0,113,187);
+}
+.mid-fade-left {
+    background: rgb(0,113,187);
+    background: linear-gradient(90deg, rgba(0,113,187,0) 0%, rgba(0,113,187,1) 63%);
+}
+.mid-fade-right {
+    background: rgb(0,113,187);
+    background: linear-gradient(90deg, rgba(0,113,187,1) 37%, rgba(0,113,187,0) 100%);
+}
 .mid-image h2 {
     font-size:36px; 
-    font-family: 'Georgia','Merriweather', 'Times New Roman', Times, serif;
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
     font-weight: 500;
+    margin-left: 2.5rem;
 }
 .mid-image p {
-    line-height: 1.7;
-    letter-spacing: .6px; 
-    font-size: 22px; 
-    font-weight: 500;
-    font-family: 'Arial',Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif !important;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
 }
-p.mission-statement {
-    font-size: 18px;
-    line-height: 2.2rem;
+.mission-content {
+    mmargin-left: -100px;
+    position: relative;
+}
+.vision-content {
+    padding-left: 2.5rem;
 }
 #why {
     margin-top: -130px;
-    padding-top: 130px;
+    padding-top: 100px;
     background: url(/dist/assets/images/homepage/why-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1560,7 +1576,7 @@ img.veteran {
     height: auto;
     margin: 0;
     padding: 0;
-    margin-top: -150px;
+    
     margin-bottom: -4px;
 }
 
@@ -1910,6 +1926,10 @@ body.sub-page #main-content p.lg {
 }
 .trustworthy-blue .btn-naii:hover {
     color: #fff;
+}
+.trustworthy-blue svg {
+    margin-bottom: -5px;
+    margin-right: 5px;
 }
 .trustworthy-blue .btn-naii:hover svg path {
     fill: #fff;      

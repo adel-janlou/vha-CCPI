@@ -42,13 +42,13 @@
     <!-- USWDS INIT-->
     <script src="assets/vendor/uswds-init.min.js"></script>
     <script rel="preload" href="assets/vendor/uswds.min.js" as="script"></script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
 
 </head>
 
 <body class="bg-gray-5">
+    <div id="head"></div>
     <div id="header"></div>
     <div id="crisis-modal"></div>
     <script>
@@ -142,28 +142,28 @@
         </script>
 
         <section class="mid-image">
-            <div class="grid-container">
-                <div class="grid-row grid-gap-1 padding-bottom-15">
-                    <div class="tablet:grid-col-7 text-left text-white padding-top-5 padding-bottom-5">
-                        <h2>VA Artificial Intelligence Vision Statement</h2>
-                        <p class="padding-bottom-4">
-                            <strong>
-                                The VA’s Artificial Intelligence (AI) vision is to improve outcomes and experiences for our
-                                Veterans by developing trustworthy AI capabilities to support the Department of Veterans
-                                Affairs mission.
-                            </strong>
-                        </p>       
-
-                        <h2><i> Mission Statement</i></h2>
-
-                        <p class="padding-bottom-5 mission-statement">
-                            The Department of Veterans Affairs will build robust capatab
-                            in AI to develop and apply innovative AI solutions and transform
-                            the VA by facilitating a learning environment that supports the
-                            delivery of world-class benefits and services to our Veterans
-                        </p>
-                    </div>
+            <div class="grid-row tablet:flex-justify-center">
+                <div class="tablet:grid-col-4">
+                    <h2>VA Artificial Intelligence<br />Vision Statement</h2>
                 </div>
+            </div>
+            <div class="grid-row tablet:flex-justify-start">
+                <div class="tablet:grid-col-4 mid-fade-left">&nbsp;</div>
+                <div class="tablet:grid-col-4 mid-image-content vision-content">
+                    <p class="padding-right-5">The VA’s Artificial Intelligence (AI) vision is to improve outcomes and experiences for our Veterans by developing trustworthy AI capabilities to support the Department of Veterans Affairs mission.</p>
+                </div>
+            </div>
+            <div class="grid-row tablet:flex-justify-center">
+                <div class="tablet:grid-col-4">
+                    <h2><i> Mission Statement</i></h2>
+                </div>
+            </div>
+            <div class="grid-row tablet:flex-justify-end">
+                <div class="tablet:grid-col-4 mid-image-content mission-content margin-left-5">
+                    <p class="padding-left-5">The Department of Veterans Affairs will build robust capabilities in AI to develop and apply innovative AI solutions and transform the VA by facilitating a learning environment that supports the delivery of world-class benefits and services to our Veterans.</p>
+                </div>
+                <div class="tablet:grid-col-4 mid-fade-right">&nbsp;</div>
+            </div>
         </div>
         </section>
         
@@ -173,7 +173,7 @@
                     <div class="tablet:grid-col-6 flex-align-self-end">
                         <img class="veteran flex-align-self-end"src="/dist/assets/images/homepage/why-ww2-vet.png" alt="image-holder ">
                     </div>
-                    <div class="tablet:grid-col-6 text-center">
+                    <div class="tablet:grid-col-6 flex-align-self-center text-center">
                         <h1>Why AI <em>at</em> VA?</h1>
                         <p class="text-left"><strong>VA is leading the development of AI solutions to benefit Veterans, their caregivers and survivors.</strong></p>
                         <hr>
@@ -312,8 +312,9 @@
     <div id="footer"></div>
     
     <script>
-        $('#header').load('partials/head.html');
-        $('#crisis-modal').load('partials/crisis-modal.html');
+        //$('#head').load('partials/head.html');
+        //$('#crisis-modal').load('partials/crisis-modal.html');
+        $('#header').load('partials/header.html');
         $('#footer').load('partials/footer.html');
     </script>
 
