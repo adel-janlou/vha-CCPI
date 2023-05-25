@@ -1902,7 +1902,7 @@ body.sub-page #main-content p.lg {
     font-weight: 700;
 }
 .trustworthy-upper img {
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 .trustworthy-blue h2 {
@@ -1933,6 +1933,12 @@ body.sub-page #main-content p.lg {
 }
 .trustworthy-blue .btn-naii:hover svg path {
     fill: #fff;      
+}
+body.page-trustworthy .promo-text {
+    padding: 0;
+}
+body.page-trustworthy .promo-text .btn-naii {
+    margin-bottom: 5px;
 }
 .usa-footer {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
