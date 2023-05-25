@@ -1628,7 +1628,6 @@ img.veteran {
     height: 536px;
 }
 .tab {
-    
     overflow: hidden;
 }
 img.brochure {
@@ -1666,7 +1665,8 @@ h2 {
     border: 0; 
     width: 100%;
     font-size: 31px;
-    font-family: 'Georgia',Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif !important;
+    /*font-family: 'Georgia',Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif !important;*/
+    font-family: 'Merriweather Web',Georgia,Cambria,Times New Roman,Times,serif!important;
 }
 button:focus-visible, a:focus-visible {
     outline: 0.25rem solid #2491ff !important;
