@@ -1891,6 +1891,17 @@ body.sub-page #main-content p.lg {
     background-position: bottom right; 
     background-size: contain; 
 }
+@media (max-width: 1450px) {
+    .trustworthy-upper {
+        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1)), url('/dist/assets/images/trustworthy-header-cropped.png') no-repeat top right;
+        background-position: top right -100px;
+    }
+}
+@media (max-width: 700px) {
+    .trustworthy-upper {
+        background: none;
+    }
+}
 .sub-page .trustworthy-upper h2 {
     font-family: 'Source Sans Pro', sans-serif !important;
     font-size: 24px;
@@ -1918,6 +1929,20 @@ body.sub-page #main-content p.lg {
     background-repeat: no-repeat;
     background-position: top left; 
     background-size: contain;
+}
+body.page-trustworthy .blue-gradient {
+    padding: 50px 0 60px 0;
+}
+@media (max-width: 1300px) {
+    .trustworthy-feature .grid-container {
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/trustworthy-veteran.png) no-repeat top right;
+        background-size: cover;
+        background-position: top center -200px;
+    }
+    body.page-trustworthy .sub-page-feature {
+        margin-top: -200px;
+        padding-top: 200px;
+    }
 }
 .trustworthy-blue .btn-naii {
     font-size: 26px;
