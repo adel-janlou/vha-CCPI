@@ -1977,6 +1977,12 @@ body.page-about .blue-gradient h2 {
     background-size: contain;
     background-color: rgba(234, 239, 239, 1);
 }
+.about-feature .grid-container {
+    background-image: url(/dist/assets/images/about-amvet-cut.png);
+    background-repeat: no-repeat;
+    background-position: top left 100px; 
+    background-size: contain;
+}
 body.page-trustworthy .blue-gradient {
     padding: 50px 0 60px 0;
 }
@@ -1985,6 +1991,10 @@ body.page-trustworthy .blue-gradient {
         background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/trustworthy-veteran.png) no-repeat top right;
         background-size: cover;
         background-position: top center -200px;
+    }
+    .about-feature .grid-container {
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/about-amvet-cut.png) no-repeat top center;
+        background-size: contain;
     }
     body.page-trustworthy .sub-page-feature {
         margin-top: -200px;
