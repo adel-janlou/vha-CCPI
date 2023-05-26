@@ -1721,7 +1721,6 @@ p.box-description {
     padding: 0;
 }
 .sub-page h2 {
-    font-family: 'Georgia','Cambria','Times New Roman','Times',serif !important;
     font-weight: 500;
     font-size: 40px;
 }
@@ -1741,6 +1740,30 @@ p.box-description {
 body.page-about .sub-page-upper-content {
     margin-left: -100px;
 }
+@media (max-width: 1600px) {
+    .sub-page-upper img {
+        width: 80%;
+        height: auto;
+        margin-bottom: -100px;
+        margin-left: -40px;
+    }
+}
+@media (max-width: 1000px) {
+    .sub-page-upper img {
+        width: 50%;
+        height: auto;
+        margin-bottom: unset;
+        margin-left: unset;
+        margin: 0 auto;
+    }
+    .about-brochure {
+        text-align: center;
+    }
+    body.page-about .sub-page-upper-content {
+        margin-left: unset;
+    }
+}
+
 .blue {
     color: #0071BB;
 }
@@ -1765,17 +1788,9 @@ body.sub-page #main-content p.lg {
 .blue-gradient h2 {
     font-size: 55px;
 }
-.mid-blue {
-    padding: 50px 0 85px 0;
-    background: rgb(0,31,58);
-    background: linear-gradient(90deg, rgba(0,31,58,1) 0%, rgba(0,62,115,1) 47%);
-    color: #fff;
-    border-top: 11px solid #FAC922;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    z-index: -1 !important;
-}
-.mid-blue h2 {
+body.page-about .blue-gradient h2 {
     text-align: center;
+    font-size: 40px;
     max-width: 450px;
     margin: 0 auto 40px auto;
 }
@@ -1960,7 +1975,7 @@ body.sub-page #main-content p.lg {
     background-repeat: no-repeat;
     background-position: top left; 
     background-size: contain;
-    background-color: rgba(234, 239, 239, 1;
+    background-color: rgba(234, 239, 239, 1);
 }
 body.page-trustworthy .blue-gradient {
     padding: 50px 0 60px 0;
