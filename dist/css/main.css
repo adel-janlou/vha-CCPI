@@ -1822,7 +1822,6 @@ body.sub-page #main-content p.lg {
     text-align: center;
 }
 .engage-upper {
-    background: url(/dist/assets/images/homepage/why-bg.svg);
     background: url(/dist/assets/images/engage-top-combined-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1832,6 +1831,12 @@ body.sub-page #main-content p.lg {
   .engage-upper {
     background-position: bottom -120px center;
   }
+}
+@media (max-width: 1000px) {
+    .engage-upper {
+        background: linear-gradient(rgba(234, 239, 239, 0.65), rgba(234, 239, 239, .8)), url(/dist/assets/images/engage-top-combined-bg.png) no-repeat bottom center;
+        background-size: cover;
+    }
 }
 .engage-blue {
     
@@ -1860,14 +1865,25 @@ body.sub-page #main-content p.lg {
     background-position: bottom left; 
     background-size: cover; 
 }
+.summit-series .right-column img {
+    border: 10px solid #fff;
+}
 @media (min-width: 1800px) {
     .summit-series-inner {
       background-position: bottom -200px left;
     }
-  }
-.summit-series .right-column img {
-    border: 10px solid #fff;
 }
+@media (max-width: 1000px) {
+    .summit-series {
+        margin-top: unset;
+    }
+    .summit-series-inner {
+        background: linear-gradient(rgba(234, 239, 239, 0.65), rgba(234, 239, 239, .8)), url(/dist/assets/images/summit-bg-lg.png) no-repeat bottom center;
+        background-size: cover;
+    }
+}
+
+
 .yellow-more-info {
     background: rgb(250,201,34);
     background: linear-gradient(90deg, rgba(250,201,34,0) 0%, rgba(250,201,34,1) 53%);
@@ -1875,6 +1891,11 @@ body.sub-page #main-content p.lg {
     padding: 20px;
     margin-bottom: 30px;
     text-align: right;
+}
+@media (max-width: 1000px) {
+    .yellow-more-info {
+        margin-right: -1rem;
+    }
 }
 .yellow-more-info a {
     color: #000 !important;
@@ -1916,6 +1937,16 @@ body.sub-page #main-content p.lg {
     width: 500px;
     height: auto;
 }
+@media (max-width: 800px) {
+    .blue-gradient {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    }
+}
+@media (max-width: 1000px) {
+    .engage-blue {
+        clip-path: unset;
+    }
+}
 .trustworthy-blue h2 {
     font-family: 'Source Sans Pro', sans-serif !important;
     font-size: 24px;
@@ -1929,6 +1960,7 @@ body.sub-page #main-content p.lg {
     background-repeat: no-repeat;
     background-position: top left; 
     background-size: contain;
+    background-color: rgba(234, 239, 239, 1;
 }
 body.page-trustworthy .blue-gradient {
     padding: 50px 0 60px 0;
