@@ -1623,9 +1623,14 @@ img.globe {
     height: auto;
     margin-top: 100px;
 }
+@media (max-width: 1024px) {
+    #tab-container {
+        height: unset;
+        min-height: 60%;
+    }
+}
 @media (max-width: 640px) {
     #tab-container {
-        height: 420px;
         text-align: center;
     }
     img.brochure {
@@ -1856,10 +1861,11 @@ body.page-about .blue-gradient h2 {
     }
 }
 .engage-blue {
-    
+    position: relative;
+    z-index: 2 !important;
 }
 .engage-blue img {
-    width: 270px;
+    width: 300px;
     height: auto;
 }
 .engage-blue p a {
@@ -1871,10 +1877,9 @@ body.page-about .blue-gradient h2 {
     background-size: cover;
     background-position: bottom center;
     margin-top: -130px;
-    z-index: -3;
     position: relative;
     opacity: 1;
-    z-index: -1;
+    z-index: 1 !important;
 }
 .summit-series-inner {
     background: url(/dist/assets/images/summit-bg-lg.png); 
@@ -1908,7 +1913,11 @@ body.page-about .blue-gradient h2 {
     padding: 20px;
     margin-bottom: 30px;
     text-align: right;
+    position: relative;
+    z-index: 2 !important;
+
 }
+
 @media (max-width: 1000px) {
     .yellow-more-info {
         margin-right: -1rem;
