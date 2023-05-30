@@ -15,7 +15,7 @@ body {
 h1, h2, h3, p {
     -webkit-font-smoothing: antialiased;
 }
-h2, h3 {
+h1, h2, h3 {
     font-family: 'Merriweather', 'Georgia';
 }
 p {
@@ -1545,22 +1545,6 @@ ul.b {
     border-bottom: 10px solid #fac921!important;
     padding-bottom: 0 !important;
 }
-#why h1 {
-    font-family: 'Georgia','Merriweather Web',Georgia,Cambria,Times New Roman,Times,serif!important; 
-    font-size: 58px;
-    font-weight: 500 !important;
-}
-#why p {
-    font-size:25px; 
-    font-family: 'Arial','Source Sans Pro Web',Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;
-    padding: 0 20px;
-    margin: 0 0 30px 0;
-}
-#why hr {
-    max-width: 300px; 
-    border: .5px solid rgba(10, 17, 51, .2);
-    margin-bottom: 30px;
-}
 .yellow-btn {
     background-color: white; color: #000; 
     border-radius: 10px;   
@@ -1639,12 +1623,30 @@ img.globe {
     height: auto;
     margin-top: 100px;
 }
-#tab-containerr img {
-    display: block;
-    max-width:100%;
-    width: auto;
-    height: auto;    
+@media (max-width: 640px) {
+    #tab-container {
+        height: 420px;
+        text-align: center;
+    }
+    img.brochure {
+        width: 200px !important;
+        height: auto;
+    }
+    img.globe {
+        width: 200px;
+        height: auto;
+        margin-top: unset;
+        display: none;
+    }
+    img.use-case {
+        width: 130px;
+        height: auto;
+        display: none;
+    }
 }
+
+
+
 .tab h2 {
     font-family: 'Merriweather Web',Georgia,Cambria,Times New Roman,Times,serif!important;
     font-size: 50px;
@@ -1975,7 +1977,7 @@ body.page-about .blue-gradient h2 {
     background-repeat: no-repeat;
     background-position: top left; 
     background-size: contain;
-    background-color: rgba(234, 239, 239, 1);
+    /*background-color: rgba(234, 239, 239, 1);*/
 }
 .about-feature .grid-container {
     background-image: url(/dist/assets/images/about-amvet-cut.png);
@@ -1983,12 +1985,18 @@ body.page-about .blue-gradient h2 {
     background-position: top left 100px; 
     background-size: contain;
 }
+.why-feature .grid-container {
+    background-image: url(/dist/assets/images/homepage/why-ww2-vet.png);
+    background-repeat: no-repeat;
+    background-position: top left; 
+    background-size: contain;
+}
 body.page-trustworthy .blue-gradient {
     padding: 50px 0 60px 0;
 }
 @media (max-width: 1300px) {
     .trustworthy-feature .grid-container {
-        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/trustworthy-veteran.png) no-repeat top right;
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/trustworthy-veteran.png) no-repeat top center;
         background-size: cover;
         background-position: top center -200px;
     }
@@ -1996,10 +2004,28 @@ body.page-trustworthy .blue-gradient {
         background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/about-amvet-cut.png) no-repeat top center;
         background-size: contain;
     }
+    .why-feature .grid-container {
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/homepage/why-ww2-vet.png) no-repeat top center;
+        background-size: contain;
+    }
     body.page-trustworthy .sub-page-feature {
         margin-top: -200px;
         padding-top: 200px;
     }
+}
+.why-feature h1 {
+    font-size: 58px;
+    font-weight: 500 !important;
+}
+.why-feature p {
+    font-size:25px; 
+    padding: 0 20px;
+    margin: 0 0 30px 0;
+}
+.why-feature hr {
+    max-width: 300px; 
+    border: .5px solid rgba(10, 17, 51, .2);
+    margin-bottom: 30px;
 }
 .trustworthy-blue .btn-naii {
     font-size: 26px;
