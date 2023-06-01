@@ -16,10 +16,12 @@ h1, h2, h3, p {
     -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3 {
-    font-family: 'Merriweather', 'Georgia';
+    /*font-family: 'Merriweather', 'Georgia';*/
+    font-family: 'Merriweather Web', 'Georgia';
 }
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Source Sans Pro Web', sans-serif;
     font-weight: 400;
 }
 .centered {
@@ -1569,10 +1571,10 @@ img.veteran {
 }
 
 .box-2 {
-    background-image: url(/dist/assets/images/homepage/BUTTON.png);
+    /*background-image: url(/dist/assets/images/homepage/BUTTON.png);
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: cover;*/
+    background: #112E51;
 }
 
 .box-pro {
@@ -2002,23 +2004,24 @@ body.page-about .blue-gradient h2 {
 body.page-trustworthy .blue-gradient {
     padding: 50px 0 60px 0;
 }
-@media (max-width: 1300px) {
+
+@media (max-width: 1024px) {
     .trustworthy-feature .grid-container {
         background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/trustworthy-veteran.png) no-repeat top center;
         background-size: cover;
         background-position: top center -200px;
     }
-    .about-feature .grid-container {
-        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/about-amvet-cut.png) no-repeat top center;
-        background-size: contain;
+    body.page-trustworthy .sub-page-feature {
+        margin-top: -200px;
+        padding-top: 200px;
     }
     .why-feature .grid-container {
         background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/homepage/why-ww2-vet.png) no-repeat top center;
         background-size: contain;
     }
-    body.page-trustworthy .sub-page-feature {
-        margin-top: -200px;
-        padding-top: 200px;
+    .about-feature .grid-container {
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/about-amvet-cut.png) no-repeat top center;
+        background-size: contain;
     }
 }
 .why-feature h1 {
