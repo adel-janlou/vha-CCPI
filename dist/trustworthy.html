@@ -51,9 +51,151 @@
 </head>
 
 <body class="bg-gray-5 sub-page page-trustworthy">
-    <div id="head"></div>
-    <div id="header"></div>
-    <div id="crisis-modal"></div>
+    <!-- VA Crisis Header-->
+    <div class="usa-overlay"></div>
+<section class="usa-banner position-relative" aria-label="Official government website">
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner position-relative">
+                <div class="grid-col-auto"><img class="usa-banner__header-flag" src="assets/img/us_flag_small.png"
+                        alt="U.S. flag" /></div>
+                <div class="grid-col-fill tablet:grid-col-auto">
+                    <p class="usa-banner__header-text">An official website of the United States government</p>
+                    <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+                </div>
+                <button class="usa-accordion__button usa-banner__button" type="button" aria-expanded="false"
+                    aria-controls="gov-banner-default"><span class="usa-banner__button-text">Here's how you
+                        know</span></button>
+            </div>
+        </header>
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-dot-gov.svg" role="img"
+                        alt="" aria-hidden="true" />
+                    <div class="usa-media-block__body">
+                        <p><strong>Official websites use .gov</strong><br />A <strong>.gov</strong> website belongs
+                            to an official government organization in the United States.</p>
+                    </div>
+                </div>
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="assets/img/icon-https.svg" role="img"
+                        alt="" aria-hidden="true" />
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Secure .gov websites use HTTPS</strong><br />A <strong>lock</strong> (<span
+                                class="icon-lock"><svg class="usa-banner__lock-image"
+                                    xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64"
+                                    role="img" aria-labelledby="banner-lock-title banner-lock-description"
+                                    focusable="false">
+                                    <title id="banner-lock-title">Lock</title>
+                                    <desc id="banner-lock-description">A locked padlock</desc>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z">
+                                    </path>
+                                </svg></span>) or <strong>https://</strong> means you've safely connected to the
+                            .gov website. Share sensitive information only on official, secure websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="usa-button usa-button--secondary va-crisis-line" href="#crisis-line-modal"
+        aria-controls="crisis-line-modal" data-open-modal>
+        <div class="va-crisis-line-inner">
+            <span class="va-crisis-line-icon" aria-hidden="true"><img src="assets/img/VCL-icon-white.svg" alt=""
+                    aria-hidden="true" /></span><span class="va-crisis-line-text">Talk to the <strong>Veterans
+                    Crisis Line</strong> now</span><img class="va-crisis-line-arrow" alt="" aria-hidden="true"
+                src="assets/img/arrow-right-white.svg" />
+        </div>
+    </a>
+</section>
+
+<header class="usa-header usa-header--extended" style="background-color: rgb(14, 38, 64);">
+  <div class="usa-navbar">
+      <div id="extended-logo" class="usa-logo">
+          <em class="usa-logo__text">
+              <a href="#" title="SimLearn | Home Page" aria-label="Home">
+                  <span class="logo text-white">VA </span>
+                  <span class="text-white text-thin"> | Artificial Intelligence</span></a>
+          </em>
+
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+  </div>
+  <nav role="navigation" class="usa-nav" style="background-color: rgb(14, 38, 64);">
+      <div class="usa-nav__inner">
+          <button class="usa-nav__close"><img src="/assets/uswds-2.0.3/img/close.svg" alt="close"></button>
+          <ul class="usa-nav__primary usa-accordion">
+              <li class="usa-nav__primary-item">
+                  <a href="index.html" title="VA Artificial Intelligence | Home page" class="usa-nav__link usa-link"><i
+                    class="fa fa-home icon-left text-white" aria-hidden="false"></i> Home</a>
+              </li>
+              <li class="usa-nav__primary-item">
+                <a href="about.html" title="About AI@VA" class="usa-nav__link usa-link"><i class="fa fa-home icon-left text-white" aria-hidden="false"></i> About</a>
+              </li>
+              <li class="usa-nav__primary-item">
+                  <a href="engage.html" title="Engage with AI@VA" class="usa-nav__link usa-link"> Engage with AI@VA
+                  </a>
+              </li>
+              <li class="usa-nav__primary-item">
+                  <a href="trustworthy.html" title="Trustworthy AI" class="usa-nav__link usa-link"> Trustworthy AI </a>
+              </li>
+
+          </ul>
+      </div>
+      <div class="usa-nav__secondary"></div>
+  </nav>
+</header>
+    <!-- VA Crisis Header End-->
+    <div id="crisis-modal">
+        <div class="usa-modal crisis-line-modal" id="crisis-line-modal" aria-labelledby="crisis-modal-heading"
+        aria-describedby="crisis-modal-description">
+        <div class="usa-modal__content">
+            <div class="usa-modal__main">
+                <h2 class="usa-modal__heading" id="crisis-modal-heading">
+                    <div class="display-flex flex-align-center"><img class="vcl-logo" src="assets/img/vcl-logo.png"
+                            alt="Veterans Crisis Line Logo" />We're here anytime, day or night – 24/7</div>
+                </h2>
+                <div class="usa-prose">
+                    <p id="crisis-modal-description">If you are a Veteran in crisis or concerned about one, connect with
+                        our caring, qualified responders for confidential help. Many of them are Veterans themselves.
+                    </p>
+                </div>
+                <div class="crisis-links">
+                    <div class="crisis-link border-top border-base-lighter">
+                        <img class="usa-icon" src="assets/img/material-icons/phone.svg" aria-hidden="true"
+                            focusable="false" /><a class="usa-link" href="tel:988">Call <strong>988 and select
+                                1</strong></a>
+                    </div>
+                    <div class="crisis-link border-top border-base-lighter">
+                        <img class="usa-icon" src="assets/img/material-icons/smartphone.svg" aria-hidden="true"
+                            focusable="false" /><a class="usa-link" href="sms:838255">Text <strong>838255</strong></a>
+                    </div>
+                    <div class="crisis-link border-top border-base-lighter"><img class="usa-icon"
+                            src="assets/img/material-icons/chat.svg" aria-hidden="true" focusable="false" /><a
+                            class="usa-link" href="https://www.veteranscrisisline.net/get-help-now/chat/">Start a
+                            Confidential Chat</a></div>
+                    <div class="crisis-link border-top border-base-lighter">
+                        <img class="usa-icon" src="assets/img/material-icons/hearingdisabled.svg" aria-hidden="true"
+                            focusable="false" /><a class="usa-link" href="tel:+18007994889">Call TTY if you have hearing
+                            loss <strong>800-799-4889</strong></a>
+                    </div>
+                    <div class="crisis-link border-top border-base-lighter"><a class="usa-link"
+                            href="https://www.veteranscrisisline.net/">Get more resources at VeteransCrisisLine.net</a>
+                    </div>
+                </div>
+            </div>
+            <button class="usa-button usa-modal__close" type="button" aria-label="Close this window" data-close-modal>
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="assets/img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+        </div>
+    </div>
+    <!-- Crisis Modal End-->
     <main id="main-content">
         
       <section class="sub-page-header">
@@ -137,9 +279,6 @@
     </main>
     <div id="footer"></div>
     <script>
-        //$('#head').load('partials/head.html');
-        //$('#crisis-modal').load('partials/crisis-modal.html');
-        $('#header').load('partials/header.html');
         $('#footer').load('partials/footer.html');
     </script>
 
