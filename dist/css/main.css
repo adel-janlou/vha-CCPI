@@ -1615,6 +1615,7 @@ img.veteran {
 }
 .tab {
     overflow: hidden;
+    height: 580px;
 }
 img.brochure {
     width: 500px !important;
@@ -1628,16 +1629,18 @@ img.globe {
 @media (max-width: 1024px) {
     #tab-container {
         height: unset;
-        min-height: 60%;
+        min-height: 80%;
     }
 }
 @media (max-width: 640px) {
     #tab-container {
         text-align: center;
+        height: 260px;
     }
     img.brochure {
         width: 200px !important;
         height: auto;
+        display: none;
     }
     img.globe {
         width: 200px;
@@ -1659,6 +1662,11 @@ img.globe {
     font-size: 50px;
     font-style: italic;
     margin-top: 0;
+}
+@media (max-width: 600px) {
+    .tab h2 {
+        margin-bottom: 15px;
+    }
 }
 .tab span {
     font-family: 'Source Sans Pro Web',Helvetica Neue,Helvetica,Roboto,Arial,sans-serif!important;
