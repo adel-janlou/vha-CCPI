@@ -1884,18 +1884,35 @@ body.page-about .blue-gradient h2 {
     z-index: 1 !important;
 }
 .summit-series-inner {
-    background: url(/dist/assets/images/summit-bg-lg.png); 
+    background: url(/dist/assets/images/summit-bg-lg.png);
+    background: url(/dist/assets/images/engage-summit-lg.png); 
     background-repeat: no-repeat;
-    background-position: bottom left; 
-    background-size: cover; 
+    background-position: bottom 00px left; 
+    background-size: contain; 
 }
 .summit-series .right-column img {
     border: 10px solid #fff;
 }
-@media (min-width: 1800px) {
+@media (max-width: 1880px) {
     .summit-series-inner {
-      background-position: bottom -200px left;
+      background-position: bottom -250px left -300px;
+      background-size: cover;
     }
+}
+@media (max-width: 1700px) {
+    .summit-series-inner {
+        background-position: bottom -150px left -300px;
+      }
+}
+@media (max-width: 1550px) {
+    .summit-series-inner {
+        background-position: bottom -50px left -300px;
+      }
+}
+@media (max-width: 1400px) {
+    .summit-series-inner {
+        background-position: bottom 0 left -300px;
+      }
 }
 @media (max-width: 1000px) {
     .summit-series {
@@ -2065,7 +2082,7 @@ body.page-trustworthy .promo-text .btn-naii {
 .usa-nav__close img {
     -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
             filter: invert(100%);
-  }
+}
 .usa-footer {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.06rem;
