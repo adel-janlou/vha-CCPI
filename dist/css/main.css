@@ -2059,6 +2059,13 @@ body.page-trustworthy .promo-text {
 body.page-trustworthy .promo-text .btn-naii {
     margin-bottom: 5px;
 }
+.usa-link:visited {  
+    color: #fff !important;
+}
+.usa-nav__close img {
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+            filter: invert(100%);
+  }
 .usa-footer {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.06rem;
