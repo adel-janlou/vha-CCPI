@@ -1488,7 +1488,6 @@ ul.b {
 
 /* midle section with background  */
 .mid-image {
-    
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1506,6 +1505,12 @@ ul.b {
 @media (max-width: 1000px) {
     .mid-image {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    }
+}
+@media (max-width: 550px) {
+    .mid-image {
+        padding: 20px 0 30px 0;
+        clip-path: unset;
     }
 }
 .mid-image-content {
@@ -1833,6 +1838,12 @@ body.page-about .blue-gradient h2 {
     background-size: cover;
     background-position: bottom center;
 }
+@media (max-width: 550px) {
+    .why-feature {
+        margin-top: unset;
+        padding-top: 20px;
+    }
+}
 .white-section {
     background: #fff;
     padding: 50px 0;
@@ -2051,6 +2062,11 @@ body.page-trustworthy .blue-gradient {
     .about-feature .grid-container {
         background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/about-amvet-cut.png) no-repeat top center;
         background-size: contain;
+    }
+}
+@media (max-width: 600px) {
+    .why-feature .grid-container {
+        background-size: cover;
     }
 }
 .why-feature h1 {
