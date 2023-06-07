@@ -1758,6 +1758,16 @@ p.box-description {
     margin: 0;
     padding: 0;
 }
+@media (max-width: 1024px) {
+    .sub-page-title h1 {
+        font-size: 45px;
+    }
+}
+@media (max-width: 600px) {
+    .sub-page-title h1 {
+        font-size: 40px;
+    }
+}
 .sub-page h2 {
     font-weight: 500;
     font-size: 40px;
