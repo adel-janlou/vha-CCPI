@@ -1426,9 +1426,15 @@ ul.b {
     color: whitesmoke;
     width: 100%;
     height: 100%;
-
 }
-
+@media (max-width: 640px) {
+    .w3-red, .w3-hover-red:hover {
+        border-top: none !important;
+    }
+    .caret {
+        display: none !important;
+    }
+}
 
 .w3-btn, .w3-button {
     border: none;
