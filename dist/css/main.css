@@ -1615,7 +1615,7 @@ img.veteran {
 }
 .tab {
     overflow: hidden;
-    height: 580px;
+    
 }
 img.brochure {
     width: 500px !important;
@@ -1654,8 +1654,12 @@ img.globe {
         display: none;
     }
 }
-
-
+@media (max-width: 533px) {
+    #tab-container {
+        text-align: center;
+        height: 310px;
+    }
+}
 
 .tab h2 {
     font-family: 'Merriweather Web',Georgia,Cambria,Times New Roman,Times,serif!important;
