@@ -1673,14 +1673,20 @@ img.globe {
 }
 
 .tab h2 {
-    font-family: 'Merriweather Web',Georgia,Cambria,Times New Roman,Times,serif!important;
+    font-family: 'Merriweather',Georgia,Cambria,Times New Roman,Times,serif!important;
     font-size: 50px;
     font-style: italic;
     margin-top: 0;
 }
+@media (max-width: 900px) {
+    .tab h2 {
+        font-size: 40px;
+    }
+}
 @media (max-width: 600px) {
     .tab h2 {
         margin-bottom: 15px;
+        font-size: 40px;
     }
 }
 .tab span {
@@ -1954,6 +1960,7 @@ body.page-about .blue-gradient h2 {
 }
 
 .yellow-more-info {
+    font-family: 'Source Sans Pro Web', sans-serif;
     background: rgb(250,201,34);
     background: linear-gradient(90deg, rgba(250,201,34,0) 0%, rgba(250,201,34,1) 53%);
     color: #000;
@@ -1962,7 +1969,6 @@ body.page-about .blue-gradient h2 {
     text-align: right;
     position: relative;
     z-index: 2 !important;
-
 }
 
 @media (max-width: 1000px) {
