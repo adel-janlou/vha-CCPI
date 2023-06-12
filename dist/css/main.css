@@ -1727,6 +1727,16 @@ button:focus-visible, a:focus-visible {
     border:.25rem solid white;
     margin-bottom: 40px;
 }
+@media (max-width: 1024px) {
+    .btn-naii {
+        min-width: 100%;
+    }
+}
+@media (max-width: 640px) {
+    .btn-naii {
+        min-width: 272px;
+    }
+}
 p.box-description {
     font-size: 36px;
     line-height: 50px;
