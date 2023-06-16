@@ -1755,7 +1755,7 @@ p.box-description {
     font-size: 36px;
     line-height: 50px;
     letter-spacing: 1;
-    font-family: 'Merriweather Web', 'Georgia' 'Times',serif !important;
+    font-family: 'Merriweather Web','Georgia',sans-serif !important;
     text-align: center;
     font-style: italic;
     color: #0A1133;
