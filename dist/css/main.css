@@ -1647,6 +1647,10 @@ img.globe {
     #tab-container {
         text-align: center;
         height: 260px;
+        display: none;
+    }
+    .tab-nav {
+        display: none;
     }
     img.brochure {
         width: 200px !important;
@@ -1735,6 +1739,12 @@ button:focus-visible, a:focus-visible {
 @media (max-width: 640px) {
     .btn-naii {
         min-width: 272px;
+    }
+}
+@media (max-width: 640px) {
+    #box-links {
+        margin-top: -50px;
+        padding-top: 50px;
     }
 }
 p.box-description {
@@ -1870,9 +1880,9 @@ body.page-about .blue-gradient h2 {
     background-size: cover;
     background-position: bottom center;
 }
-@media (max-width: 550px) {
+@media (max-width: 640px) {
     .why-feature {
-        margin-top: unset;
+        margin-top: 0;
         padding-top: 20px;
     }
 }
