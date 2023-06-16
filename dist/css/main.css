@@ -675,7 +675,11 @@ ul.striped-list>li {
         color: white !important;
     }
 }
-
+@media (max-width: 64em) {
+    .usa-navbar {
+        border-bottom: none !important;
+    }
+}
 .usa-link:visited {
     color: #c6b8dc;
 }
