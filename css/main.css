@@ -1502,7 +1502,7 @@ ul.b {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(/dist/assets/images/homepage/mid-img-v2.png);
+    background-image: url(/assets/images/homepage/mid-img-v2.png);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     color: #fff;
     padding: 50px 0 175px 0;
@@ -1555,7 +1555,7 @@ ul.b {
 #why {
     margin-top: -130px;
     padding-top: 100px;
-    background: url(/dist/assets/images/homepage/why-bg.svg);
+    background: url(/assets/images/homepage/why-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -1586,21 +1586,21 @@ img.veteran {
 }
 
 .box-2 {
-    /*background-image: url(/dist/assets/images/homepage/BUTTON.png);
+    /*background-image: url(/assets/images/homepage/BUTTON.png);
     background-repeat: no-repeat;
     background-size: cover;*/
     background: #112E51;
 }
 
 .box-pro {
-    background-image: url(/dist/assets/images/homepage/Box-2.svg);
+    background-image: url(/assets/images/homepage/Box-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .naii {
-    background-image: url(/dist/assets/images/homepage/R2b.png);
+    background-image: url(/assets/images/homepage/R2b.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1624,7 +1624,7 @@ img.veteran {
 
 /* TT Additions */
 #tab-container {
-    background-image: url(/dist/assets/images/homepage/vaai-home-tab-bg.jpg);
+    background-image: url(/assets/images/homepage/vaai-home-tab-bg.jpg);
     background-size: cover;
     height: 536px;
 }
@@ -1768,7 +1768,7 @@ p.box-description {
 }
 .sub-page-title {
     background: #0473bc;
-    background-image: url('/dist/assets/images/about-bg.png');
+    background-image: url('/assets/images/about-bg.png');
     background-repeat: no-repeat;
     padding: 30px 0;    
 }
@@ -1879,7 +1879,7 @@ body.page-about .blue-gradient h2 {
 .sub-page-feature {
     margin-top: -100px;
     padding-top: 100px;
-    background: url(/dist/assets/images/homepage/why-bg.svg);
+    background: url(/assets/images/homepage/why-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -1900,7 +1900,7 @@ body.page-about .blue-gradient h2 {
 }
 .promo-text {
     background: #003e73;
-    background-image: url('/dist/assets/images/about-feature-txt-bg.png');
+    background-image: url('/assets/images/about-feature-txt-bg.png');
     background-repeat: no-repeat;
     background-size: auto 100%;
     padding: 30px 0;   
@@ -1914,7 +1914,7 @@ body.page-about .blue-gradient h2 {
     text-align: center;
 }
 .engage-upper {
-    background: url(/dist/assets/images/engage-top-combined-bg.png);
+    background: url(/assets/images/engage-top-combined-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -1926,7 +1926,7 @@ body.page-about .blue-gradient h2 {
 }
 @media (max-width: 1000px) {
     .engage-upper {
-        background: linear-gradient(rgba(234, 239, 239, 0.65), rgba(234, 239, 239, .8)), url(/dist/assets/images/engage-top-combined-bg.png) no-repeat bottom center;
+        background: linear-gradient(rgba(234, 239, 239, 0.65), rgba(234, 239, 239, .8)), url(/assets/images/engage-top-combined-bg.png) no-repeat bottom center;
         background-size: cover;
     }
 }
@@ -1942,7 +1942,7 @@ body.page-about .blue-gradient h2 {
     color: #fff;
 }
 .summit-series {
-    background: url(/dist/assets/images/homepage/why-bg.svg);
+    background: url(/assets/images/homepage/why-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -1952,8 +1952,8 @@ body.page-about .blue-gradient h2 {
     z-index: 1 !important;
 }
 .summit-series-inner {
-    background: url(/dist/assets/images/summit-bg-lg.png);
-    background: url(/dist/assets/images/engage-summit-lg.png); 
+    background: url(/assets/images/summit-bg-lg.png);
+    background: url(/assets/images/engage-summit-lg.png); 
     background-repeat: no-repeat;
     background-position: bottom 00px left; 
     background-size: contain; 
@@ -1987,7 +1987,7 @@ body.page-about .blue-gradient h2 {
         margin-top: unset;
     }
     .summit-series-inner {
-        background: linear-gradient(rgba(234, 239, 239, 0.65), rgba(234, 239, 239, .8)), url(/dist/assets/images/summit-bg-lg.png) no-repeat bottom center;
+        background: linear-gradient(rgba(234, 239, 239, 0.65), rgba(234, 239, 239, .8)), url(/assets/images/summit-bg-lg.png) no-repeat bottom center;
         background-size: cover;
     }
 }
@@ -2019,14 +2019,14 @@ body.page-about .blue-gradient h2 {
 .trustworthy-upper {
     background: #fff;
     padding: 40px 0;
-    background: url(/dist/assets/images/trustworthy-header-cropped.png); 
+    background: url(/assets/images/trustworthy-header-cropped.png); 
     background-repeat: no-repeat;
     background-position: bottom right; 
     background-size: contain; 
 }
 @media (max-width: 1450px) {
     .trustworthy-upper {
-        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1)), url('/dist/assets/images/trustworthy-header-cropped.png') no-repeat top right;
+        background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1)), url('/assets/images/trustworthy-header-cropped.png') no-repeat top right;
         background-position: top right -100px;
     }
 }
@@ -2068,20 +2068,20 @@ body.page-about .blue-gradient h2 {
     color: unset;
 }
 .trustworthy-feature .grid-container {
-    background-image: url(/dist/assets/images/trustworthy-veteran.png); 
+    background-image: url(/assets/images/trustworthy-veteran.png); 
     background-repeat: no-repeat;
     background-position: top left; 
     background-size: contain;
     /*background-color: rgba(234, 239, 239, 1);*/
 }
 .about-feature .grid-container {
-    background-image: url(/dist/assets/images/about-amvet-cut.png);
+    background-image: url(/assets/images/about-amvet-cut.png);
     background-repeat: no-repeat;
     background-position: top left 100px; 
     background-size: contain;
 }
 .why-feature .grid-container {
-    background-image: url(/dist/assets/images/homepage/why-ww2-vet.png);
+    background-image: url(/assets/images/homepage/why-ww2-vet.png);
     background-repeat: no-repeat;
     background-position: top left; 
     background-size: contain;
@@ -2092,7 +2092,7 @@ body.page-trustworthy .blue-gradient {
 
 @media (max-width: 1024px) {
     .trustworthy-feature .grid-container {
-        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/trustworthy-veteran.png) no-repeat top center;
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/assets/images/trustworthy-veteran.png) no-repeat top center;
         background-size: cover;
         background-position: top center -200px;
     }
@@ -2101,11 +2101,11 @@ body.page-trustworthy .blue-gradient {
         padding-top: 200px;
     }
     .why-feature .grid-container {
-        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/homepage/why-ww2-vet.png) no-repeat top center;
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/assets/images/homepage/why-ww2-vet.png) no-repeat top center;
         background-size: contain;
     }
     .about-feature .grid-container {
-        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/dist/assets/images/about-amvet-cut.png) no-repeat top center;
+        background: linear-gradient(rgba(234, 239, 239, 0.75), rgba(234, 239, 239, 1)), url(/assets/images/about-amvet-cut.png) no-repeat top center;
         background-size: contain;
     }
 }
